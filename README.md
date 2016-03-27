@@ -9,24 +9,24 @@
 
   This mostly assumes that you are using a recent version of OS X, so your mileage may vary. 
 
-![](docs/img/square.png) indicates a step to do. 
+![](imgs/square.png) indicates a step to do. 
 
 ##1)  Tools
 
 * ###[atom.io](http://atom.io)
 
   is a great code editor, it is cross platform and looks pretty.
-  <br>![](docs/img/square.png) 1.0)  install from [atom.io](http://atom.io)
-  <br>![](docs/img/square.png) 1.1)  open Atom and then do: *Atom -> Install Shell Commands*
+  <br>![](imgs/square.png) 1.0)  install from [atom.io](http://atom.io)
+  <br>![](imgs/square.png) 1.1)  open Atom and then do: *Atom -> Install Shell Commands*
 
 * ###[git+github](http://www.github.com)
   git is a code collaboration tool but also will allow us to use github to host our pages! If you already have git then you can skip this step.
   
-  <br>![](docs/img/square.png) 1.2)  Go to [github.com](http://github.com) and create an account if you don't have one already!
-  <br>![](docs/img/square.png) 1.3)  Install the github app from here: [Mac](http://mac.github.com) or [PC](http://windows.github.com).
-  <br>![](docs/img/square.png) 1.4)  Run *GitHub* app, and set up with your new account.
-  <br>![](docs/img/square.png) 1.5)  Go to *Preferences* -> *Advanced* and fill in your information with the same email you used for your github account and then click *Install Command Line Tools*
-  <img src="docs/img/github_cmd.png" style="width:600px;">
+  <br>![](imgs/square.png) 1.2)  Go to [github.com](http://github.com) and create an account if you don't have one already!
+  <br>![](imgs/square.png) 1.3)  Install the github app from here: [Mac](http://mac.github.com) or [PC](http://windows.github.com).
+  <br>![](imgs/square.png) 1.4)  Run *GitHub* app, and set up with your new account.
+  <br>![](imgs/square.png) 1.5)  Go to *Preferences* -> *Advanced* and fill in your information with the same email you used for your github account and then click *Install Command Line Tools*
+  <img src="imgs/github_cmd.png" style="width:600px;">
 
 * no other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://docs.google.com/document/d/1XODTyblh3NP1sxO-mObPfx5STlbD78tK0r2lmj4E8Co).
 
@@ -34,10 +34,10 @@
 
 We'll have to use some Terminal command line dark magic here.  Copy/paste is your friend.  
 
-  <br>![](docs/img/square.png) 2.0)  Open Terminal (on Windows open Git Shell)
-  <br>![](docs/img/square.png) 2.1)  ```cd ~/Desktop```
-  <br>![](docs/img/square.png) 2.2)  ```git clone https://github.com/dali-lab/project-name.git my-dali-project```
-  <br>![](docs/img/square.png) 2.3)  ```cd my-dali-project```
+  <br>![](imgs/square.png) 2.0)  Open Terminal (on Windows open Git Shell)
+  <br>![](imgs/square.png) 2.1)  ```cd ~/Desktop```
+  <br>![](imgs/square.png) 2.2)  ```git clone https://github.com/dali-lab/project-name.git my-dali-project```
+  <br>![](imgs/square.png) 2.3)  ```cd my-dali-project```
 
 what this does is change directory to your Desktop, then clones the the tutorial repository there, and then you cd into that cloned repository.  For the rest of this tutorial we assume that you have a Terminal window open and that you are cd'd into the repository you just cloned.  If you get any errors in the above give a shout! 
 
@@ -55,7 +55,7 @@ You are now ready to start!
 
 ##3) Editing Markdown
 
-  <br>![](docs/img/square.png) 3.0)  In Terminal run:  ```atom .``` For Windows, just open up atom and use 'Add Project Folder' and select the cloned directory from above.  
+  <br>![](imgs/square.png) 3.0)  In Terminal run:  ```atom .``` For Windows, just open up atom and use 'Add Project Folder' and select the cloned directory from above.  
 
 This will open the current folder into the Atom text editor. Note the folder structure.  What are you reading now (in browser) is actually a [markdown](https://guides.github.com/features/mastering-markdown/) file: **README.md**. 
 
@@ -68,7 +68,7 @@ Play around and make some changes.  In particular add yourself to the team secti
 
 Now that you've made some changes to the site, we'll go over how to use git to commit and push your changes.   Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.  
 
-<img src="docs/img/git_workflow.png" style="width:600px;">
+<img src="imgs/git_workflow.png" style="width:600px;">
 
 ###Clone the repo:
 You have already done this step using the ```git clone``` command.
@@ -111,8 +111,8 @@ where the line between  ```<<<HEAD``` and ```====``` is the line/lines of code t
 
 Since we've been using Atom so far there is a nice plugin to help visualize this a little better.
 
-  <br>![](docs/img/square.png) Atom -> Preferences -> Install -> search for merge-conflicts
-  <img src="docs/img/merge-conflicts.gif" style="width:600px;">
+  <br>![](imgs/square.png) Atom -> Preferences -> Install -> search for merge-conflicts
+  <img src="imgs/merge-conflicts.gif" style="width:600px;">
 
 
 Once you have your conflict file the way you want it.  Fixed and without any more of the conflict markers.
@@ -124,7 +124,7 @@ All you have to do to continue is:  ```git add thefixedfile``` which indicated t
 
 Now that you've resolved any conflicts you're ready to push to the remote repository!
 
-  <br>![](docs/img/square.png) ```git push origin master```
+  <br>![](imgs/square.png) ```git push origin master```
   
   ```origin``` is the remote you are pushing to and is named origin by default
  
