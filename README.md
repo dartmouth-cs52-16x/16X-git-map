@@ -175,7 +175,7 @@ This will set up origin to point to the dali-lab/gitivity repo.
 ### Work on Code
 - Start a local feature branch and do work on it 
 ```
-git checkout -b feature
+git checkout -b <feature>
 git add <file>
 git commit -m 'commit message'
 ```
@@ -184,15 +184,8 @@ git commit -m 'commit message'
 Note that these commands only updates your current branch
 
 ```bash
-git fetch origin       # updates local copies of remote branches
-git rebase origin/master     # rebase your current branch
-```
-
-Alternatively
-```bash
 git pull --rebase origin master
 ```
-
 or
 ```bash
 git pullorigin master
@@ -200,7 +193,7 @@ git pullorigin master
 
 - When you're nearly ready to publish, rebase your local branch on top of the latest master. 
 ```
-git checkout feature  # make sure you're on your branch
+git checkout <feature>  # make sure you're on your branch
 git pull --rebase origin master   # rebase on top of the remote master
 ```
 
@@ -220,9 +213,10 @@ git rebase -i HEAD~X
 ```
 where X is the number of commits back you want to roll back
 
-Note that this can cause problems if you've pushed your branch to your remote repo, since you are rewriting commit history in your local branch and this will mismatch with the remote repo's history. If you've done a rebase commit squash, the next time you push to the remote repo you will have to do a forced update `git push -f origin feature`
+Note that this can cause problems if you've pushed your branch to your remote repo, since you are rewriting commit history in your local branch and this will mismatch with the remote repo's history. If you've done a rebase commit squash, the next time you push to the remote repo you will have to do a forced update `git push -f origin feature`. However be aware that this is dangerous and anyone else working on this feature branch will have issues pushing their branch. One solution to this is asking them to `stash` their commits and then `rebase` after you push your branch.
 
-#### Feature branch + Pull request
+After you are finished working on your branch
+
 ```
 git push origin feature
 ```
