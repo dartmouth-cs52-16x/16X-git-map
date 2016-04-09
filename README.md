@@ -2,8 +2,8 @@
 
 ## Overview 
 
-*  In your groups, each person will use git to clone a version of your teams git repository.  
-*  Then you'll edit some markdown in the readme.md file.
+*  In your groups, each person will use git to clone a version of your team's git repository.  
+*  Then you'll edit some markdown (very simple code) in the README.md file.
 *  Each person should add themselves into the team section.
 *  Then you'll commit and merge your changes of the page with your teammates and push your changes to the git repo.
 
@@ -11,7 +11,7 @@
 
 ![](imgs/square.png) indicates a step to do. 
 
-##1)  Tools
+##1)  Setup Some Tools
 
 * ###[atom.io](http://atom.io)
 
@@ -20,26 +20,36 @@
   <br>![](imgs/square.png) 1.1)  open Atom and then do: *Atom -> Install Shell Commands*
 
 * ###[git+github](http://www.github.com)
-  git is a code collaboration tool but also will allow us to use github to host our pages! If you already have github then you can skip this step.
+  git is a code collaboration tool! If you already have git on your computer then you can skip this step.
   
   <br>![](imgs/square.png) 1.2)  Go to [github.com](http://github.com) and create an account if you don't have one already!
-  <br>![](imgs/square.png) 1.3)  Install the github app from here: [Mac](http://mac.github.com) or [PC](http://windows.github.com). If you are a developer, we recommend using the CLI (command line) version of git just to familiarize youreself more with the shell.
-  <br>![](imgs/square.png) 1.4)  Run *GitHub* app, and set up with your new account.
+  <br>![](imgs/square.png) 1.3)  Install the github app from here: [Mac](http://mac.github.com) or [PC](http://windows.github.com). If you are a developer, we recommend using the CLI (command line) version of git just to familiarize youreself more with the shell. In fact for this tutorial we're going to be all Terminal!
+  <br>![](imgs/square.png) 1.4)  Run the *GitHub* app, and set up with your new account.
   <br>![](imgs/square.png) 1.5)  Go to *Preferences* -> *Advanced* and fill in your information with the same email you used for your github account and then click *Install Command Line Tools*
   <img src="imgs/github_cmd.png" style="width:600px;">
+  <br>![](imgs/square.png) 1.6)  Now **Exit** the app. 
 
-* no other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://docs.google.com/document/d/1XODTyblh3NP1sxO-mObPfx5STlbD78tK0r2lmj4E8Co).
+* no other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://github.com/dali-lab/dev-resources).
 
-##2)  Terminal
 
-We'll have to use some Terminal command line dark magic here.  Copy/paste is your friend.  
+##1.5) Your Github Repository
 
-  <br>![](imgs/square.png) 2.0)  Open Terminal (on Windows open Git Shell)
+  <br>![](imgs/square.png) 1.0) Find your team's github repository on [github.com](http://github.com/dali-lab) and go to its page.
+  <br>![](imgs/square.png) 2.0) You'll use the repository URL in the next step, so leave this page open. 
+  <img src="imgs/get_github_url.png" style="width:600px;">
+
+
+
+##2) Terminal
+
+We'll have to use some Terminal command line dark magic here.  Copy/paste is your friend. The https URL below is your team's github URL that you found in step 1.5.
+
+  <br>![](imgs/square.png) 2.0)  Open Terminal *(on Windows open Git Shell)*
   <br>![](imgs/square.png) 2.1)  ```cd ~/Desktop```
-  <br>![](imgs/square.png) 2.2)  ```git clone https://github.com/dali-lab/project-name.git my-dali-project```
+  <br>![](imgs/square.png) 2.2)  ```git clone https://github.com/dali-lab/YOUR_PROJECT.git my-dali-project```
   <br>![](imgs/square.png) 2.3)  ```cd my-dali-project```
 
-what this does is change directory to your Desktop, then clones the the tutorial repository there, and then you cd into that cloned repository.  For the rest of this tutorial we assume that you have a Terminal window open and that you are cd'd into the repository you just cloned.  If you get any errors in the above give a shout! 
+what this does is change directory to your Desktop, then clones your team repository there, and then you cd into that cloned repository.  For the rest of this tutorial we assume that you have a Terminal window open and that you are cd'd into the repository you just cloned.  If you get any errors in the above give a shout! 
 
 Some more Terminal commands that are useful:
 
@@ -57,16 +67,15 @@ You are now ready to start!
 
   <br>![](imgs/square.png) 3.0)  In Terminal run:  ```atom .``` For Windows, just open up atom and use 'Add Project Folder' and select the cloned directory from above.  
 
-This will open the current folder into the Atom text editor. Note the folder structure.  What are you reading now (in browser) is actually a [markdown](https://guides.github.com/features/mastering-markdown/) file: **README.md**. 
+This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually a [markdown](https://guides.github.com/features/mastering-markdown/) file: **README.md**. 
 
 Play around and make some changes.  In particular add yourself to the team section!  Change some images.  We'll walk through this step but in particular see if you can find *(command+f)* teammates and see how to change the text and image.  To insert a new image just put a .jpg or .png in the img folder (make sure it is square) and change the ```img src=``` line. 
-
 
 
 ##4) Git
 
 
-Now that you've made some changes to the site, we'll go over how to use git to commit and push your changes.   Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.  
+Now that you've made some changes to the site, we'll go over how to use git to commit and push your changes.   Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitely name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.  
 
 <img src="imgs/git_workflow.png" style="width:600px;">
 
@@ -86,7 +95,7 @@ In Terminal:  ```git commit -am "i made some changes"```
 ###Pull your teammates changes:
 In Terminal:  ```git pull```
 
-This will check the github remote server for any changes and download and merge them into your local repo. 
+This will check the github remote server for any changes and download and merge them into your local version. 
 
 ###Merge Conflicts
 
@@ -132,7 +141,7 @@ Now that you've resolved any conflicts you're ready to push to the remote reposi
 
 ###Done!
 
-Now you can go to [http://dali-lab.github.io/project-name](http://dali-lab.github.io/project-name) to see your site!
+If you go to your repository github page now you'll be able to see all the changes you made to the readme!
 
 ##5) Advanced Git for Devs
 
@@ -143,15 +152,18 @@ Setting up SSH keys
 Setting up Git Config
 
 ```
-atom ~/.gitconfig  # or whatever texteditor you prefer
-
 git config --global user.name "Your Name"
 git config --global user.email <yourgithubemail>
 git config --global push.default simple   # this is much safer than 'matching'
+```
 
-# Then add the aslias and branch configs
+#### Then add the aliases and branch configs
+```
+atom ~/.gitconfig  # or whatever texteditor you prefer
+```
 
-# Sample
+#### Sample
+```
 [user]
     name = John Doe
     email = johndoe@dali.dartmouth.edu
@@ -163,7 +175,7 @@ git config --global push.default simple   # this is much safer than 'matching'
     default = simple
 ```
 
-Setting up `git push` to use `simple` matching is very important. Otherwise it is easy, while you're force-pushing a feature branch, to also accidentally force push your master to the prod repo. See here for a good explanation http://stackoverflow.com/a/13148313.
+Setting up `git push` to use `simple` matching is very important. Otherwise it is easy, while you're force-pushing a feature branch, to also accidentally force push your master to the prod repo. See [here](http://stackoverflow.com/a/13148313)for a good explanation.
 
 ## Recommended Workflow
 
