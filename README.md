@@ -1,6 +1,6 @@
 # DALI GITivity #
 
-Today you'll be learning the ins and outs of an essential concept used in design and developer- version control. We'll be using git and github (the site you're at now!) to learn how manage multiple people working on the same document at the same time- all while having the ability to backup and rever your work. If this is all new to you, don't worry! We'll start from the beginning and build from there.
+Today you'll be learning the ins and outs of an essential concept used in software design and development — version control. We'll be using git and github (the site you're at now!) to learn how manage multiple people working on the same document at the same time — all while having the ability to backup and revert your work. If this is all new to you, don't worry! We'll start from the beginning and build from there.
 
 ## Overview
 
@@ -13,7 +13,7 @@ This mostly assumes that you are using a recent version of OS X, so your mileage
 ## Goals at a Glance
 Depending on your role, this is what you will accomplish by the end of this guide!
 
-#### Basic: Designers and Developers
+#### Basic: Everybody!
 1. Clone your repository
 1. Make some edits
   - Modify `README.md` by adding your name
@@ -27,7 +27,7 @@ Depending on your role, this is what you will accomplish by the end of this guid
   - `commit`
 1. `push`
 
-#### Advanced: Developers, Designers optional
+#### Advanced: For those who know some git already.
 1. `pull` master
 1. Create a `branch`
 1. Make some edits
@@ -56,7 +56,7 @@ git is a code collaboration tool! You might be able to skip this step if you've 
 1.  Now **Exit** the app.
 
 #### Developers
-1. Set up your global config variables with:
+1. Set up your global config variables in *Terminal* with:
 ```
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
@@ -77,7 +77,7 @@ git config --global user.email johndoe@example.com
 
 ### Developers
 1. From the command line (where you will run all future commands), navigate to where you want the repo to end up on your computer. For example:
-`cd ~/Desktop`
+`cd ~/Documents`
 1. Clone the repo:
 `git clone [repo-URL]`
 1. Enter your repo:
@@ -97,14 +97,14 @@ If you need some help or a couple pointers, give me a shout!
 
   -  In Terminal run:  ```atom .``` For Windows, just open up atom and use 'Add Project Folder' and select the cloned directory from above.  
 
-This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually a markdown file **README.md**. Here's a [wonderful cheat sheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) that'll help you make your markdown files look awesome!
+This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually a markdown file **README.md**. Here's a [wonderful cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) that'll help you make your markdown files look awesome!
 
 Play around and make some changes. In particular create an "Authors:" line and add yourself! Add some images!
 
 #### Images
 To insert a new image just put a .jpg or .png in the img folder (make sure it is square) and change the ```img src=``` line.
 
-Pro Tip: Get a preview of your markdown file with *Packages -> Markdown Preview -> Toggle Preview*, or the shortcut *SHIFT-CTRL-M*.
+Pro Tip: Get a preview of your markdown file right inside Atom go to *Packages -> Markdown Preview -> Toggle Preview*, or the shortcut *SHIFT-CTRL-M*.
 
 ## An Overview of Git
 Now that you've made some changes to the site, we'll go over how to use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here. This is a good overview image for the things you'll be doing. **Devs should pay close attention to this!**
