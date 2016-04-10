@@ -1,104 +1,160 @@
 # DALI GITivity #
 
-## Overview 
+## Goals at a Glance
+
+#### Basic: Designers and Developers
+1. Clone your repository
+1. Make some edits
+  - Modify `README.md` by adding your name
+  - Put a picture of yourself in your repo
+1. `add` this file to source control
+1. `commit` your changes
+1. `pull`
+1. if you need to resolve conflicts
+  - fix the conflicts
+  - add the flixed files
+  - `commit`
+1. `push`
+
+#### Advanced: Developers, Designers optional
+1. `pull` master
+1. Create a `branch`
+1. Make changes
+1. `commit`
+1. `merge`
+  - Alternatively, `rebase`
+
+
+## Overview
 
 *  In your groups, each person will use git to clone a version of your team's git repository.  
 *  Then you'll edit some markdown (very simple code) in the README.md file.
 *  Each person should add themselves into the team section.
 *  Then you'll commit and merge your changes of the page with your teammates and push your changes to the git repo.
 
-  This mostly assumes that you are using a recent version of OS X, so your mileage may vary. 
+  This mostly assumes that you are using a recent version of OS X, so your mileage may vary.
 
-![](imgs/square.png) indicates a step to do. 
+## Setup
 
-##1)  Setup Some Tools
+* ### [atom.io](http://atom.io)
+  This is a great code editor, it is cross platform and looks pretty. If you prefer a different editor you can use that one instead.
 
-* ###[atom.io](http://atom.io)
+  1. Install from [atom.io](http://atom.io)
+  1. Open Atom and then do: *Atom -> Install Shell Commands*
 
-  is a great code editor, it is cross platform and looks pretty.
-  <br>![](imgs/square.png) 1.0)  install from [atom.io](http://atom.io)
-  <br>![](imgs/square.png) 1.1)  open Atom and then do: *Atom -> Install Shell Commands*
+* ### [git+github](http://www.github.com)
+  git is a code collaboration tool! You might be able to skip this step if you've previously used git on your computer.
 
-* ###[git+github](http://www.github.com)
-  git is a code collaboration tool! If you already have git on your computer then you can skip this step.
-  
-  <br>![](imgs/square.png) 1.2)  Go to [github.com](http://github.com) and create an account if you don't have one already!
-  <br>![](imgs/square.png) 1.3)  Install the github app from here: [Mac](http://mac.github.com) or [PC](http://windows.github.com). If you are a developer, we recommend using the CLI (command line) version of git just to familiarize youreself more with the shell. In fact for this tutorial we're going to be all Terminal!
-  <br>![](imgs/square.png) 1.4)  Run the *GitHub* app, and set up with your new account.
-  <br>![](imgs/square.png) 1.5)  Go to *Preferences* -> *Advanced* and fill in your information with the same email you used for your github account and then click *Install Command Line Tools*
+  1. Create an account at [github.com](http://github.com). If you need to do this step, make sure you also let someone know so you can be added to your team's respository.
+
+  #### Designers
+  1. Install the github app from here: [Mac](http://mac.github.com) or [PC](http://windows.github.com).
+  1. Run the *GitHub* app, and set up with your new account.
+  1. Go to *Preferences* -> *Advanced* and fill in your information with the same email you used for your github account and then click *Install Command Line Tools*
   <img src="imgs/github_cmd.png" style="width:600px;">
-  <br>![](imgs/square.png) 1.6)  Now **Exit** the app. 
+  1.  Now **Exit** the app.
+
+  #### Developers
+  1. Set up your global config variables with:
+  ```
+  git config --global user.name "John Doe"
+  git config --global user.email johndoe@example.com
+  ```
 
 * no other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://github.com/dali-lab/dev-resources).
 
+## 1) Clone your Respository
+**What this does:** The repository is what git uses to store your project's information. It contains commits and references to commits (more on this later). The folder on your computer becomes your *workspace*.
 
-##1.5) Your Github Repository
-
-  <br>![](imgs/square.png) 1.0) Find your team's github repository on [github.com](http://github.com/dali-lab) and go to its page.
-  <br>![](imgs/square.png) 2.0) You'll use the repository URL in the next step, so leave this page open. 
+  1. Find your team's github repository on [github.com](http://github.com/dali-lab) and go to its page.
+  1. You'll use the repository URL in the next step, so leave this page open.
   <img src="imgs/get_github_url.png" style="width:600px;">
 
+  ### Designers
+    1. From your Github app, clone the team repo
+    ![](imgs/app_add.png)
 
+  ### Developers
+    1. From the command line (where you will run all future commands), navigate to where you want the repo to end up on your computer. For example:
+    `cd ~/Desktop`
+    1. Clone the repo:
+    `git clone [repo-URL]`
+    1. Enter your repo:
+    `cd [my-dali-project]`
 
-##2) Terminal
+    Some more useful Terminal commands:
 
-We'll have to use some Terminal command line dark magic here.  Copy/paste is your friend. The https URL below is your team's github URL that you found in step 1.5.
+      ```ls -la```  will list files in current directory </br>
+      ```pwd```  will show current directory</br>
+      ```cd  somenewdirectory```  will change directory to *somenewdirectory*</br>
+      ```cp source target``` will copy files</br>
+      ```mv source target``` will move</br>
 
-  <br>![](imgs/square.png) 2.0)  Open Terminal *(on Windows open Git Shell)*
-  <br>![](imgs/square.png) 2.1)  ```cd ~/Desktop```
-  <br>![](imgs/square.png) 2.2)  ```git clone https://github.com/dali-lab/YOUR_PROJECT.git my-dali-project```
-  <br>![](imgs/square.png) 2.3)  ```cd my-dali-project```
+    If you need some help or a couple pointers, give me a shout!
 
-what this does is change directory to your Desktop, then clones your team repository there, and then you cd into that cloned repository.  For the rest of this tutorial we assume that you have a Terminal window open and that you are cd'd into the repository you just cloned.  If you get any errors in the above give a shout! 
+## 2) Editing Markdown
 
-Some more Terminal commands that are useful:
+  -  In Terminal run:  ```atom .``` For Windows, just open up atom and use 'Add Project Folder' and select the cloned directory from above.  
 
-```ls -la```  will list files in current directory </br>
-```pwd```  will show current directory</br>
-```cd  somenewdirectory```  will change directory to *somenewdirectory*</br>
-```cp source target``` will copy files</br>
-```mv source target``` will move</br>
+This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually a markdown file **README.md**. Here's a [wonderful cheat sheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) that'll help you make your markdown files look awesome!
 
+Play around and make some changes. In particular add yourself to the team section! Change some images. We'll walk through this step but in particular see if you can find *(command+f)* teammates and see how to change the text and image.  
 
-You are now ready to start!
+#### Images
+To insert a new image just put a .jpg or .png in the img folder (make sure it is square) and change the ```img src=``` line.
 
+Pro Tip: Get a preview of your markdown file with *Packages -> Markdown Preview -> Toggle Preview*, or the shortcut *SHIFT-CTRL-M*.
 
-##3) Editing Markdown
+## 3) Git Add
 
-  <br>![](imgs/square.png) 3.0)  In Terminal run:  ```atom .``` For Windows, just open up atom and use 'Add Project Folder' and select the cloned directory from above.  
+### An Overview of Git
+Now that you've made some changes to the site, we'll go over how to use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.  
 
-This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually a [markdown](https://guides.github.com/features/mastering-markdown/) file: **README.md**. 
+<!-- <img src="imgs/git_workflow.png" style="width:600px;"> -->
 
-Play around and make some changes.  In particular add yourself to the team section!  Change some images.  We'll walk through this step but in particular see if you can find *(command+f)* teammates and see how to change the text and image.  To insert a new image just put a .jpg or .png in the img folder (make sure it is square) and change the ```img src=``` line. 
+**What this does:** The add step tells git which files from the workspace you want it to track, or index.
 
+### Designers
+  - The Github app does this for you so you can move on!
 
-##4) Git
+### Developers
+  - **Check your status:** Use ```git status``` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.
+  - **Add Untracked Files:** Use ```git add filename``` on those files to tell git to track them.
+    - You might also used `git add -a` to add all untracked files at once
 
+## 4) Git Commit
+**What this does:** Committing files tells git to stage the files for upload to the remote repository. These staged files are known as your *local repository*. Commits should represent one logical change in the repo and the commit message should make that change clear.
 
-Now that you've made some changes to the site, we'll go over how to use git to commit and push your changes.   Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitely name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.  
+### Designers
+  - New and modified files will show up in the center pane of the Github app. Choose which files you want to commit, write a commit message and then press *Commit to Master* in the bottom center.
+  ![](imgs/app_commit.png)
+  - Continue to commit files until you see "No Uncommitted Changes"
 
-<img src="imgs/git_workflow.png" style="width:600px;">
+### Developers
+  - **Commit your changes:** ```git commit -am "i made some changes"```
+    - ``-a`` means all changes
+    - ``-m`` indicates that your commit message follows directly, a commit message is required.
 
-###Clone the repo:
-You have already done this step using the ```git clone``` command.
+## 5) Git Pull
+### Designers
+  - Again, the Github app a couple of these next steps together. For now, press the "Sync" button in the top right. This will first pull, then try to push to the remote repository.
 
-###Check status
-Use ```git status``` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.  Use ```git add filename``` on those files to tell git to track them. 
+### Developers
+  - **Pull your teammates changes:** ```git pull```
+    - This will check the github remote server for any changes and download and merge them into your local version.
 
-###Commit your changes:
-In Terminal:  ```git commit -am "i made some changes"```
+### 6) Merge Conflicts
+#### Designers
+  - You might get a message that looks like this:
+  ![](imgs/app_merge_conflict.png)
 
-``-a`` means all changes<br>
-``-m`` indicates that your commit message follows directly, a commit message is required.
+  - This is where the fun starts- how do you fix this?
+    - The cause for merge conflicts is when you edited the exact same line as someone else and git doesn't know how to automatically merge that. So to fix you just need to pick apart the conflict and merge it in.
+  - Instead of "No Uncommitted Changes," you should now see something like "1 Change"- this is the conflicted file!
+  ![](imgs/app_merge_conflict2.png)
+  - You already have this file open in your editor. Continue to the section **Deciphering Merge Conflicts**.
 
-
-###Pull your teammates changes:
-In Terminal:  ```git pull```
-
-This will check the github remote server for any changes and download and merge them into your local version. 
-
-###Merge Conflicts
-
+#### Developers
 At this point after a ```git pull``` you may get a message that looks like this:
 
      CONFLICT (content): Merge conflict in somefile
@@ -106,7 +162,9 @@ At this point after a ```git pull``` you may get a message that looks like this:
 
 This is when the fun starts.  How do you fix this?
 
-The cause for merge conflicts is when you edited the exact same line as someone else and git doesn't know how to automatically merge that. So to fix you just need to pick apart the conflict and merge it in.
+The cause for merge conflicts is when you edited the exact same line as someone else and git doesn't know how to automatically merge that. So to fix you just need to pick apart the conflict and merge it in- continue to the next section to see how this happens!
+
+#### Deciphering Merge Conflicts
 
 If you were to do this by hand, git takes the pretty code you wrote and injects terrible "conflict markers" that look like this:
 
@@ -115,8 +173,8 @@ If you were to do this by hand, git takes the pretty code you wrote and injects 
     =======
     var h = 'Hi!';
     >>>>>>> cb1abc6bd98cfc84317f8aa95a7662815417802d
-      
-where the line between  ```<<<HEAD``` and ```====``` is the line/lines of code that are relevant in your file, and between  ```====``` and ```>>>> cb1abc6``` are from the remote repository.  The crazy characters refer to the commit that the change comes from. 
+
+where the line between  ```<<<HEAD``` and ```====``` is the line/lines of code that are relevant in your file, and between  ```====``` and ```>>>> cb1abc6``` are from the remote repository (the repository that you see on github.com). The crazy characters refer to the commit that the change comes from.
 
 Since we've been using Atom so far there is a nice plugin to help visualize this a little better.
 
@@ -124,12 +182,15 @@ Since we've been using Atom so far there is a nice plugin to help visualize this
   <img src="imgs/merge-conflicts.gif" style="width:600px;">
 
 
-Once you have your conflict file the way you want it.  Fixed and without any more of the conflict markers.
+Once you have your conflict file the way you want it fixed and without any more of the conflict markers...
 
-All you have to do to continue is:  ```git add thefixedfile``` which indicated to git that you have resolved the conflict. Then ```git commit``` with no options will complete the merge and automatically create a commit message.
+#### Designers
+- Commit the files like you learned in step 4
 
+#### Developers
+- All you have to do to continue is:  ```git add thefixedfile``` which indicated to git that you have resolved the conflict. Then ```git commit``` with no options will complete the merge and automatically create a commit message.
 
-###Push Your Commits
+### 7)Push Your Commits
 
 Now that you've resolved any conflicts you're ready to push to the remote repository!
 
@@ -182,10 +243,10 @@ Setting up `git push` to use `simple` matching is very important. Otherwise it i
 ```
 git clone git@github.com:dali-lab/gitivity.git
 ```
-This will set up origin to point to the dali-lab/gitivity repo. 
+This will set up origin to point to the dali-lab/gitivity repo.
 
 ### Work on Code
-- Start a local feature branch and do work on it 
+- Start a local feature branch and do work on it
 ```
 git checkout -b <feature>
 git add <file>
@@ -203,7 +264,7 @@ or
 git pullorigin master
 ```
 
-- When you're nearly ready to publish, rebase your local branch on top of the latest master. 
+- When you're nearly ready to publish, rebase your local branch on top of the latest master.
 ```
 git checkout <feature>  # make sure you're on your branch
 git pull --rebase origin master   # rebase on top of the remote master
@@ -211,10 +272,10 @@ git pull --rebase origin master   # rebase on top of the remote master
 
  If you have rebase conflicts, fix the files manually and do `git add`, then `git rebase --continue`. Repeat until you're all good.
 
-### (Optional) Clean up branch history 
+### (Optional) Clean up branch history
 You might want to consider cleaning up your local branch history. It's a good idea to commit frequently as checkpoints to save your work, but if you have a lot of them, the shared repo history will look cleaner without them.
 
-Rebase with up git "interactive" mode, which will pull up your text editor. To squash a commit into the previous one, replace the "p" with an "s", and save the file. 
+Rebase with up git "interactive" mode, which will pull up your text editor. To squash a commit into the previous one, replace the "p" with an "s", and save the file.
 ```
 git rebase -i master
 ```
@@ -323,5 +384,3 @@ if [ -f ~/.git-completion.bash ]; then
 fi
 ```
 More information can be found [here](http://apple.stackexchange.com/questions/55875/git-auto-complete-for-branches-at-the-command-line)
-
-
