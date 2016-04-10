@@ -127,7 +127,7 @@ Now that you've made some changes to the site, we'll go over how to use git to a
 
 ### Designers
   - New and modified files will show up in the center pane of the Github app. Choose which files you want to commit, write a commit message and then press *Commit to Master* in the bottom center.
-  ![](imgs/app_commit.png)
+  ![commit](imgs/app_commit.png)
   - Continue to commit files until you see "No Uncommitted Changes"
 
 ### Developers
