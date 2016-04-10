@@ -106,12 +106,12 @@ To insert a new image just put a .jpg or .png in the img folder (make sure it is
 
 Pro Tip: Get a preview of your markdown file with *Packages -> Markdown Preview -> Toggle Preview*, or the shortcut *SHIFT-CTRL-M*.
 
-## 3) Git Add
-
-### An Overview of Git
+## An Overview of Git
 Now that you've made some changes to the site, we'll go over how to use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here. This is a good overview image for the things you'll be doing. **Devs should pay close attention to this!**
 
- <img src="http://i.stack.imgur.com/MgaV9.png" style="width:600px;">
+<img src="http://i.stack.imgur.com/MgaV9.png" style="width:600px;">
+
+## 3) Git Add
 
 **What this does:** The add step tells git which files from the workspace you want it to track, or index.
 
