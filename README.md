@@ -148,7 +148,6 @@ Now that you've made some changes to the site, we'll go over how to use git to a
 #### Designers
   - After clicking "Sync" you might get a message that looks like this:
   ![conflict](imgs/app_merge_conflict.png)
-
   - This is where the fun starts- how do you fix this?
     - The cause for merge conflicts is when you edited the exact same line as someone else and git doesn't know how to automatically merge that. So to fix you just need to pick apart the conflict and merge it in.
   - Instead of "No Uncommitted Changes," you should now see something like "1 Change"- this is the conflicted file!
@@ -191,21 +190,22 @@ Once you have your conflict file the way you want it fixed and without any more 
 #### Developers
 - All you have to do to continue is:  ```git add thefixedfile``` which indicated to git that you have resolved the conflict. Then ```git commit``` with no options will complete the merge and automatically create a commit message.
 
-### 7)Push Your Commits
+### 7) Push Your Commits
+**What this does:** Now that you've resolved any conflicts you're ready to push your local changes to the remote repository!
 
-Now that you've resolved any conflicts you're ready to push to the remote repository!
+#### Designers
+  - All you need to do is hit that Sync button again! Go ahead to your github page and see the live changes.
 
-  <br>![](imgs/square.png) ```git push origin master```
-
-  ```origin``` is the remote you are pushing to and is named origin by default
-
- ```master``` is the branch you are pushing.
+#### Developers
+  - ```git push origin master```
+    - ```origin``` is the remote you are pushing to and is named origin by default
+    - ```master``` is the branch you are pushing
 
 ###Done!
 
 If you go to your repository github page now you'll be able to see all the changes you made to the readme!
 
-##5) Advanced Git for Devs
+## Advanced Git for Devs
 
 Setting up SSH keys
 
