@@ -72,7 +72,7 @@
 
   ### Designers
     1. From your Github app, clone the team repo
-    ![](imgs/app_add.png)
+  ![](imgs/app_add.png)
 
   ### Developers
     1. From the command line (where you will run all future commands), navigate to where you want the repo to end up on your computer. For example:
@@ -98,7 +98,7 @@
 
 This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually a markdown file **README.md**. Here's a [wonderful cheat sheet] (https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) that'll help you make your markdown files look awesome!
 
-Play around and make some changes. In particular add yourself to the team section! Change some images. We'll walk through this step but in particular see if you can find *(command+f)* teammates and see how to change the text and image.  
+Play around and make some changes. In particular create an "Authors:" line and add yourself! Add some images!
 
 #### Images
 To insert a new image just put a .jpg or .png in the img folder (make sure it is square) and change the ```img src=``` line.
