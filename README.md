@@ -1,6 +1,17 @@
 # DALI GITivity #
 
+Today you'll be learning the ins and outs of an essential concept used in design and developer- version control. We'll be using git and github (the site you're at now!) to learn how manage multiple people working on the same document at the same time- all while having the ability to backup and rever your work. If this is all new to you, don't worry! We'll start from the beginning and build from there.
+
+## Overview
+
+*  In your groups, each person will use git to clone a version of your team's git repository.  
+*  Then you'll edit some markdown (very simple code) in the README.md file.
+*  Then you'll commit and merge your changes of the page with your teammates and push your changes to the git repo.
+
+This mostly assumes that you are using a recent version of OS X, so your mileage may vary.
+
 ## Goals at a Glance
+Depending on your role, this is what you will accomplish by the end of this guide!
 
 #### Basic: Designers and Developers
 1. Clone your repository
@@ -12,85 +23,75 @@
 1. `pull`
 1. if you need to resolve conflicts
   - fix the conflicts
-  - add the flixed files
+  - add the fixed files as you did previously
   - `commit`
 1. `push`
 
 #### Advanced: Developers, Designers optional
 1. `pull` master
 1. Create a `branch`
-1. Make changes
+1. Make some edits
 1. `commit`
 1. `merge`
   - Alternatively, `rebase`
 
-
-## Overview
-
-*  In your groups, each person will use git to clone a version of your team's git repository.  
-*  Then you'll edit some markdown (very simple code) in the README.md file.
-*  Each person should add themselves into the team section.
-*  Then you'll commit and merge your changes of the page with your teammates and push your changes to the git repo.
-
-  This mostly assumes that you are using a recent version of OS X, so your mileage may vary.
-
 ## Setup
 
 * ### [atom.io](http://atom.io)
-  This is a great code editor, it is cross platform and looks pretty. If you prefer a different editor you can use that one instead.
+This is a great code editor, it is cross platform and looks pretty. If you prefer a different editor you can use that one instead.
 
-  1. Install from [atom.io](http://atom.io)
-  1. Open Atom and then do: *Atom -> Install Shell Commands*
+1. Install from [atom.io](http://atom.io)
+1. Open Atom and then do: *Atom -> Install Shell Commands*
 
 * ### [git+github](http://www.github.com)
-  git is a code collaboration tool! You might be able to skip this step if you've previously used git on your computer.
+git is a code collaboration tool! You might be able to skip this step if you've previously used git on your computer.
 
-  1. Create an account at [github.com](http://github.com). If you need to do this step, make sure you also let someone know so you can be added to your team's respository.
+1. Create an account at [github.com](http://github.com). If you need to do this step, make sure you also let someone know so you can be added to your team's repository.
 
-  #### Designers
-  1. Install the github app from here: [Mac](http://mac.github.com) or [PC](http://windows.github.com).
-  1. Run the *GitHub* app, and set up with your new account.
-  1. Go to *Preferences* -> *Advanced* and fill in your information with the same email you used for your github account and then click *Install Command Line Tools*
-  <img src="imgs/github_cmd.png" style="width:600px;">
-  1.  Now **Exit** the app.
+#### Designers
+1. Install the github app from here: [Mac](http://mac.github.com) or [PC](http://windows.github.com).
+1. Run the *GitHub* app, and set up with your new account.
+1. Go to *Preferences* -> *Advanced* and fill in your information with the same email you used for your github account and then click *Install Command Line Tools*
+<img src="imgs/github_cmd.png" style="width:600px;">
+1.  Now **Exit** the app.
 
-  #### Developers
-  1. Set up your global config variables with:
-  ```
-  git config --global user.name "John Doe"
-  git config --global user.email johndoe@example.com
-  ```
+#### Developers
+1. Set up your global config variables with:
+```
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+```
 
 * no other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://github.com/dali-lab/dev-resources).
 
 ## 1) Clone your Respository
 **What this does:** The repository is what git uses to store your project's information. It contains commits and references to commits (more on this later). The folder on your computer becomes your *workspace*.
 
-  1. Find your team's github repository on [github.com](http://github.com/dali-lab) and go to its page.
-  1. You'll use the repository URL in the next step, so leave this page open.
-  <img src="imgs/get_github_url.png" style="width:600px;">
+1. Find your team's github repository on [github.com](http://github.com/dali-lab) and go to its page.
+1. You'll use the repository URL in the next step, so leave this page open.
+<img src="imgs/get_github_url.png" style="width:600px;">
 
-  ### Designers
-    1. From your Github app, clone the team repo
-  ![](imgs/app_add.png)
+### Designers
+1. From your Github app, clone the team repo
+![add](imgs/app_add.png)
 
-  ### Developers
-    1. From the command line (where you will run all future commands), navigate to where you want the repo to end up on your computer. For example:
-    `cd ~/Desktop`
-    1. Clone the repo:
-    `git clone [repo-URL]`
-    1. Enter your repo:
-    `cd [my-dali-project]`
+### Developers
+1. From the command line (where you will run all future commands), navigate to where you want the repo to end up on your computer. For example:
+`cd ~/Desktop`
+1. Clone the repo:
+`git clone [repo-URL]`
+1. Enter your repo:
+`cd [my-dali-project]`
 
-    Some more useful Terminal commands:
+Some more useful Terminal commands:
 
-      ```ls -la```  will list files in current directory </br>
-      ```pwd```  will show current directory</br>
-      ```cd  somenewdirectory```  will change directory to *somenewdirectory*</br>
-      ```cp source target``` will copy files</br>
-      ```mv source target``` will move</br>
+  ```ls -la```  will list files in current directory </br>
+  ```pwd```  will show current directory</br>
+  ```cd  somenewdirectory```  will change directory to *somenewdirectory*</br>
+  ```cp source target``` will copy files</br>
+  ```mv source target``` will move</br>
 
-    If you need some help or a couple pointers, give me a shout!
+If you need some help or a couple pointers, give me a shout!
 
 ## 2) Editing Markdown
 
@@ -145,13 +146,13 @@ Now that you've made some changes to the site, we'll go over how to use git to a
 
 ### 6) Merge Conflicts
 #### Designers
-  - You might get a message that looks like this:
-  ![](imgs/app_merge_conflict.png)
+  - After clicking "Sync" you might get a message that looks like this:
+  ![conflict](imgs/app_merge_conflict.png)
 
   - This is where the fun starts- how do you fix this?
     - The cause for merge conflicts is when you edited the exact same line as someone else and git doesn't know how to automatically merge that. So to fix you just need to pick apart the conflict and merge it in.
   - Instead of "No Uncommitted Changes," you should now see something like "1 Change"- this is the conflicted file!
-  ![](imgs/app_merge_conflict2.png)
+  ![conflict](imgs/app_merge_conflict2.png)
   - You already have this file open in your editor. Continue to the section **Deciphering Merge Conflicts**.
 
 #### Developers
