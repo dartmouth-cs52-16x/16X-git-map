@@ -110,14 +110,14 @@ Play around and make some changes. In particular create an "Authors:" line and a
 #### Images
 To insert a new image just put a .jpg or .png in an `imgs` folder and use the syntax  
 ```<img src="path-to-image-here">```
-OR
+or
 ```! [description] (path-to-image-here)```
 and remove the spaces.
 
 Pro Tip: Get a preview of your markdown file right inside Atom go to *Packages -> Markdown Preview -> Toggle Preview*, or the shortcut *SHIFT-CTRL-M*. Use this sparingly, however since it slows Atom down a lot!
 
 ## An Overview of Git
-Now that you've made some changes to the site, we'll go over how to use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here. This is a good overview image for the things you'll be doing. **Devs should pay close attention to this!**
+Now that you've made some changes to the site, we'll go over how to use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here. This is a good overview image for the things you'll be doing. **CLI users should pay close attention to this!**
 
 <img src="http://i.stack.imgur.com/MgaV9.png" style="width:600px;">
 
@@ -393,7 +393,7 @@ git cherry-pick <COMMIT ID>
 ```
 
 #### Basic guidelines
-- Try to use "git rebase" commands when possible rather than "git merge", so we
+- Try to use `git rebase` commands when possible rather than `git merge`, so we
 can have a cleaner and more linear Git commit history (that said, merge commits do have their place).
 - Use local branches to do most of your more involved work (this also lets you
   quickly switch between different features, or pause work on a feature to work on a bug fix).
