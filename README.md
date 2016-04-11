@@ -34,10 +34,10 @@ Depending on your role, this is what you will accomplish by the end of this guid
 1. `commit`
 1. `merge`
   - Alternatively, `rebase`
-  
+
 ## How To Proceed
-Each of the following sections will have sections titled **APP** or **CLI**. You choose which you want to do. The **APP** sections use the GitHub App and **CLI** will use Terminal and the command line version of git.  If your role on your team is that of a developer, you should definitely learn CLI!  Designers, feel free to do whichever you are more interested in! 
-  
+Each of the following sections will have sections titled **APP** or **CLI (Command Line Interface)**. You choose which you want to do. The **APP** sections use the GitHub App and **CLI** will use Terminal and the command line version of git.  If your role on your team is that of a developer, you should definitely learn CLI!  Designers, feel free to do whichever you are more interested in!
+
 
 ## Setup
 
@@ -85,9 +85,9 @@ git config --global user.email johndoe@example.com
 1. From the command line (where you will run all future commands), navigate to where you want the repo to end up on your computer. For example:
 `cd ~/Documents`
 1. Clone the repo:
-`git clone [repo-URL]`
+`git clone repo-URL`
 1. Enter your repo:
-`cd [my-dali-project]`
+`cd my-dali-project`
 
 Some more useful Terminal commands:
 
@@ -108,9 +108,12 @@ This will open the current folder into the Atom text editor. What are you readin
 Play around and make some changes. In particular create an "Authors:" line and add yourself! Add some images!
 
 #### Images
-To insert a new image just put a .jpg or .png in the img folder (make sure it is square) and change the ```img src=``` line.
+To insert a new image just put a .jpg or .png in an `imgs` folder and use the syntax  
+```<img src="path-to-image-here">```
+OR
+```![description](path-to-image-here)```
 
-Pro Tip: Get a preview of your markdown file right inside Atom go to *Packages -> Markdown Preview -> Toggle Preview*, or the shortcut *SHIFT-CTRL-M*.
+Pro Tip: Get a preview of your markdown file right inside Atom go to *Packages -> Markdown Preview -> Toggle Preview*, or the shortcut *SHIFT-CTRL-M*. Use this sparingly, however since it slows Atom down a lot!
 
 ## An Overview of Git
 Now that you've made some changes to the site, we'll go over how to use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here. This is a good overview image for the things you'll be doing. **Devs should pay close attention to this!**
@@ -142,13 +145,15 @@ Now that you've made some changes to the site, we'll go over how to use git to a
   - **Commit your changes:** ```git commit -am "i made some changes"```
     - ``-a`` means all changes
     - ``-m`` indicates that your commit message follows directly, a commit message is required.
-  - Example of sample commit chains for a pull request that adds new payments feature to a e-commerce website
+  - Example of sample commit chains for a pull request that adds new payments feature to a e-commerce website:
     - "Setup and initialize new Charge Table"
     - "Add API call to generate a new Charge"
     - "Add task that processes new charges"
     - "Add tests to make sure charge amounts are accurate between server and client"
 
 ## 5) Git Pull
+**What this does:** Git pull will try to sync the remote repository with your workspace.
+
 ### APP
   - Again, the Github app groups a couple of these next steps together. For now, press the "Sync" button in the top right. This will first pull (and merge remote changes) and then will try to push to the remote repository.
 
@@ -223,20 +228,20 @@ If you go to your repository github page now you'll be able to see all the chang
 
 Here we go through a more in depth git flow that includes code branches and pull requests.  If your team is larger than 2 people you should definitely use this!
 
-First off, clone your repo! Or continue working from where you left off above. 
+First off, clone your repo! Or continue working from where you left off above.
 
 ##### 1. Work on Code
-- Start a local feature branch and do work on it. A branch keeps your work separate from the main or *master* branch.  Think of this as a tree where the *master* branch can be thought of as the trunk. `git checkout -b` will both create a new branch and check it out to make it the current branch you are working on.
+Start a local feature branch and do work on it. A branch keeps your work separate from the main or *master* branch.  Think of this as a tree where the *master* branch can be thought of as the trunk. `git checkout -b` will both create a new branch and check it out to make it the current branch you are working on.
 
 ```
-git branch <feature>  #creates new branch 
+git branch <feature>  #creates new branch
 git checkout <feature>  #switches to this branch
 git add <file>
 git commit -m 'commit message'
 ```
 
-- Periodically pull in changes from *origin/master* and update your feature branch.
-Note that these commands only update your current local branch.  The idea here is to not fall too far behind the master branch if other people are working on it. 
+Periodically pull in changes from *origin/master* and update your feature branch.
+Note that these commands only update your current local branch.  The idea here is to not fall too far behind the master branch if other people are working on it.
 
 ```
 git pull --rebase origin master
@@ -247,7 +252,7 @@ If you have rebase conflicts, fix the files manually and do `git add`, then
 
 
 ##### 2. Rebase local branch
-- When you're nearly ready to publish, rebase your local branch on top of the latest master. Just like you have been above.
+When you're nearly ready to publish, rebase your local branch on top of the latest master. Just like you have been above.
 
 
 ##### 3. (Optional) Clean up branch history
@@ -265,11 +270,11 @@ OR
 ```
 git rebase -i HEAD~X
 ```
-where X is the number of commits back you want to roll back
+where X is the number of commits back you want to roll back.
 
 ![Rebase Interactive](imgs/rebase-interactive.png)
 
-Is this the screen you will see after typing `git rebase -i`.
+This is the screen you will see after typing `git rebase -i`.
 This file will be launched in your default text editor.
 You have many different options, typically `squash` is the most useful.
 
@@ -284,7 +289,7 @@ To finish, save and exit on your text editor (:wq in Vim).
 After squashing, you have to write a new commit message.
 Again to finish, save and exit on your text editor. Done!
 
-**Note** that this can cause problems if you've pushed your branch to your remote repo,
+**Note:** this can cause problems if you've pushed your branch to your remote repo,
 since you are rewriting commit history in your local branch and this will mismatch
 with the remote repo's history. Best to do this before pushing, but if you've done a rebase commit squash on commits that you already pushed, then the next
 time you push to the remote repo you will have to do a forced update `git push -f origin feature`.
@@ -354,8 +359,7 @@ for a good explanation.
 ```
 git push -u origin newfeature    
 ```
--u is short for --set-upstream, which will set up your local branch to pull
-automatically from this newly pushed branch. However it's optional.
+`-u` is short for `--set-upstream`, which will set up your local branch to pull automatically from this newly pushed branch. However it's optional.
 
 ##### Delete remote branch
 ```
@@ -405,7 +409,7 @@ your text editor a lot.
 
 
 #### Git Bash Scripts
--Add the following to your .bash_profile to see your current branch and status
+- Add the following to your `.bash_profile` to see your current branch and status
 within the command line prompt:
 
 
