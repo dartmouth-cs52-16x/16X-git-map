@@ -161,7 +161,7 @@ Now that you've made some changes to the site, we'll go over how to use git to a
 ### CLI
   - **Pull your teammates changes:** ```git pull```
     - This will check the github remote server for any changes and download and merge them into your local version.
-    - Protip: Get used to using ```git pull --rebase```, this is typically the way open source projects manage their Git workflow.  The difference is that rebasing will pull in all changes from the remote and then apply your commits on top rather than creating a a new "merge" commit. This gives you a cleaner unified git history.
+    - Protip: Get used to using ```git pull --rebase```, this is typically the way open source projects manage their Git workflow.  The difference is that rebasing will pull in all changes from the remote and then apply your commits on top rather than creating a a new "merge" commit. This gives you a cleaner unified git history. Here's a [2 minute read](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) on the differences between merging and rebasing.
 
 ### 6) Merge Conflicts
 #### APP
@@ -245,7 +245,7 @@ Periodically pull in changes from *origin/master* and update your feature branch
 Note that these commands only update your current local branch.  The idea here is to not fall too far behind the master branch if other people are working on it.
 
 ```
-git pull --rebase origin master
+git pull -- origin master
 ```
 
 If you have rebase conflicts, fix the files manually and do `git add`, then
