@@ -121,10 +121,10 @@ Now that you've made some changes to the site, we'll go over how to use git to a
 ### Developers
   - **Check your status:** Use ```git status``` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.
   - **Add Untracked Files:** Use ```git add filename``` on those files to tell git to track them.
-    - You might also used `git add -a` to add all untracked files at once
+    - You might also used `git add .` to add all untracked files recursively.
 
 ## 4) Git Commit
-**What this does:** Committing files tells git to stage the files for upload to the remote repository. These staged files are known as your *local repository*. Commits should represent one logical change in the repo and the commit message should make that change clear.
+**What this does:** Committing files tells git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally. Commits should represent one logical change in the repo and the commit message should make that change clear.
 
 ### Designers
   - New and modified files will show up in the center pane of the Github app. Choose which files you want to commit, write a commit message and then press *Commit to Master* in the bottom center.
