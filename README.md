@@ -75,11 +75,11 @@ git config --global user.email johndoe@example.com
 
 1. Find your team's github repository on [github.com](http://github.com/dali-lab) and go to its page.
 1. You'll use the repository URL in the next step, so leave this page open.
-<img src="imgs/get_github_url.png" style="width:600px;">
+![get github url](imgs/get_github_url.png)
 
 ### APP
 1. From your Github app, clone the team repo
-![add](imgs/app_add.png)
+![app add](imgs/app_add.png)
 
 ### CLI
 1. From the command line (where you will run all future commands), navigate to where you want the repo to end up on your computer. For example:
@@ -189,10 +189,8 @@ If you were to do this by hand, git takes the pretty code you wrote and injects 
 
 where the line between  ```<<<HEAD``` and ```====``` is the line/lines of code that are relevant in your file, and between  ```====``` and ```>>>> cb1abc6``` are from the remote repository (the repository that you see on github.com). The crazy characters refer to the commit that the change comes from.
 
-Since we've been using Atom so far there is a nice plugin to help visualize this a little better.
-
-  <br>![](imgs/square.png) Atom -> Preferences -> Install -> search for merge-conflicts
-  <img src="imgs/merge-conflicts.gif" style="width:600px;">
+Since we've been using Atom so far there is a nice plugin to help visualize this a little better. Atom -> Preferences -> Install -> search for merge-conflicts
+![merge-conflict](imgs/merge-conflicts.gif)
 
 Once you have your conflict file the way you want it — ie. fixed and without any more of the conflict markers...
 
@@ -217,35 +215,15 @@ Once you have your conflict file the way you want it — ie. fixed and without a
 
 If you go to your repository github page now you'll be able to see all the changes you made to the readme!
 
-## Advanced Git for Devs
 
-#### Sample Git Config
-```
-[user]
-    name = John Doe
-    email = johndoe@dali.dartmouth.edu
-[alias]
-    pullorigin="pull --rebase origin"   # tweak naming to whatever, but a nice shortcut to ensure --rebase
-    co="checkout"
-    st="status"
-    br="branch"
-[branch]
-    autosetuprebase = always    # set rebase to be default for new branches
-[push]
-    default = simple
-```
 
-Setting up `git push` to use `simple` matching is very important. Otherwise it
-is easy, while you're force-pushing a feature branch, to also accidentally force
-push your master to the prod repo. See [here](http://stackoverflow.com/a/13148313)
-for a good explanation.
+## Advanced Git Flow
 
 #### Recommended Workflow
 
-```
-git clone git@github.com:dali-lab/gitivity.git
-```
-This will set up origin to point to the dali-lab/gitivity repo.
+Here we go through a more in depth git flow that includes code branches and pull requests.  If your team is larger than 2 people you should definitely use this!
+
+First off, clone your repo! Or continue working from where you left off above. 
 
 ##### 1. Work on Code
 - Start a local feature branch and do work on it
@@ -337,6 +315,30 @@ code changes will be merged.
 **You should also delete the branch in Github.**
 
 ## Additional Git Things
+
+
+#### Sample Git Config
+To edit `atom ~/.gitconfig`
+
+```
+[user]
+    name = John Doe
+    email = johndoe@dali.dartmouth.edu
+[alias]
+    pullorigin="pull --rebase origin"   # tweak naming to whatever, but a nice shortcut to ensure --rebase
+    co="checkout"
+    st="status"
+    br="branch"
+[branch]
+    autosetuprebase = always    # set rebase to be default for new branches
+[push]
+    default = simple
+```
+
+Setting up `git push` to use `simple` matching is very important. Otherwise it
+is easy, while you're force-pushing a feature branch, to also accidentally force
+push your master to the prod repo. See [here](http://stackoverflow.com/a/13148313)
+for a good explanation.
 
 #### Useful Commands
 
