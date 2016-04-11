@@ -56,11 +56,13 @@ git is a code collaboration tool! You might be able to skip this step if you've 
 1.  Now **Exit** the app.
 
 #### Developers
-1. Set up your global config variables in *Terminal* with:
+1. Setup your global config variables in *Terminal* with:
 ```
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
+
+1. Setup your SSH keys. If you already have generated SSH keys before, then you can skip ahead to [this step](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent). Otherwise, most of you will need to generate new SSH keys and should read this [guide](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/). SSH keys will make it easier to authenticate with GitHub.
 
 * no other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://github.com/dali-lab/dev-resources).
 
@@ -122,6 +124,7 @@ Now that you've made some changes to the site, we'll go over how to use git to a
   - **Check your status:** Use ```git status``` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.
   - **Add Untracked Files:** Use ```git add filename``` on those files to tell git to track them.
     - You might also used `git add -a` to add all untracked files at once
+    - Pro Tip: `git add -u` adds all tracked files and `git add -A` adds all files in the working tree
 
 ## 4) Git Commit
 **What this does:** Committing files tells git to stage the files for upload to the remote repository. These staged files are known as your *local repository*. Commits should represent one logical change in the repo and the commit message should make that change clear.
@@ -135,6 +138,11 @@ Now that you've made some changes to the site, we'll go over how to use git to a
   - **Commit your changes:** ```git commit -am "i made some changes"```
     - ``-a`` means all changes
     - ``-m`` indicates that your commit message follows directly, a commit message is required.
+  - Example of sample commit chains for a pull request that adds new payments feature to a e-commerce website
+    - Setup and initialize new Charge Table
+    - Add API call to generate a new Charge
+    - Add task that processes new charges
+    - Add tests to make sure charge amounts are accurate between server and client
 
 ## 5) Git Pull
 ### Designers
@@ -143,6 +151,7 @@ Now that you've made some changes to the site, we'll go over how to use git to a
 ### Developers
   - **Pull your teammates changes:** ```git pull```
     - This will check the github remote server for any changes and download and merge them into your local version.
+    - Protip: Get used to using ```git pull --rebase```, this is typically the way open source projects manage their Git workflow.
 
 ### 6) Merge Conflicts
 #### Designers
@@ -207,46 +216,35 @@ If you go to your repository github page now you'll be able to see all the chang
 
 ## Advanced Git for Devs
 
-Setting up SSH keys
-
-[Read this guide here](https://help.github.com/articles/generating-an-ssh-key/)
-
-Setting up Git Config
-
-```
-git config --global user.name "Your Name"
-git config --global user.email <yourgithubemail>
-git config --global push.default simple   # this is much safer than 'matching'
-```
-
-#### Then add the aliases and branch configs
-```
-atom ~/.gitconfig  # or whatever texteditor you prefer
-```
-
-#### Sample
+#### Sample Git Config
 ```
 [user]
     name = John Doe
     email = johndoe@dali.dartmouth.edu
 [alias]
-        pullorigin="pull --rebase origin"   # tweak naming to whatever, but a nice shortcut to ensure --rebase
+    pullorigin="pull --rebase origin"   # tweak naming to whatever, but a nice shortcut to ensure --rebase
+    co="checkout"
+    st="status"
+    br="branch"
 [branch]
-        autosetuprebase = always    # set rebase to be default for new branches
+    autosetuprebase = always    # set rebase to be default for new branches
 [push]
     default = simple
 ```
 
-Setting up `git push` to use `simple` matching is very important. Otherwise it is easy, while you're force-pushing a feature branch, to also accidentally force push your master to the prod repo. See [here](http://stackoverflow.com/a/13148313)for a good explanation.
+Setting up `git push` to use `simple` matching is very important. Otherwise it
+is easy, while you're force-pushing a feature branch, to also accidentally force
+push your master to the prod repo. See [here](http://stackoverflow.com/a/13148313)
+for a good explanation.
 
-## Recommended Workflow
+#### Recommended Workflow
 
 ```
 git clone git@github.com:dali-lab/gitivity.git
 ```
 This will set up origin to point to the dali-lab/gitivity repo.
 
-### Work on Code
+##### 1. Work on Code
 - Start a local feature branch and do work on it
 ```
 git checkout -b <feature>
@@ -265,18 +263,23 @@ or
 git pullorigin master
 ```
 
+##### 2. Rebase local branch
 - When you're nearly ready to publish, rebase your local branch on top of the latest master.
 ```
 git checkout <feature>  # make sure you're on your branch
 git pull --rebase origin master   # rebase on top of the remote master
 ```
 
- If you have rebase conflicts, fix the files manually and do `git add`, then `git rebase --continue`. Repeat until you're all good.
+ If you have rebase conflicts, fix the files manually and do `git add`, then
+ `git rebase --continue`. Repeat until you're all good.
 
-### (Optional) Clean up branch history
-You might want to consider cleaning up your local branch history. It's a good idea to commit frequently as checkpoints to save your work, but if you have a lot of them, the shared repo history will look cleaner without them.
+##### 3. (Optional) Clean up branch history
+You might want to consider cleaning up your local branch history. It's a good
+idea to commit frequently as checkpoints to save your work, but if you have a
+lot of them, the shared repo history will look cleaner without them.
 
-Rebase with up git "interactive" mode, which will pull up your text editor. To squash a commit into the previous one, replace the "p" with an "s", and save the file.
+Rebase with up git "interactive" mode, which will pull up your text editor.
+To squash a commit into the previous one, replace the "p" with an "s", and save the file.
 ```
 git rebase -i master
 ```
@@ -287,7 +290,32 @@ git rebase -i HEAD~X
 ```
 where X is the number of commits back you want to roll back
 
-Note that this can cause problems if you've pushed your branch to your remote repo, since you are rewriting commit history in your local branch and this will mismatch with the remote repo's history. If you've done a rebase commit squash, the next time you push to the remote repo you will have to do a forced update `git push -f origin feature`. However be aware that this is dangerous and anyone else working on this feature branch will have issues pushing their branch. One solution to this is asking them to `stash` their commits and then `rebase` after you push your branch.
+![Rebase Interactive](imgs/rebase-interactive.png)
+
+Is this the screen you will see after typing `git rebase -i`.
+This file will be launched in your default text editor.
+You have many different options, typically `squash` is the most useful.
+
+![Squash](imgs/squash.png)
+
+By changing the character in front of the second commit to `s`,
+we are "combining" the second commit into the first commit.
+To finish, save and exit on your text editor (:wq in Vim).
+
+![Commit Messages](imgs/commit-messages.png)
+
+After squashing, you have to write a new commit message.
+Again to finish, save and exit on your text editor. Done!
+
+Note that this can cause problems if you've pushed your branch to your remote repo,
+since you are rewriting commit history in your local branch and this will mismatch
+with the remote repo's history. If you've done a rebase commit squash, the next
+time you push to the remote repo you will have to do a forced update `git push -f origin feature`.
+However be aware that this is dangerous and anyone else working on this feature
+branch will have issues pushing their branch. One solution to this is asking
+them to `stash` their commits and then `rebase` after you push your branch.
+
+##### 4. Push Feature Branch
 
 After you are finished working on your branch
 
@@ -295,22 +323,27 @@ After you are finished working on your branch
 git push origin feature
 ```
 
-Then go to Github and submit a pull request (choosing whatever branch you just pushed), add a quick description. Possibly do code review. Close the request.
+##### 5. Create Pull Request
 
-To do a code review, @mention a peer in the pull request. Once approved, your code changes will be merged.
+Then go to Github and submit a pull request (choosing whatever branch you just
+  pushed), add a quick description. Possibly do code review. Close the request.
+
+To do a code review, @mention a peer in the pull request. Once approved, your
+code changes will be merged.
 
 **You should also delete the branch in Github.**
 
-##6) Additional Git Things
+## Additional Git Things
 
-### Useful Commands
+#### Useful Commands
 
 ##### Push local branch to your remote repo
 
 ```
 git push -u origin newfeature    
 ```
--u is short for --set-upstream, which will set up your local branch to pull automatically from this newly pushed branch. However it's optional.
+-u is short for --set-upstream, which will set up your local branch to pull
+automatically from this newly pushed branch. However it's optional.
 
 ##### Delete remote branch
 ```
@@ -336,20 +369,33 @@ git reset --hard master origin/master
 ```
 
 ##### Grab a commit from another branch
-Sometimes you commit to the wrong branch. Figure out the commit ID of the commit you want to grab.
+Sometimes you commit to the wrong branch. Figure out the commit ID of the commit
+you want to grab.
 ```
 git cherry-pick <COMMIT ID>
 ```
 
-### Basic guidelines
-- Try to use "git rebase" commands when possible rather than "git merge", so we can have a cleaner and more linear Git commit history (that said, merge commits do have their place).
-- Use local branches to do most of your more involved work (this also lets you quickly switch between different features, or pause work on a feature to work on a bug fix).
-- The general idea is to try to resolve conflicts locally (by pulling in changes from the shared repo before pushing), so merging into master (either manually or by Github pull request merge should be simple and automatic)
+#### Basic guidelines
+- Try to use "git rebase" commands when possible rather than "git merge", so we
+can have a cleaner and more linear Git commit history (that said, merge commits do have their place).
+- Use local branches to do most of your more involved work (this also lets you
+  quickly switch between different features, or pause work on a feature to work on a bug fix).
+- The general idea is to try to resolve conflicts locally (by pulling in changes
+  from the shared repo before pushing), so merging into master (either manually
+    or by Github pull request merge should be simple and automatic)
 
-### Pro-tips
-- If you are doing a complex rebase merge fix, if you squash your commits first (see earlier notes about rebase interactive), you can do your manual merge fixes in fewer, as there are fewer commits to have to edit. Otherwise you may be opening your text editor a lot.
+#### Some more Pro-tips
+- If you are doing a complex rebase merge fix, if you squash your commits first
+(see earlier notes about rebase interactive), you can do your manual merge fixes
+in fewer, as there are fewer commits to have to edit. Otherwise you may be opening
+your text editor a lot.
 - A nice way to visualize your Git branches locally is by using GitX (http://rowanj.github.io/gitx/).
--Add the following to your .bash_profile to see your current branch and status within the command line prompt:
+
+
+#### Git Bash Scripts
+-Add the following to your .bash_profile to see your current branch and status
+within the command line prompt:
+
 
 ```
 # Prompt to add branch and status to the command line
@@ -377,7 +423,8 @@ function prompt_title {
 PROMPT_COMMAND=prompt_title
 ```
 
-Add the following to your .bash_profile for Git Autocompletion. This way you can `git checkout TAB` for branches
+Add the following to your .bash_profile for Git Autocompletion. This way you
+can `git checkout TAB` for branches
 
 ```
 if [ -f ~/.git-completion.bash ]; then
