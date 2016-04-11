@@ -226,33 +226,29 @@ Here we go through a more in depth git flow that includes code branches and pull
 First off, clone your repo! Or continue working from where you left off above. 
 
 ##### 1. Work on Code
-- Start a local feature branch and do work on it
+- Start a local feature branch and do work on it. A branch keeps your work separate from the main or *master* branch.  Think of this as a tree where the *master* branch can be thought of as the trunk. `git checkout -b` will both create a new branch and check it out to make it the current branch you are working on.
+
 ```
-git checkout -b <feature>
+git branch <feature>  #creates new branch 
+git checkout <feature>  #switches to this branch
 git add <file>
 git commit -m 'commit message'
 ```
 
-- Periodically pull in changes from origin/master and update your feature branch.
-Note that these commands only updates your current branch
+- Periodically pull in changes from *origin/master* and update your feature branch.
+Note that these commands only update your current local branch.  The idea here is to not fall too far behind the master branch if other people are working on it. 
 
-```bash
+```
 git pull --rebase origin master
 ```
-or
-```bash
-git pullorigin master
-```
+
+If you have rebase conflicts, fix the files manually and do `git add`, then
+ `git rebase --continue`. Repeat until you're all good.
+
 
 ##### 2. Rebase local branch
-- When you're nearly ready to publish, rebase your local branch on top of the latest master.
-```
-git checkout <feature>  # make sure you're on your branch
-git pull --rebase origin master   # rebase on top of the remote master
-```
+- When you're nearly ready to publish, rebase your local branch on top of the latest master. Just like you have been above.
 
- If you have rebase conflicts, fix the files manually and do `git add`, then
- `git rebase --continue`. Repeat until you're all good.
 
 ##### 3. (Optional) Clean up branch history
 You might want to consider cleaning up your local branch history. It's a good
@@ -288,13 +284,13 @@ To finish, save and exit on your text editor (:wq in Vim).
 After squashing, you have to write a new commit message.
 Again to finish, save and exit on your text editor. Done!
 
-Note that this can cause problems if you've pushed your branch to your remote repo,
+**Note** that this can cause problems if you've pushed your branch to your remote repo,
 since you are rewriting commit history in your local branch and this will mismatch
-with the remote repo's history. If you've done a rebase commit squash, the next
+with the remote repo's history. Best to do this before pushing, but if you've done a rebase commit squash on commits that you already pushed, then the next
 time you push to the remote repo you will have to do a forced update `git push -f origin feature`.
 However be aware that this is dangerous and anyone else working on this feature
 branch will have issues pushing their branch. One solution to this is asking
-them to `stash` their commits and then `rebase` after you push your branch.
+them to `stash` their commits and then `rebase` after you push your branch. You've been warned.
 
 ##### 4. Push Feature Branch
 
@@ -306,13 +302,24 @@ git push origin feature
 
 ##### 5. Create Pull Request
 
-Then go to Github and submit a pull request (choosing whatever branch you just
-  pushed), add a quick description. Possibly do code review. Close the request.
+The best flow to merge your feature into the *master* branch is to issue a pull request. This bundles up your feature branch into a request that you or someone else on your team can approve.
+
+Go to Github (or use the Github Desktop App) and submit a *New Pull Request* (choosing whatever branch you just
+  pushed), add a quick description. Possibly do code review. Close the request. The idea here is that this is a checkpoint spot before adding your feature to the *master* branch so that everybody on your teams knows what is happening.
 
 To do a code review, @mention a peer in the pull request. Once approved, your
 code changes will be merged.
 
-**You should also delete the branch in Github.**
+Alternatively you can merge your changes in to the master branch without a pull request, but this should only be done if you are using git on your own or with a very small team.
+
+```
+git checkout master
+git merge <feature>
+```
+
+**Once you no longer need it you should delete the branch**
+On github and locally `git branch -d <feature>`
+
 
 ## Additional Git Things
 
