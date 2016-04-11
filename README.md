@@ -111,7 +111,8 @@ Play around and make some changes. In particular create an "Authors:" line and a
 To insert a new image just put a .jpg or .png in an `imgs` folder and use the syntax  
 ```<img src="path-to-image-here">```
 OR
-```![description](path-to-image-here)```
+```exclamation-point[description](path-to-image-here)```
+and replace `exclamation-point` with `!`.
 
 Pro Tip: Get a preview of your markdown file right inside Atom go to *Packages -> Markdown Preview -> Toggle Preview*, or the shortcut *SHIFT-CTRL-M*. Use this sparingly, however since it slows Atom down a lot!
 
