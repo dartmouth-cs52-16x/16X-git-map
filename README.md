@@ -61,8 +61,8 @@ git is a code collaboration tool! You might be able to skip this step if you've 
 
 #### CLI
 1. Setup your global config variables in *Terminal* with:  
-  ```bash
-  git config --global user.name "John Doe"
+  ```
+  git config --global user.name "John Doe"  
   git config --global user.email johndoe@example.com
   ```
 1. Ensure that the configs are set up with `cat ~/.gitconfig`. *Email* and *Name* should be filled out.
