@@ -65,10 +65,11 @@ git is a code collaboration tool! You might be able to skip this step if you've 
 git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
+1. Ensure that the configs are set up with `cat ~/.gitconfig`. **Email** and **Name** should be filled out.
 
 1. Setup your SSH keys. If you already have generated SSH keys before, then you can skip ahead to [this step](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent). Otherwise, most of you will need to generate new SSH keys and should read this [guide](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/). SSH keys will make it easier to authenticate with GitHub.
 
-* no other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://github.com/dali-lab/dev-resources).
+- no other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://github.com/dali-lab/dev-resources).
 
 ## 1) Clone your Respository
 **What this does:** The repository is what git uses to store your project's information. It contains commits and references to commits (more on this later). The folder on your computer becomes your *workspace*.
