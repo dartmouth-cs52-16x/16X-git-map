@@ -241,8 +241,11 @@ Start a local feature branch and do work on it. A branch keeps your work separat
 ```
 git branch <feature>  #creates new branch
 git checkout <feature>  #switches to this branch
-git add <file>
-git commit -m 'commit message'
+```
+Now, try adding an image to the repo and put it in your README.
+```
+git add <new-file>
+git commit -am 'commit message'
 ```
 
 Protip: `git checkout -b` will both create a new branch and check it out to make it the current branch you are working on.
