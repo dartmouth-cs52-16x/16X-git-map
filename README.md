@@ -135,6 +135,7 @@ Now that you've made some changes to the site, we'll go over how to use git to a
   - **Add Untracked Files:** Use ```git add filename``` on those files to tell git to track them.
     - You might also used `git add .` to add all untracked files recursively from the current directory.
     - Pro Tip: `git add -u` adds all tracked files and `git add -A` adds all files in the working tree
+  - Go ahead a try to add these files now
 
 ## 4) Git Commit
 **What this does:** Committing files tells git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally. Commits should represent one logical change in the repo and the commit message should make that change clear.
