@@ -62,7 +62,7 @@ git is a code collaboration tool! You might be able to skip this step if you've 
 #### CLI
 1. Setup your global config variables in *Terminal* with:  
   `git config --global user.name "John Doe"`
-  
+
   `git config --global user.email johndoe@example.com`
 1. Ensure that the configs are set up with `cat ~/.gitconfig`. *Email* and *Name* should be filled out.
 
@@ -236,7 +236,7 @@ Here we go through a more in depth git flow that includes code branches and pull
 First off, clone your repo! Or continue working from where you left off above.
 
 ##### 1. Work on Code
-Start a local feature branch and do work on it. A branch keeps your work separate from the main or *master* branch.  Think of this as a tree where the *master* branch can be thought of as the trunk. `git checkout -b` will both create a new branch and check it out to make it the current branch you are working on.
+Start a local feature branch and do work on it. A branch keeps your work separate from the main or *master* branch.  Think of this as a tree where the *master* branch can be thought of as the trunk.
 
 ```
 git branch <feature>  #creates new branch
@@ -244,6 +244,9 @@ git checkout <feature>  #switches to this branch
 git add <file>
 git commit -m 'commit message'
 ```
+
+Protip: `git checkout -b` will both create a new branch and check it out to make it the current branch you are working on.
+Protip#2: `git branch` will show which branches exist and which you're on (the `*`)
 
 Periodically pull in changes from *origin/master* and update your feature branch.
 Note that these commands only update your current local branch.  The idea here is to not fall too far behind the master branch if other people are working on it.
