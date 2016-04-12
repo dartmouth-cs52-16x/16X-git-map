@@ -60,11 +60,11 @@ git is a code collaboration tool! You might be able to skip this step if you've 
 1.  Now **Exit** the app.
 
 #### CLI
-1. Setup your global config variables in *Terminal* with:
-```
-git config --global user.name "John Doe"
-git config --global user.email johndoe@example.com
-```
+1. Setup your global config variables in *Terminal* with:  
+  ```
+  git config --global user.name "John Doe"
+  git config --global user.email johndoe@example.com
+  ```
 1. Ensure that the configs are set up with `cat ~/.gitconfig`. *Email* and *Name* should be filled out.
 
 1. Setup your SSH keys. If you already have generated SSH keys before, then you can skip ahead to [this step](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent). Otherwise, most of you will need to generate new SSH keys and should read this [guide](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/). SSH keys will make it easier to authenticate with GitHub.
@@ -102,11 +102,14 @@ If you need some help or a couple pointers, give me a shout!
 
 ## 2) Editing Markdown
 
-  -  In Terminal run:  ```atom .``` For Windows, just open up atom and use 'Add Project Folder' and select the cloned directory from above.  
+In Terminal run:  ```atom .``` For Windows, just open up atom and use 'Add Project Folder' and select the cloned directory from above.  
 
 This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually a markdown file **README.md**. Here's a [wonderful cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) that'll help you make your markdown files look awesome!
 
-Play around and make some changes. In particular create an "Authors:" line and add yourself! Add some images!
+Play around and make some changes. Here are some ideas:
+- Create an "Authors:" line and add yourself!
+- Add a project description
+- Add some images!
 
 #### Images
 To insert a new image just put a .jpg or .png in an `imgs` folder and use the syntax  
