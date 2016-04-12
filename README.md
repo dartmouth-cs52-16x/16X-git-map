@@ -61,12 +61,8 @@ git is a code collaboration tool! You might be able to skip this step if you've 
 
 #### CLI
 1. Setup your global config variables in *Terminal* with:  
-  ```
-  git config --global user.name "John Doe"  
-  ```
-  ```
-  git config --global user.email johndoe@example.com
-  ```
+  `git config --global user.name "John Doe"`
+  `git config --global user.email johndoe@example.com`
 1. Ensure that the configs are set up with `cat ~/.gitconfig`. *Email* and *Name* should be filled out.
 
 1. Setup your SSH keys. If you already have generated SSH keys before, then you can skip ahead to [this step](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/#adding-your-ssh-key-to-the-ssh-agent). Otherwise, most of you will need to generate new SSH keys and should read this [guide](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/). SSH keys will make it easier to authenticate with GitHub.
