@@ -271,17 +271,23 @@ You might want to consider cleaning up your local branch history. It's a good
 idea to commit frequently as checkpoints to save your work, but if you have a
 lot of them, the shared repo history will look cleaner without them.
 
-Rebase with up git "interactive" mode, which will pull up your text editor.
-To squash a commit into the previous one, replace the "p" with an "s", and save the file.
+A nice way to visualize your commits and branchs locally is `git log --graph --oneline`. Alternatively, use a GUI like GitX (http://rowanj.github.io/gitx/).
+
+Then, rebase with up git "interactive" mode, which will pull up your text editor.
 ```
 git rebase -i master
 ```
-
 OR
 ```
 git rebase -i HEAD~X
 ```
-where X is the number of commits back you want to roll back.
+where X is the number of commits back you want to roll back, OR
+```
+git rebase -i xxxxxx
+```
+where xxxxxx is the commit id, which you can get from `git log`.
+
+To squash a commit into the previous one, replace "pick" with "s" or "squash" and save the file.
 
 ![Rebase Interactive](imgs/rebase-interactive.png)
 
@@ -416,7 +422,6 @@ can have a cleaner and more linear Git commit history (that said, merge commits 
 (see earlier notes about rebase interactive), you can do your manual merge fixes
 in fewer, as there are fewer commits to have to edit. Otherwise you may be opening
 your text editor a lot.
-- A nice way to visualize your Git branches locally is by using GitX (http://rowanj.github.io/gitx/).
 
 
 #### Git Bash Scripts
