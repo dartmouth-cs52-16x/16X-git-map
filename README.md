@@ -455,8 +455,10 @@ function prompt_title {
 PROMPT_COMMAND=prompt_title
 ```
 
-Add the following to your .bash_profile for Git Autocompletion. This way you
-can `git checkout TAB` for branches
+#### Git Autocompletion
+This will allow you to do `git checkout TAB` for a list of branches. First, download the git autocompletion support for bash.
+`curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash`
+Then, add the following to your `~/.bash_profile`.
 
 ```
 if [ -f ~/.git-completion.bash ]; then
