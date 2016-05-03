@@ -239,8 +239,8 @@ First off, clone your repo! Or continue working from where you left off above.
 Start a local feature branch and do work on it. A branch keeps your work separate from the main or *master* branch.  Think of this as a tree where the *master* branch can be thought of as the trunk.
 
 ```
-git branch <feature>  #creates new branch
-git checkout <feature>  #switches to this branch
+git branch <feature>  # creates new branch feature
+git checkout <feature>  # switches to branch feature
 ```
 Now, try adding an image to the repo and put it in your README.
 ```
@@ -249,7 +249,7 @@ git commit -am 'commit message'
 ```
 
 Protip: `git checkout -b` will both create a new branch and check it out to make it the current branch you are working on.
-Protip#2: `git branch` will show which branches exist and which you're on (the `*`)
+Protip #2: `git branch` will show which branches exist and which you're on (the `*`)
 
 Periodically pull in changes from *origin/master* and update your feature branch.
 Note that these commands only update your current local branch.  The idea here is to not fall too far behind the master branch if other people are working on it.
@@ -339,8 +339,8 @@ git checkout master
 git merge <feature>
 ```
 
-**Once you no longer need it you should delete the branch**
-On github and locally `git branch -d <feature>`
+**Once you no longer need a branch you should delete it!**
+You can do this on  github and locally with `git branch -d <feature>`
 
 
 ## Additional Git Things
@@ -374,7 +374,7 @@ for a good explanation.
 ##### Push local branch to your remote repo
 
 ```
-git push -u origin newfeature    
+git push -u origin <feature>
 ```
 `-u` is short for `--set-upstream`, which will set up your local branch to pull automatically from this newly pushed branch. However it's optional.
 
@@ -390,7 +390,7 @@ git branch -D <feature>
 
 ##### Checkout a remote branch
 ```bash
-git checkout feature     # shorter version, works with newer versions of Git
+git checkout <feature>     # shorter version, works with newer versions of Git
 ```
 
 ##### Reset your branch to some other branch
