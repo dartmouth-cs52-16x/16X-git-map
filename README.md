@@ -1,33 +1,36 @@
-# DALI GITivity #
+# CS52 Collaborative Coding and Class Page #
 
 Today you'll be learning the ins and outs of an essential concept used in software design and development — version control. We'll be using git and github (the site you're at now!) to learn how manage multiple people working on the same document at the same time — all while having the ability to backup and revert your work. If this is all new to you, don't worry! We'll start from the beginning and build from there.
 
 ## Overview
 
-*  In your groups, each person will use git to clone a version of your team's git repository.  
-*  Then you'll edit some markdown (very simple code) in the README.md file.
-*  Then you'll commit and merge your changes of the page with your teammates and push your changes to the git repo.
+*  In your groups, each person will use git to clone this repository.  
+*  Then you'll edit some basic html to add yourself to the site.
+*  Then you'll commit and merge your changes of the page and push your changes to the git repo.
 
 This mostly assumes that you are using a recent version of OS X, so your mileage may vary.
 
 ## Goals at a Glance
-Depending on your role, this is what you will accomplish by the end of this guide!
+Here's what we're going to do!
 
-#### Basic: Everybody!
-1. Clone your repository
+#### Basic git
+1. Clone this repo
+1. Create a `branch`
 1. Make some edits
-  - Modify `README.md` by adding your name
+  - Modify `index.html`
   - Put a picture of yourself in your repo
-1. `add` this file to source control
+  - add a location to the map
+1. `add` a file to source control
 1. `commit` your changes
-1. `pull`
+1. `pull` master
+1. create a `branch`
 1. if you need to resolve conflicts
   - fix the conflicts
   - add the fixed files as you did previously
   - `commit`
 1. `push`
 
-#### Advanced: For those who know some git already.
+#### Branches
 1. `pull` master
 1. Create a `branch`
 1. Make some edits
@@ -35,14 +38,13 @@ Depending on your role, this is what you will accomplish by the end of this guid
 1. `merge`
   - Alternatively, `rebase`
 
-## How To Proceed
-Each of the following sections will have sections titled **APP** or **CLI (Command Line Interface)**. You choose which you want to do. The **APP** sections use the GitHub App and **CLI** will use Terminal and the command line version of git.  If your role on your team is that of a developer, you should definitely learn CLI!  Designers, feel free to do whichever you are more interested in!
+#### Pull Requests
 
 
 ## Setup
 
 * ### [atom.io](http://atom.io)
-This is a great code editor, it is cross platform and looks pretty. If you prefer a different editor you can use that one instead.
+You should already have this if not:
 
 1. Install from [atom.io](http://atom.io)
 1. Open Atom and then do: *Atom -> Install Shell Commands*
@@ -50,60 +52,43 @@ This is a great code editor, it is cross platform and looks pretty. If you prefe
 * ### [git+github](http://www.github.com)
 git is a code collaboration tool! You might be able to skip this step if you've previously used git on your computer.
 
-1. Create an account at [github.com](http://github.com). If you need to do this step, make sure you also let someone know so you can be added to your team's repository.
 
-#### APP
-1. Install the github app from here: [Mac](http://mac.github.com) or [PC](http://windows.github.com).
-1. Run the *GitHub* app, and set up with your new account.
-1. Go to *Preferences* -> *Advanced* and fill in your information with the same email you used for your github account and then click *Install Command Line Tools*
-<img src="imgs/github_cmd.png" style="width:600px;">
-1.  Now **Exit** the app.
-
-#### CLI
+### Git global configs:
 1. Setup your global config variables in *Terminal* with:  
   `git config --global user.name "John Doe"`
 
   `git config --global user.email johndoe@example.com`
 1. Ensure that the configs are set up with `cat ~/.gitconfig`. *Email* and *Name* should be filled out.
 
-1. Setup your SSH keys. If you already have generated SSH keys before, then you can skip ahead to [this step](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/). Otherwise, most of you will need to generate new SSH keys and should read this [guide](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/). SSH keys will make it easier to authenticate with GitHub.
 
-No other tools will be necessary but for the future here's a recommended [list of DALI recommended dev tools](https://github.com/dali-lab/dev-resources).
-
-## 1) Clone your Respository
+## 1) Clone the Repository
 **What this does:** The repository is what git uses to store your project's information. It contains commits and references to commits (more on this later). The folder on your computer becomes your *workspace*.
 
-1. Find your team's github repository on [github.com](http://github.com/dali-lab) and go to its page.
-1. You'll use the repository URL in the next step, so leave this page open.
-![get github url](imgs/get_github_url.png)
-
-### APP
-1. From your Github app, clone the team repo
-![app add](imgs/app_add.png)
-
-### CLI
 1. From the command line (where you will run all future commands), navigate to where you want the repo to end up on your computer. For example:
-`cd ~/Documents`
+`mkdir ~/Documents/CS52`
+`cd ~/Documents/CS52`
 1. Clone the repo:
-`git clone repo-URL`
-1. Enter your repo:
-`cd my-dali-project`
+`git clone https://github.com/dartmouth-cs52/16X-git-map.git`
+1. change directory to this new workspace:
+`cd 16X-git-map`
 
 Some more useful Terminal commands:
 
-  ```ls -la```  will list files in current directory </br>
-  ```pwd```  will show current directory</br>
-  ```cd  somenewdirectory```  will change directory to *somenewdirectory*</br>
-  ```cp source target``` will copy files</br>
-  ```mv source target``` will move</br>
+  `ls -la`  will list files in current directory </br>
+  `pwd`  will show current directory</br>
+  `cd  somenewdirectory`  will change directory to *somenewdirectory*</br>
+  `cp source target` will copy files</br>
+  `mv source target` will move</br>
 
-If you need some help or a couple pointers, give me a shout!
+If you need some help or a couple pointers, give a shout!
 
-## 2) Editing Markdown
+## 2) Edit Some HTML
 
 In Terminal run:  ```atom .``` For Windows, just open up atom and use 'Add Project Folder' and select the cloned directory from above.  
 
-This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually a markdown file **README.md**. Here's a [wonderful cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) that'll help you make your markdown files look awesome!
+This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually the markdown file **README.md**.  If you find typos feel free to edit those, but right now we'll try editing some HTML.
+
+
 
 Play around and make some changes. Here are some ideas:
 - Create an "Authors:" line and add yourself!
@@ -112,9 +97,9 @@ Play around and make some changes. Here are some ideas:
 
 #### Images
 To insert a new image just put a .jpg or .png in an `imgs` folder and use the syntax  
-```<img src="path-to-image-here">```
+`<img src="path-to-image-here">`
 or
-```! [description] (path-to-image-here)```
+`! [description] (path-to-image-here)`
 and remove the spaces.
 
 Pro Tip: Get a preview of your markdown file right inside Atom go to *Packages -> Markdown Preview -> Toggle Preview*, or the shortcut *SHIFT-CTRL-M*. Use this sparingly, however since it slows Atom down a lot!
@@ -143,7 +128,7 @@ Now that you've made some changes to the site, we'll go over how to use git to a
 
 ### APP
   - New and modified files will show up in the center pane of the Github app. Choose which files you want to commit, write a commit message and then press *Commit to Master* in the bottom center.
-  ![commit](imgs/app_commit.png)
+  ![commit](docs/imgs/app_commit.png)
   - Continue to commit files until you see "No Uncommitted Changes"
 
 ### CLI
@@ -170,11 +155,11 @@ Now that you've made some changes to the site, we'll go over how to use git to a
 ### 6) Merge Conflicts
 #### APP
   - After clicking "Sync" you might get a message that looks like this:
-  ![conflict](imgs/app_merge_conflict.png)
+  ![conflict](docs/imgs/app_merge_conflict.png)
   - This is where the fun starts — how do you fix this?
     - The cause for merge conflicts is that you edited the exact same line as someone else and git doesn't know how to automatically merge that. This happens and is normal, don't worry.  So to fix you just need to pick apart the conflict and merge it in.
   - Instead of "No Uncommitted Changes," you should now see something like "1 Change"- this is the conflicted file!
-  ![conflict](imgs/app_merge_conflict2.png)
+  ![conflict](docs/imgs/app_merge_conflict2.png)
   - You already have this file open in your editor. Continue to the section **Deciphering Merge Conflicts**.
 
 #### CLI
@@ -200,7 +185,7 @@ If you were to do this by hand, git takes the pretty code you wrote and injects 
 where the line between  ```<<<HEAD``` and ```====``` is the line/lines of code that are relevant in your file, and between  ```====``` and ```>>>> cb1abc6``` are from the remote repository (the repository that you see on github.com). The crazy characters refer to the commit that the change comes from.
 
 Since we've been using Atom so far there is a nice plugin to help visualize this a little better. Atom -> Preferences -> Install -> search for merge-conflicts
-![merge-conflict](imgs/merge-conflicts.gif)
+![merge-conflict](docs/imgs/merge-conflicts.gif)
 
 Once you have your conflict file the way you want it — ie. fixed and without any more of the conflict markers...
 
@@ -217,9 +202,9 @@ Once you have your conflict file the way you want it — ie. fixed and without a
   - All you need to do is hit that Sync button again! Go ahead to your github page and see the live changes.
 
 #### CLI
-  - ```git push origin master```
-    - ```origin``` is the remote you are pushing to and is named origin by default
-    - ```master``` is the branch you are pushing
+  - `git push origin master`
+    - `origin` is the remote you are pushing to and is named origin by default
+    - `master` is the branch you are pushing
 
 ###Done!
 
@@ -289,19 +274,19 @@ where xxxxxx is the commit id, which you can get from `git log`.
 
 To squash a commit into the previous one, replace "pick" with "s" or "squash" and save the file.
 
-![Rebase Interactive](imgs/rebase-interactive.png)
+![Rebase Interactive](docs/imgs/rebase-interactive.png)
 
 This is the screen you will see after typing `git rebase -i`.
 This file will be launched in your default text editor.
 You have many different options, typically `squash` is the most useful.
 
-![Squash](imgs/squash.png)
+![Squash](docs/imgs/squash.png)
 
 By changing the character in front of the second commit to `s`,
 we are "combining" the second commit into the first commit.
 To finish, save and exit on your text editor (:wq in Vim).
 
-![Commit Messages](imgs/commit-messages.png)
+![Commit Messages](docs/imgs/commit-messages.png)
 
 After squashing, you have to write a new commit message.
 Again to finish, save and exit on your text editor. Done!
