@@ -43,7 +43,8 @@ addMarker({
 });
 
 
-//TODO: Add yourself to the map here!
+/* TODO: Add yourself to the map here! */
+// START SECTION FOR MARKERS
 
 
 
@@ -57,16 +58,18 @@ addMarker({
 
 
 
+
+//END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
 
 // this sets up popups and clicks on all the markers
 facemarkers.eachLayer(function(marker) {
   marker.on('mouseover', function (e) {
-      e.target.openPopup();
+    e.target.openPopup();
   });
   marker.on('mouseout', function (e) {
-      e.target.closePopup();
+    e.target.closePopup();
   });
   marker.on('click', function (e) {
       eModal.ajax({url: e.target.options.url, title: e.target.options.name});

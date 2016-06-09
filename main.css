@@ -10,11 +10,6 @@ html, body, #map {
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
 }
-.circularx {
-    border-radius: 100px;
-    -webkit-border-radius: 100px;
-    -moz-border-radius: 100px;
-}
 
 .circular img {
     opacity: 0;
