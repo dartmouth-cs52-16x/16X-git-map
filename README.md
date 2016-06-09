@@ -43,31 +43,30 @@ Here's what we're going to do!
 1. pull request will merge our changes into the main branch
 1. view our work!
 
-## GRADING 10pts
+Key: <br />
+🚀steps to definitely pay attention to <br/>
+💻run this in Terminal<br />
+🍸pro tip<br />
 
-1. basic html file added to people/ and pushed to github: 2pts
-1. main.js edited to show marker on map: 5pts
-1. pull request issued properly and merged in: 3pts
 
 
 ## Setup
 
-* ### [atom.io](http://atom.io)
-You should already have this if not:
+**[atom.io](http://atom.io)**
+You should already have this. If not, install from [atom.io](http://atom.io).  Open Atom and then do: *Atom -> Install Shell Commands*
 
-1. Install from [atom.io](http://atom.io)
-1. Open Atom and then do: *Atom -> Install Shell Commands*
-
-* ### [git+github](http://www.github.com)
+**[git+github](http://www.github.com)**
 git is a code collaboration tool! You might be able to skip this step if you've previously used git on your computer.
+
+*On Windows use Git Shell for all the Terminal comamnds*
 
 
 ### Git global configs:
-🚀 Setup your global config variables in *Terminal* with:
+🚀 Setup your global config variables in *Terminal* if you haven't yet:
 
-  💻`git config --global user.name "John Doe"`
+  💻`git config --global user.name "Jane Doe"`
 
-  💻`git config --global user.email johndoe@example.com`
+  💻`git config --global user.email janedoe@example.com`
 
 Ensure that the configs are set up with `cat ~/.gitconfig`. *Email* and *Name* should be filled out.
 
@@ -75,12 +74,14 @@ Ensure that the configs are set up with `cat ~/.gitconfig`. *Email* and *Name* s
 ## 1) Clone the Repository
 **What this does:** The repository is what git uses to store your project's information. It contains commits and references to commits (more on this later). The folder on your computer becomes your *workspace*.
 
-1. From the command line (where you will run all future commands), navigate to where you want the repo to end up on your computer. For example:
+From the command line (where you will run all future commands):
+
+1. 🚀Navigate to where you want the repo to end up on your computer. For example:
 `mkdir ~/Documents/CS52`
 `cd ~/Documents/CS52`
-1. Clone the repo:
+1. 🚀Clone the repo:
 `git clone https://github.com/dartmouth-cs52/16X-git-map.git`
-1. change directory to this new workspace:
+1. 🚀change directory to this new workspace:
 `cd 16X-git-map`
 
 Some more useful Terminal commands:
@@ -97,7 +98,7 @@ If you need some help or a couple pointers, give a shout!
 
 To view what we currently have the easiest way to start a local webserver is to use Python!
 
-In 💻:
+🚀 To run python based webserver in 💻:
 ```bash
 python -m SimpleHTTPServer 9000 &
 ```
@@ -110,11 +111,11 @@ this will start a simple little webserver so you can now access the page in your
 
 ## 2) Edit Some HTML
 
-💻 `atom .` For Windows, just open up atom and use 'Add Project Folder' and select the cloned directory from above.  
+💻 `atom .` For Windows, just open up atom and use *Add Project Folder* and select the cloned directory from above.  
 
-This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually the markdown file **README.md**.  If you find typos feel free to edit those, but right now we'll try editing some HTML.
+This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually the markdown file **README.md**.  *If you find typos feel free to issue a pull request or ticket!* Now we'll try editing some HTML.
 
-Create a file in the folder `people` and name it `yourname.html`
+Create a file in the folder `people` and name it `yourname.html`.
 Play around and put some html snippets in there. Could be a little bit about yourself. Even just plain text works.
 
 ### Images
@@ -125,7 +126,6 @@ To insert a new image just put a .jpg or .png in an `images` folder and use the 
 
 You can view your changes in your browser at:
 http://localhost:9000/people/yourname.html
-
 
 
 ## An Overview of Git
@@ -141,10 +141,14 @@ This is a good overview image for the things you'll be doing — it'll all make 
 
 **What this does:** The add step tells git which files from the workspace you want it to track, or add to the index.
 
-  - 🚀**Check your status:** Use ```git status``` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.
-  - 🚀**Add Untracked Files:** Use ```git add filename``` on those files to tell git to track them.
+  - 🚀**Check your status:** Use `git status` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.
+  - 🚀**Add Untracked Files:** Use `git add filename` on those files to tell git to track them.
     - You might also used `git add .` to add all untracked files recursively from the current directory.
-  - Go ahead a try to add your new files now.
+  - 🚀Go ahead a try to add your new files now. Run `git status` to make sure they are added.
+
+Here's what this looked like while editing this README:
+![git status](docs/imgs/git_status.png)
+
 
 ## 4) Git Commit
 **What this does:** Committing files tells git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
@@ -152,18 +156,18 @@ This is a good overview image for the things you'll be doing — it'll all make 
   - 🚀**Commit your changes:** ```git commit -am "i made some changes"```
     - ``-a`` means all changes
     - ``-m`` indicates that your commit message follows directly, a commit message is required.
-  - Example of sample commit chains that adds new payments feature to a e-commerce website:
+  - Example of sample commit chains that adds new payments feature to an e-commerce website:
     - "Setup and initialize new Charge Table"
     - "Add API call to generate a new Charge"
     - "Add task that processes new charges"
     - "Add tests to make sure charge amounts are accurate between server and client"
 
 ## 5) Git Pull
-**What this does:** Git pull will try to sync the remote repository with your workspace.
+**What this does:** Git pull will try to fetch and merge the remote repository with your workspace.
 
-  - 🚀**Pull others changes:** `git pull`
+  - 🚀**Pull others' changes:** `git pull`
     - This will check the github remote server for any changes and download and merge them into your local version.
-    - 🍸Protip: Get used to using ```git pull --rebase```, this is typically the way open source projects manage their Git workflow.  The difference is that rebasing will pull in all changes from the remote and then apply your commits on top rather than creating a a new "merge" commit. This gives you a cleaner unified git history. Here's a [2 minute read](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) on the differences between merging and rebasing.
+    - 🍸Protip: Try using ```git pull --rebase```, this is typically the way open source projects manage their Git workflow.  The difference is that rebasing will pull in all changes from the remote and then apply your commits on top rather than creating a a new "merge" commit. This gives you a cleaner unified git history. Here's a [2 minute read](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) on the differences between merging and rebasing.
 
 ### 6) Merge Conflicts
 
@@ -192,7 +196,7 @@ var h = 'Hi!';
 
 where the line between  `<<<HEAD` and `====` is the line/lines of code that are relevant in your file, and between  `====` and `>>>> cb1abc6` are from the remote repository (the repository that you see on github.com). The crazy characters refer to the commit that the change comes from.
 
-Since we've been using Atom so far there is a nice plugin to help visualize this a little better. Atom -> Preferences -> Install -> search for merge-conflicts
+Since we've been using Atom so far there is a nice plugin to help visualize this a little better. *Atom -> Preferences -> Install -> search* for merge-conflicts
 ![merge-conflict](docs/imgs/merge-conflicts.gif)
 
 Once you have your conflict file the way you want it — ie. fixed and without any more of the conflict markers...
@@ -220,14 +224,16 @@ Now lets add a picture of yourself and a lat long for a place that you like or a
 
 Open `main.js` in atom.
 
-Find where we run the method `addMarker` to create a marker for Froggy.
+🚀Find where we run the method `addMarker` to create a marker for Froggy.
 Copy that function call and paste it in somewhere in the `SECTION FOR MARKERS`.  
 
 Add an image of yourself into `images`.   It would probably be a good idea to resize your image to be 200x200 pixels. If you don't have a favorite tool for this try [resizeimage](http://resizeimage.net/)
 
-For the `url` field use the new page that you page earlier!
+For the `url` field use the new page that you made earlier!
 
-Play around with it till you have a working badge visible on your local dev site:  http://localhost:9000/
+Find a lat long: http://www.latlong.net/
+
+🚀Play around with it till you have a working badge visible on your local dev site:  http://localhost:9000/ and when click on the badge it is able to load in the page you made into the modal.
 
 
 
@@ -254,10 +260,10 @@ git checkout <feature>  # switches to branch feature
 
 🚀lets name our branch feature with yourname_icon! `git checkout -b yourname_icon`.   (lowercase and no spaces)
 
-🚀if you do `git branch` you should see `yourname_icon *`.  Well with your actual name there.
+🚀if you do `git branch` you should see `* yourname_icon`.
 
 
-🍸Protip: Periodically pull in changes from *origin/gh-pages* (or *master* in other situations) and update your feature branch.
+🍸Protip: Periodically pull in changes from *origin/gh-pages* (or *origin/master* in other situations) and update your feature branch.
 Note that these commands only update your current local branch.  The idea here is to not fall too far behind the master branch if other people are working on it.
 
 ```bash
@@ -287,9 +293,9 @@ git push origin yourname_icon
 
 ### Create Pull Request
 
-The best flow to merge your feature into the *master/gh-pages* branch is to issue a pull request. This bundles up your feature branch into a request that you or someone else on your team can approve.
+The best flow to merge your feature into the main branch is to issue a pull request. This bundles up your feature branch into a request that you or someone else on your team can approve.
 
-🚀Go to Github (or use the Github Desktop App) and submit a *New Pull Request* (choosing whatever branch you just pushed), add a quick description. Possibly do code review or just approve the request yourself. The idea here is that this is a checkpoint spot before adding your feature to the *master/gh-pages* branch so that everybody on your teams knows what is happening.
+🚀Go to Github (or use the Github Desktop App) and submit a *New Pull Request* (choosing whatever branch you just pushed), add a quick description. Possibly do code review or just approve the request yourself. The idea here is that this is a checkpoint spot before adding your feature to the main branch so that everybody on your teams knows what is happening.
 
 To do a code review, @mention a peer in the pull request. Once approved, your code changes will be merged.
 
