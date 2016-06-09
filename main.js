@@ -75,3 +75,16 @@ facemarkers.eachLayer(function(marker) {
       eModal.ajax({url: e.target.options.url, title: e.target.options.name});
   });
 });
+
+
+// setup the info control layer
+var info = L.control();
+
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this._div.innerHTML = '<a href="/"><h4>Dartmouth CS52 16X</h4></a>';
+    return this._div;
+};
+
+
+info.addTo(map);
