@@ -322,6 +322,7 @@ Once your changes are merged into the remote `gh-pages` branch on github you'll 
 
 ## Additional Git Tips and Resources:
 
+[Git CheatSheet](http://www.ndpsoftware.com/git-cheatsheet.html#loc=workspace)
 
 #### Sample Git Config
 To edit `atom ~/.gitconfig`
