@@ -58,7 +58,7 @@ You should already have this. If not, install from [atom.io](http://atom.io).  O
 **[git+github](http://www.github.com)**
 git is a code collaboration tool! You might be able to skip this step if you've previously used git on your computer.
 
-*On Windows use Git Shell for all the Terminal comamnds*
+*On Windows use Git Shell for all the Terminal commands*
 
 
 ### Git global configs:
@@ -352,7 +352,7 @@ You might want to consider cleaning up your local branch history. It's a good
 idea to commit frequently as checkpoints to save your work, but if you have a
 lot of them, the shared repo history will look cleaner without them.
 
-A nice way to visualize your commits and branchs locally is `git log --graph --oneline`. Alternatively, use a GUI like GitX (http://rowanj.github.io/gitx/).
+A nice way to visualize your commits and branches locally is `git log --graph --oneline`. Alternatively, use a GUI like GitX (http://rowanj.github.io/gitx/).
 
 Then, rebase with up git "interactive" mode, which will pull up your text editor.
 ```bash
