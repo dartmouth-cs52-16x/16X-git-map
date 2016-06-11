@@ -248,6 +248,8 @@ We're going to create a branch now and try out this new workflow.
 ### Create a new branch
 Start a local feature branch and do work on it. A branch keeps your work separate from the main (usually called *master*) branch.  Think of this as a tree where the *master* (or in our case *gh-pages*) branch can be thought of as the trunk.
 
+Here is a great visualization tool to help see what you are doing in the git tree: [git-with-d3](https://onlywei.github.io/explain-git-with-d3/#branch)
+
 ```bash
 git branch <feature>  # creates new branch feature
 git checkout <feature>  # switches to branch feature
