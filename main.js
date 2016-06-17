@@ -27,6 +27,8 @@ const addMarker = function(options) {
   facemarkers.addLayer(marker.addTo(map).bindPopup(options.message));
 }
 
+
+
 /* END SETUP */
 
 
@@ -42,6 +44,7 @@ addMarker({
   lat_long: [9.6660971,-85.0621176],
 });
 /****************************/
+
 
 
 
@@ -65,10 +68,13 @@ addMarker({
 });
 
 
-
-
-
-
+addMarker({
+  name: 'Yvonne',
+  iconUrl: 'images/yvonne.jpg',
+  url: 'people/Yvonne.html',
+  message: 'Come visit me in Beijing!',
+  lat_long: [39.904211,116.407395],
+});
 
 
 addMarker({
