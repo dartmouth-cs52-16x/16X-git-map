@@ -70,7 +70,7 @@ addMarker({
 
 addMarker({
   name: 'Yvonne',
-  iconUrl: 'images/yvonne.jpg',
+  iconUrl: 'images/froggy.jpg',
   url: 'people/Yvonne.html',
   message: 'Come visit me in Beijing!',
   lat_long: [39.904211,116.407395],
