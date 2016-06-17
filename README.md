@@ -104,7 +104,7 @@ python -m SimpleHTTPServer 9000 &
 ```
 
 ![](docs/imgs/simpleserver.png)<br>
-this will start a simple little webserver so you can now access the page in your browser at: [http://localhost:9000](http://localhost:900)
+this will start a simple little webserver so you can now access the page in your browser at: [http://localhost:9000](http://localhost:9000)
 
 *If you have Windows you may not have python installed. Install version 2.7.x from [python.org](http://python.org)*
 
