@@ -100,6 +100,7 @@ To view what we currently have the easiest way to start a local webserver is to 
 
 🚀 To run python based webserver in 💻:
 ```bash
+cd 16X-git-map # just make sure you are in the same dir as index.html
 python -m SimpleHTTPServer 9000 &
 ```
 
@@ -111,7 +112,7 @@ this will start a simple little webserver so you can now access the page in your
 
 ## 2) Edit Some HTML
 
-💻 `atom .` For Windows, just open up atom and use *Add Project Folder* and select the cloned directory from above.  
+💻 `atom .` For Windows, just open up atom and use *Add Project Folder* and select the cloned directory from above. *You may need to Atom -> Install Shell Commands on macOS if you get command not found.*
 
 This will open the current folder into the Atom text editor. What are you reading now (in browser) is actually the markdown file **README.md**.  *If you find typos feel free to issue a pull request or ticket!* Now we'll try editing some HTML.
 
