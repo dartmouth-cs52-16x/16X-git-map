@@ -48,6 +48,13 @@ addMarker({
 /* TODO: Add yourself to the map here! */
 // START SECTION FOR MARKERS
 
+addMarker({
+  name: 'Suman',
+  iconUrl: 'images/suman.jpg',
+  url: 'people/sumanbera.html',
+  message: 'Come visit me in Kolkata,India!',
+  lat_long: [22.572646,88.363895],
+});
 
 
 
