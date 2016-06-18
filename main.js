@@ -30,7 +30,7 @@ const addMarker = function(options) {
 /* END SETUP */
 
 
-//
+/*****************************/
 //
 // copy the following lines and change then as needed
 // look up the lat/long and change that as well.
@@ -41,6 +41,8 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
+/****************************/
+
 
 
 /* TODO: Add yourself to the map here! */
@@ -56,7 +58,13 @@ addMarker({
 
 
 
-
+addMarker({
+  name: 'Tim',
+  iconUrl: 'images/tim_round.jpg',
+  url: 'people/tim.html',
+  message: 'I went hiking here!',
+  lat_long: [37.2320967,-118.8578716],
+});
 
 
 //END SECTION FOR MARKERS
