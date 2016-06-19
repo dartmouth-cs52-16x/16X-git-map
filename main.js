@@ -43,7 +43,16 @@ addMarker({
 });
 
 
-//TODO: Add yourself to the map here!
+/* TODO: Add yourself to the map here! */
+// START SECTION FOR MARKERS
+
+addMarker({
+  name: 'Suman',
+  iconUrl: 'images/suman.jpg',
+  url: 'people/sumanbera.html',
+  message: 'Come visit me in Kolkata,India!',
+  lat_long: [22.572646,88.363895],
+});
 
 
 
@@ -57,18 +66,32 @@ addMarker({
 
 
 
+//END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
 
 // this sets up popups and clicks on all the markers
 facemarkers.eachLayer(function(marker) {
   marker.on('mouseover', function (e) {
-      e.target.openPopup();
+    e.target.openPopup();
   });
   marker.on('mouseout', function (e) {
-      e.target.closePopup();
+    e.target.closePopup();
   });
   marker.on('click', function (e) {
       eModal.ajax({url: e.target.options.url, title: e.target.options.name});
   });
 });
+
+
+// setup the info control layer
+var info = L.control();
+
+info.onAdd = function (map) {
+    this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
+    this._div.innerHTML = '<a href="/"><h4>Dartmouth CS52 16X</h4></a>';
+    return this._div;
+};
+
+
+info.addTo(map);
