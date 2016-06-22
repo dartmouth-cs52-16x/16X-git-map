@@ -59,7 +59,7 @@ addMarker({
 addMarker({
   name: 'Xing',
   iconUrl: 'images/Xing.jpg',
-  url: 'www.lezliemx.me',
+  url: 'people/mx.html',
   message: 'Summer term is coming!',
   lat_long: [43.701958,-72.288905],
 });
