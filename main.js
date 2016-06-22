@@ -87,7 +87,7 @@ facemarkers.eachLayer(function(marker) {
     e.target.closePopup();
   });
   marker.on('click', function (e) {
-      eModal.ajax({url: e.target.options.url, title: e.target.options.name});
+      eModal.iframe({url: e.target.options.url, title: e.target.options.name, size: 'lg'});
   });
 });
 
