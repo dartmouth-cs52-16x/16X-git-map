@@ -30,7 +30,7 @@ const addMarker = function(options) {
 /* END SETUP */
 
 
-//
+/*****************************/
 //
 // copy the following lines and change then as needed
 // look up the lat/long and change that as well.
@@ -41,6 +41,8 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
+/****************************/
+
 
 
 /* TODO: Add yourself to the map here! */
@@ -54,6 +56,13 @@ addMarker({
   lat_long: [22.572646,88.363895],
 });
 
+addMarker({
+  name: 'Xing',
+  iconUrl: 'images/Xing.jpg',
+  url: 'people/mx.html',
+  message: 'Summer term is coming!',
+  lat_long: [43.701958,-72.288905],
+});
 
 
 
@@ -62,8 +71,13 @@ addMarker({
 
 
 
-
-
+addMarker({
+  name: 'Tim',
+  iconUrl: 'images/tim_round.jpg',
+  url: 'people/tim.html',
+  message: 'I went hiking here!',
+  lat_long: [37.2320967,-118.8578716],
+});
 
 
 //END SECTION FOR MARKERS
@@ -79,7 +93,7 @@ facemarkers.eachLayer(function(marker) {
     e.target.closePopup();
   });
   marker.on('click', function (e) {
-      eModal.ajax({url: e.target.options.url, title: e.target.options.name});
+      eModal.iframe({url: e.target.options.url, title: e.target.options.name, size: 'lg'});
   });
 });
 
@@ -89,7 +103,7 @@ var info = L.control();
 
 info.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-    this._div.innerHTML = '<a href="/"><h4>Dartmouth CS52 16X</h4></a>';
+    this._div.innerHTML = '<a href="/"><h4>Dartmouth CS52 16X</h4></a><p><a href="https://github.com/dartmouth-cs52/16X-git-map">code on github</p></a>';
     return this._div;
 };
 
