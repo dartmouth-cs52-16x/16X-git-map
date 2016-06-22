@@ -56,7 +56,13 @@ addMarker({
   lat_long: [22.572646,88.363895],
 });
 
-
+addMarker({
+  name: 'Xing',
+  iconUrl: 'images/Xing.jpg',
+  url: 'www.lezliemx.me',
+  message: 'Summer term is coming!',
+  lat_long: [43.701958,-72.288905],
+});
 
 
 
