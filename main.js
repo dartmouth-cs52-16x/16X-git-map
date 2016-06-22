@@ -43,8 +43,11 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
+<<<<<<< HEAD
 /****************************/
 
+=======
+>>>>>>> 8636ac109539849d9bf6d8d1a04751ea9cde2da0
 
 
 
@@ -67,7 +70,6 @@ addMarker({
   lat_long: [43.701958,-72.288905],
 });
 
-
 addMarker({
   name: 'Yvonne',
   iconUrl: 'images/yvonne.jpg',
@@ -75,7 +77,6 @@ addMarker({
   message: 'Come visit me in Beijing!',
   lat_long: [39.904211,116.407395],
 });
-
 
 addMarker({
   name: 'Tim',
