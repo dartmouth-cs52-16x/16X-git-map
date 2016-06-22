@@ -302,6 +302,8 @@ The best flow to merge your feature into the main branch is to issue a pull requ
 
 ![pull-request](docs/imgs/pull-request.png)
 
+Ensure that you are comparing the correct two branches. Set "base" branch to be the branch where you want to commit your changes and "compare" branch to be the branch where your commits reside (see above image).
+ 
 To do a code review, @mention a peer in the pull request. Once approved, your code changes will be merged.
 
 Alternatively you can merge your changes in to the master branch without a pull request, but this should only be done if you are using git on your own or with a very small team!
