@@ -300,7 +300,7 @@ The best flow to merge your feature into the main branch is to issue a pull requ
 
 🚀Go to Github (or use the Github Desktop App) and submit a *New Pull Request* (choosing whatever branch you just pushed), add a quick description. Possibly do code review or just approve the request yourself. The idea here is that this is a checkpoint spot before adding your feature to the main branch so that everybody on your teams knows what is happening.
 
-![git pull request](docs/imgs/pull-request.png)
+![pull-request](docs/imgs/pull-request.png)
 
 To do a code review, @mention a peer in the pull request. Once approved, your code changes will be merged.
 
