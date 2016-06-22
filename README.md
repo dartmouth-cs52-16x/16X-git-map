@@ -300,7 +300,13 @@ The best flow to merge your feature into the main branch is to issue a pull requ
 
 🚀Go to Github (or use the Github Desktop App) and submit a *New Pull Request* (choosing whatever branch you just pushed), add a quick description. Possibly do code review or just approve the request yourself. The idea here is that this is a checkpoint spot before adding your feature to the main branch so that everybody on your teams knows what is happening.
 
-To do a code review, @mention a peer in the pull request. Once approved, your code changes will be merged.
+![pull-request](docs/imgs/pull-request.png)
+
+Ensure that you are comparing the correct two branches. Set "base" branch to be the branch where you want to commit your changes and "compare" branch to be the branch where your commits reside (see above image).
+
+To do a code review, @mention a peer in the pull request. Once approved, your code changes will be merged. You can also merge pull requests after carefully reviewing all the changes.
+
+![merge-pull-request](docs/imgs/merge-pull-request.png)
 
 Alternatively you can merge your changes in to the master branch without a pull request, but this should only be done if you are using git on your own or with a very small team!
 
@@ -310,7 +316,11 @@ git merge your_feature_branch_name
 ```
 
 **Once you no longer need a branch you should delete it!**
-You can do this on github and locally with `git branch -d your_feature_branch_name`.
+You can do this on github.
+
+![delete-branch](docs/imgs/delete-branch.png)
+
+You can also do this locally with `git branch -d your_feature_branch_name`.
 Note: you have to delete it in both places, as just deleting it remotely won't delete it locally.
 
 
