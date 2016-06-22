@@ -43,12 +43,7 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
-<<<<<<< HEAD
 /****************************/
-
-=======
->>>>>>> 8636ac109539849d9bf6d8d1a04751ea9cde2da0
-
 
 
 /* TODO: Add yourself to the map here! */
