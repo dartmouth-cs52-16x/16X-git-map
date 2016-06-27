@@ -122,8 +122,10 @@ Play around and put some html snippets in there. Could be a little bit about you
 ### Images
 To insert a new image just put a .jpg or .png in an `images` folder and use the syntax in your html.
 ```
-<img src="/images/nameofyourimage.jpg">
+<img src="../images/nameofyourimage.jpg">
 ```
+
+Note the relative url: going up out of people and then back down into images.
 
 You can view your changes in your browser at:
 http://localhost:9000/people/yourname.html
@@ -215,7 +217,6 @@ Once you have your conflict file the way you want it — ie. fixed and without a
 ###You've now published a page!
 
 If you go to http://dartmouth-cs52.github.io/16X-git-map/yournewpage.html now you'll be able to see your new page.
-
 
 
 ## 8) Map and Javascript
