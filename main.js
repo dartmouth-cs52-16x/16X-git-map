@@ -321,7 +321,6 @@ addMarker({
   lat_long: [26.699266, -80.035477],
 });
 
-
 addMarker({
   name: 'Sydni',
   iconUrl: 'images/sydnitopper.jpg',
