@@ -130,8 +130,8 @@ addMarker({
   name: 'Divya',
   iconUrl: 'images/flower.jpg',
   url: 'people/divya.html',
-  message: "San Jose, CA"
-  lat_long: [37.3382, 121.8863],
+  message: 'San Jose, CA',
+  lat_long: [37.3382,121.8863],
 });
 
 addMarker({
