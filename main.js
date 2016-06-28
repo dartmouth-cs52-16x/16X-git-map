@@ -255,6 +255,7 @@ addMarker({
   message: 'Home in Menlo parj',
   lat_long: [37.4530, -122.1817],
 });
+
 addMarker({
   name: 'Kyra',
   iconUrl: 'images/kyra.jpg',
@@ -318,6 +319,14 @@ addMarker({
   url: 'people/chris.html',
   message: 'Come chill on the beach',
   lat_long: [26.699266, -80.035477],
+});
+
+addMarker({
+  name: 'Sydni',
+  iconUrl: 'images/sydnitopper.jpg',
+  url: 'people/sydni.html',
+  message: 'Spent the best week of my life here!',
+  lat_long: [-53.807139,-68.378906],
 });
 
 //END SECTION FOR MARKERS
