@@ -73,6 +73,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Luisa',
+  iconUrl: 'images/luisa.jpg',
+  url: 'people/luisa.html',
+  message: 'I was just here over break :)',
+  lat_long: [4.444676,-75.242438],
+});
+
+addMarker({
   name: 'Yvonne',
   iconUrl: 'images/yvonne.jpg',
   url: 'people/Yvonne.html',
