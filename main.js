@@ -106,6 +106,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Henry Wilson',
+  iconUrl: 'images/henrywilson.jpg',
+  url: 'people/henrywilson.html',
+  message: 'Find your beach',
+  lat_long: [41.4901,-71.312845],
+});
+
+addMarker({
   name: 'Manmeet Gujral',
   iconUrl: 'images/manmeet.jpg',
   url: 'people/manmeet.html',
@@ -120,6 +128,7 @@ addMarker({
   message: 'I\'m from Medfield, MA',
   lat_long: [42.1876, -71.3065],
 })
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
