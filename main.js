@@ -106,14 +106,15 @@ addMarker({
 });
 
 addMarker({
-<<<<<<< HEAD
+
   name: 'Josh Kerber',
   iconUrl: 'images/bsp.jpg',
   url: 'people/joshkerber.html',
   message: 'Free Brady.',
   lat_long: [42.364506,-71.038887],
 });
-=======
+
+addMarker({
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
   url: 'people/henrywilson.html',
@@ -137,7 +138,15 @@ addMarker({
   lat_long: [42.1876, -71.3065],
 })
 
->>>>>>> ba509088bde5bdea3f058337c46ced27febd3dee
+addMarker({
+  name: 'Ian',
+  iconUrl: 'images/ianbateman2.jpg',
+  url: 'people/ianbateman.html',
+  message: 'I am from Manasquan, NJ',
+  lat_long: [40.113693, -74.037635],
+})
+
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
