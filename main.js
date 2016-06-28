@@ -43,6 +43,13 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
+addMarker({
+  name: 'Robert',
+  iconUrl: 'images/robert.jpg',
+  url: 'people/robert.html',
+  message: 'Hi I\'m Robert!',
+  lat_long: [33.893791,35.501777],
+});
 /****************************/
 
 
@@ -88,6 +95,22 @@ addMarker({
   url: 'people/varun.html',
   message: 'Come visit me in Delhi',
   lat_long: [28.6139,77.2090],
+});
+
+addMarker({
+  name: 'Alex Beals',
+  iconUrl: 'images/alex.jpg',
+  url: 'people/alex.html',
+  message: 'This is where I spend my summers!',
+  lat_long: [45.373615,-121.695951],
+});
+
+addMarker({
+  name: 'Manmeet Gujral',
+  iconUrl: 'images/manmeet.jpg',
+  url: 'people/manmeet.html',
+  message: 'This is home!',
+  lat_long: [42.704801,-73.754842],
 });
 //END SECTION FOR MARKERS
 
