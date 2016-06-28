@@ -104,6 +104,15 @@ addMarker({
   message: 'This is where I spend my summers!',
   lat_long: [45.373615,-121.695951],
 });
+
+addMarker({
+  name: 'Henry Wilson',
+  iconUrl: 'images/henrywilson.jpg',
+  url: 'people/henrywilson.html',
+  message: 'Find your beach',
+  lat_long: [41.4901,-71.312845],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
