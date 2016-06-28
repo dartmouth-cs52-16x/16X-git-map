@@ -113,6 +113,22 @@ addMarker({
   lat_long: [41.4901,-71.312845],
 });
 
+addMarker({
+  name: 'Manmeet Gujral',
+  iconUrl: 'images/manmeet.jpg',
+  url: 'people/manmeet.html',
+  message: 'This is home!',
+  lat_long: [42.704801,-73.754842],
+});
+
+addMarker({
+  name: 'Jean',
+  iconUrl: 'images/jeanzhou.jpg',
+  url: 'people/jeanzhou.html',
+  message: 'I\'m from Medfield, MA',
+  lat_long: [42.1876, -71.3065],
+})
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
