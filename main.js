@@ -226,6 +226,15 @@ addMarker({
 });
 
 addMarker({
+  name: 'Kyra',
+  iconUrl: 'images/kyra.jpg',
+  url: 'people/kyra.html',
+  message: 'brb swimming',
+  lat_long: [-54.220285, 55.898438],
+})
+
+
+addMarker({
   name: 'Brian Francis',
   iconUrl: 'images/brian_francis.jpg',
   url: 'people/brianfrancis.html',
