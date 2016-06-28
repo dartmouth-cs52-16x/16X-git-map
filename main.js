@@ -195,6 +195,14 @@ addMarker({
   lat_long: [33.893791,35.501777],
 })
 
+addMarker({
+  name: 'Matthew',
+  iconUrl: 'images/matthewgoldstein.jpg',
+  url: 'people/matthewgoldstein.html',
+  message: 'where I am is where I am at any given moment #deep',
+  lat_long: [26.6862971,52.3974836],
+});
+
 
 //END SECTION FOR MARKERS
 
