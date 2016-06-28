@@ -179,6 +179,7 @@ addMarker({
   lat_long: [18.7669, -46.8691],
 })
 
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
