@@ -171,6 +171,14 @@ addMarker({
   lat_long: [33.893791,35.501777],
 })
 
+addMarker({
+  name: 'Ross',
+  iconUrl: 'images/rosspic.jpg',
+  url: 'people/rossy.html',
+  message: 'Let\'s hike Table Mountain!',
+  lat_long: [-33.924869, 18.424055],
+})
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
