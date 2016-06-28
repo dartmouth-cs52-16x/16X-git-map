@@ -112,6 +112,14 @@ addMarker({
   message: 'This is home!',
   lat_long: [42.704801,-73.754842],
 });
+
+addMarker({
+  name: 'Emma',
+  iconUrl: 'images/emma.jpg',
+  url: 'people/emma.html',
+  message: 'I was born in Miami',
+  lat_long: [25.76,-80.19],
+});
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
