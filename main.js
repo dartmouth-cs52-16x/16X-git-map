@@ -43,6 +43,7 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
+
 /****************************/
 
 
@@ -88,6 +89,14 @@ addMarker({
   url: 'people/varun.html',
   message: 'Come visit me in Delhi',
   lat_long: [28.6139,77.2090],
+});
+
+addMarker({
+  name: 'Erin',
+  iconUrl: 'images/erin.jpg',
+  url: 'people/erin.html',
+  message: 'Come visit me in Atlanta!',
+  lat_long: [33.7490,-84.3880],
 });
 //END SECTION FOR MARKERS
 
