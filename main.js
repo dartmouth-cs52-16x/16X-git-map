@@ -43,6 +43,13 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
+addMarker({
+  name: 'Robert',
+  iconUrl: 'images/robert.jpg',
+  url: 'people/robert.html',
+  message: 'Hi I\'m Robert!',
+  lat_long: [33.893791,35.501777],
+});
 /****************************/
 
 
