@@ -43,6 +43,13 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
+addMarker({
+  name: 'Robert',
+  iconUrl: 'images/robert.jpg',
+  url: 'people/robert.html',
+  message: 'Hi I\'m Robert!',
+  lat_long: [33.893791,35.501777],
+});
 /****************************/
 
 
@@ -96,6 +103,39 @@ addMarker({
   message: 'Come visit me in Delhi',
   lat_long: [28.6139,77.2090],
 });
+
+addMarker({
+  name: 'Alex Beals',
+  iconUrl: 'images/alex.jpg',
+  url: 'people/alex.html',
+  message: 'This is where I spend my summers!',
+  lat_long: [45.373615,-121.695951],
+});
+
+addMarker({
+  name: 'Henry Wilson',
+  iconUrl: 'images/henrywilson.jpg',
+  url: 'people/henrywilson.html',
+  message: 'Find your beach',
+  lat_long: [41.4901,-71.312845],
+});
+
+addMarker({
+  name: 'Manmeet Gujral',
+  iconUrl: 'images/manmeet.jpg',
+  url: 'people/manmeet.html',
+  message: 'This is home!',
+  lat_long: [42.704801,-73.754842],
+});
+
+addMarker({
+  name: 'Jean',
+  iconUrl: 'images/jeanzhou.jpg',
+  url: 'people/jeanzhou.html',
+  message: 'I\'m from Medfield, MA',
+  lat_long: [42.1876, -71.3065],
+})
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
