@@ -97,6 +97,14 @@ addMarker({
   message: 'This is where I spend my summers!',
   lat_long: [45.373615,-121.695951],
 });
+
+addMarker({
+  name: 'Manmeet Gujral',
+  iconUrl: 'images/manmeet.jpg',
+  url: 'people/manmeet.html',
+  message: 'This is home!',
+  lat_long: [42.704801,-73.754842],
+});
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
