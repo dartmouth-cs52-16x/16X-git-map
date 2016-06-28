@@ -144,6 +144,14 @@ addMarker({
   lat_long: [42.1876, -71.3065],
 })
 
+addMarker({
+  name: 'Weijia',
+  iconUrl: 'images/weijia.jpg',
+  url: 'people/weijia.html',
+  message: 'Come visit me in Suzhou!',
+  lat_long: [31.299,120.5853],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
