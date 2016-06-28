@@ -170,6 +170,8 @@ addMarker({
   message: 'Free Brady.',
   lat_long: [42.364506,-71.038887],
 });
+
+
 addMarker({
 >>>>>>> add8c2ff986c5adf680c2676fa9bffaf4d0d62d1
   name: 'Henry Wilson',
@@ -216,7 +218,7 @@ addMarker({
 
 addMarker({
   name: 'Rajiv',
-  iconUrl: 'images/segfault.jpg',
+  iconUrl: 'images/rajivramaiah.jpg',
   url: 'people/rajivramaiah.html',
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
@@ -228,6 +230,7 @@ addMarker({
   message: 'brb swimming',
   lat_long: [-54.220285, 55.898438],
 })
+
 
 addMarker({
   name: 'Ross',
