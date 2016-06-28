@@ -325,8 +325,8 @@ addMarker({
   name: 'Xinwei',
   iconUrl: 'images/xjiang.jpg',
   url: 'people/xjiang.html',
-  message: 'Hello it is me!',
-  lat_long: [31.3407,121.4753],
+  message: 'Hi, it is me!',
+  lat_long: [31.2304,121.4737],
 });
 
 addMarker({
