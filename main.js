@@ -73,6 +73,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Ahsan',
+  iconUrl: 'images/ahsan.jpg',
+  url: 'people/ahsan.html',
+  message: 'antarctica',
+  lat_long: [-82.862752,135.000000],
+});
+
+addMarker({
   name: 'Xing',
   iconUrl: 'images/Xing.jpg',
   url: 'people/mx.html',
