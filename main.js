@@ -229,7 +229,7 @@ addMarker({
   iconUrl: 'images/brian_francis.jpg',
   url: 'people/brianfrancis.html',
   message: 'Home',
-  lat_long: [37.4530, 122.1817],
+  lat_long: [37.4530, -122.1817],
 });
 addMarker({
   name: 'Kyra',
