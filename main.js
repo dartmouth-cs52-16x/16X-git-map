@@ -82,6 +82,13 @@ addMarker({
 });
 
 
+addMarker({
+  name: 'Varun',
+  iconUrl: 'images/varun.jpg',
+  url: 'people/varun.html',
+  message: 'Come visit me in Delhi',
+  lat_long: [28.6139,77.2090],
+});
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
