@@ -62,6 +62,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Jessie',
+  iconUrl: 'images/jessie_anderson.jpg',
+  url: 'people/jessie_anderson.html',
+  message: 'Come visit me in Cleveland!',
+  lat_long: [41.499320,-81.694361],
+});
+
+addMarker({
   name: 'Suman',
   iconUrl: 'images/suman.jpg',
   url: 'people/sumanbera.html',
@@ -75,6 +83,14 @@ addMarker({
   url: 'people/mx.html',
   message: 'Summer term is coming!',
   lat_long: [43.701958,-72.288905],
+});
+
+addMarker({
+  name: 'Luisa',
+  iconUrl: 'images/luisa.jpg',
+  url: 'people/luisa.html',
+  message: 'I was just here over break :)',
+  lat_long: [4.444676,-75.242438],
 });
 
 addMarker({
@@ -164,7 +180,15 @@ addMarker({
   url: 'people/jeanzhou.html',
   message: 'I\'m from Medfield, MA!',
   lat_long: [42.1876, -71.3065],
-})
+});
+
+addMarker({
+  name: 'Robin Jayaswal',
+  iconUrl: 'images/robin.png',
+  url: 'people/robin.html',
+  message: 'Where I\'m From',
+  lat_long: [55.6761, 12.5683],
+});
 
 addMarker({
   name: 'Rajiv',
@@ -173,6 +197,7 @@ addMarker({
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
 })
+
 
 //END SECTION FOR MARKERS
 
