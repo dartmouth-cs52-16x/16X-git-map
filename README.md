@@ -10,7 +10,7 @@ Today you'll be learning the ins and outs of an essential concept used in softwa
 
 This mostly assumes that you are using a recent version of OS X, so your mileage may vary.
 
-## Goals at a Glance
+## Steps At a Glance
 Here's what we're going to do!
 
 #### Basic git
