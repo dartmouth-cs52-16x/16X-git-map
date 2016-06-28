@@ -106,12 +106,38 @@ addMarker({
 });
 
 addMarker({
+<<<<<<< HEAD
+  name: 'Josh Kerber',
+  iconUrl: 'images/bsp.jpg',
+  url: 'people/joshkerber.html',
+  message: 'Free Brady.',
+  lat_long: [42.364506,-71.038887],
+});
+=======
+  name: 'Henry Wilson',
+  iconUrl: 'images/henrywilson.jpg',
+  url: 'people/henrywilson.html',
+  message: 'Find your beach',
+  lat_long: [41.4901,-71.312845],
+});
+
+addMarker({
   name: 'Manmeet Gujral',
   iconUrl: 'images/manmeet.jpg',
   url: 'people/manmeet.html',
   message: 'This is home!',
   lat_long: [42.704801,-73.754842],
 });
+
+addMarker({
+  name: 'Jean',
+  iconUrl: 'images/jeanzhou.jpg',
+  url: 'people/jeanzhou.html',
+  message: 'I\'m from Medfield, MA',
+  lat_long: [42.1876, -71.3065],
+})
+
+>>>>>>> ba509088bde5bdea3f058337c46ced27febd3dee
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
