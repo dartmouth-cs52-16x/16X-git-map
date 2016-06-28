@@ -140,11 +140,27 @@ addMarker({
 });
 
 addMarker({
+  name: 'Emma',
+  iconUrl: 'images/emma.jpg',
+  url: 'people/emma.html',
+  message: 'I was born in Miami',
+  lat_long: [25.76,-80.19],
+});
+
+addMarker({
   name: 'Jean',
   iconUrl: 'images/jeanzhou.jpg',
   url: 'people/jeanzhou.html',
   message: 'I\'m from Medfield, MA',
   lat_long: [42.1876, -71.3065],
+})
+
+addMarker({
+  name: 'Rajiv',
+  iconUrl: 'images/segfault.jpg',
+  url: 'people/rajivramaiah.html',
+  message: 'Hello it is me, Rajiv!',
+  lat_long: [18.7669, 46.8691],
 })
 
 //END SECTION FOR MARKERS
