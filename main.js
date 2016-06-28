@@ -57,6 +57,14 @@ addMarker({
 // START SECTION FOR MARKERS
 
 addMarker({
+  name: 'Mau',
+  iconUrl: 'images/mauricioesquivel.jpg',
+  url: 'people/mauesrog.html',
+  message: 'My favorite city',
+  lat_long: [19.432608,-99.133208],
+});
+
+addMarker({
   name: 'Jessie',
   iconUrl: 'images/jessie_anderson.jpg',
   url: 'people/jessie_anderson.html',
