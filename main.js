@@ -98,6 +98,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Virginia',
+  iconUrl: 'images/virginia.jpg',
+  url: 'people/virginia.html',
+  message: 'Amsterdam is a beautiful place!',
+  lat_long: [52.3702,4.8952],
+});
+
+addMarker({
   name: 'Alex Beals',
   iconUrl: 'images/alex.jpg',
   url: 'people/alex.html',
@@ -105,6 +113,13 @@ addMarker({
   lat_long: [45.373615,-121.695951],
 });
 
+addMarker({
+  name: 'Josh Kerber',
+  iconUrl: 'images/bsp.jpg',
+  url: 'people/joshkerber.html',
+  message: 'Free Brady.',
+  lat_long: [42.364506,-71.038887],
+});
 addMarker({
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
