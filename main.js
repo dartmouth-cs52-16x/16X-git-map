@@ -312,6 +312,14 @@ addMarker({
   lat_long: [31.3407,121.4753],
 });
 
+addMarker({
+  name: 'Chris',
+  iconUrl: 'images/chris.jpg',
+  url: 'people/chris.html',
+  message: 'Come chill on the beach',
+  lat_long: [26.699266, -80.035477],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
