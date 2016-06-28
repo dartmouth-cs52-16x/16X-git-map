@@ -106,14 +106,13 @@ addMarker({
 });
 
 addMarker({
-<<<<<<< HEAD
   name: 'Josh Kerber',
   iconUrl: 'images/bsp.jpg',
   url: 'people/joshkerber.html',
   message: 'Free Brady.',
   lat_long: [42.364506,-71.038887],
 });
-=======
+
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
   url: 'people/henrywilson.html',
@@ -137,7 +136,6 @@ addMarker({
   lat_long: [42.1876, -71.3065],
 })
 
->>>>>>> ba509088bde5bdea3f058337c46ced27febd3dee
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
