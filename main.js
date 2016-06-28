@@ -255,7 +255,6 @@ addMarker({
   message: 'Come visit me in Suzhou!',
   lat_long: [31.299,120.5853],
 });
-
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
