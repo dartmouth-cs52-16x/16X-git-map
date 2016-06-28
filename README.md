@@ -216,7 +216,7 @@ Once you have your conflict file the way you want it — ie. fixed and without a
 
 ###You've now published a page!
 
-If you go to http://dartmouth-cs52.github.io/16X-git-map/yournewpage.html now you'll be able to see your new page.
+If you go to http://dartmouth-cs52.github.io/16X-git-map/people/yournewpage.html now you'll be able to see your new page.
 
 
 ## 8) Map and Javascript
