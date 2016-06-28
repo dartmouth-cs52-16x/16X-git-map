@@ -57,6 +57,14 @@ addMarker({
 // START SECTION FOR MARKERS
 
 addMarker({
+  name: 'Jessie',
+  iconUrl: 'images/jessie_anderson.jpg',
+  url: 'people/jessie_anderson.html',
+  message: 'Come visit me in Cleveland!',
+  lat_long: [41.499320,-81.694361],
+});
+
+addMarker({
   name: 'Suman',
   iconUrl: 'images/suman.jpg',
   url: 'people/sumanbera.html',
