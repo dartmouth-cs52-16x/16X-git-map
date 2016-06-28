@@ -304,6 +304,14 @@ addMarker({
   lat_long: [39.9526, -75.1652],
 });
 
+addMarker({
+  name: 'Xinwei',
+  iconUrl: 'images/xjiang.jpg',
+  url: 'people/xjiang.html',
+  message: 'Hello it is me!',
+  lat_long: [31.3407,121.4753],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
