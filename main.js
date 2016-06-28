@@ -76,6 +76,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Brophy',
+  iconUrl: 'images/brophy.jpg',
+  url: 'people/brophy.html',
+  message: 'I have a new puppy named Buck!',
+  lat_long: [40.712784, -74.005941],
+});
+
+addMarker({
   name: 'Tim',
   iconUrl: 'images/tim_round.jpg',
   url: 'people/tim.html',
@@ -151,7 +159,7 @@ addMarker({
   name: 'Jean',
   iconUrl: 'images/jeanzhou.jpg',
   url: 'people/jeanzhou.html',
-  message: 'I\'m from Medfield, MA',
+  message: 'I\'m from Medfield, MA!',
   lat_long: [42.1876, -71.3065],
 })
 
