@@ -223,6 +223,14 @@ addMarker({
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
 })
+
+addMarker({
+  name: 'Brian Francis',
+  iconUrl: 'images/brian_francis.jpg',
+  url: 'people/brianfrancis.html',
+  message: 'Home',
+  lat_long: [37.4530, 122.1817],
+});
 addMarker({
   name: 'Kyra',
   iconUrl: 'images/kyra.jpg',
