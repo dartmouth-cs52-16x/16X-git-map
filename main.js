@@ -63,6 +63,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Mau',
+  iconUrl: 'images/mauricioesquivel.jpg',
+  url: 'people/mauesrog.html',
+  message: 'My favorite city',
+  lat_long: [19.432608,-99.133208],
+});
+
+addMarker({
   name: 'Jessie',
   iconUrl: 'images/jessie_anderson.jpg',
   url: 'people/jessie_anderson.html',
@@ -76,6 +84,22 @@ addMarker({
   url: 'people/sumanbera.html',
   message: 'Come visit me in Kolkata,India!',
   lat_long: [22.572646,88.363895],
+});
+
+addMarker({
+  name: 'James',
+  iconUrl: 'images/jamesw.jpg',
+  url: 'people/jamesw.html',
+  message: 'Come visit me in Belleuve, Washington!',
+  lat_long: [47.550768,-122.148483],
+});
+
+addMarker({
+  name: 'Ahsan',
+  iconUrl: 'images/ahsan.jpg',
+  url: 'people/ahsan.html',
+  message: 'antarctica',
+  lat_long: [-82.862752,135.000000],
 });
 
 addMarker({
@@ -122,7 +146,7 @@ addMarker({
   name: 'Divya',
   iconUrl: 'images/flower.jpg',
   url: 'people/divya.html',
-  message: "San Jose, CA"
+  message: "San Jose, CA",
   lat_long: [37.3382, 121.8863],
 });
 
@@ -166,6 +190,8 @@ addMarker({
   message: 'Free Brady.',
   lat_long: [42.364506,-71.038887],
 });
+
+
 addMarker({
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
@@ -216,11 +242,19 @@ addMarker({
 
 addMarker({
   name: 'Rajiv',
-  iconUrl: 'images/segfault.jpg',
+  iconUrl: 'images/rajivramaiah.jpg',
   url: 'people/rajivramaiah.html',
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
 })
+
+addMarker({
+  name: 'Brian Francis',
+  iconUrl: 'images/brian_francis.jpg',
+  url: 'people/brianfrancis.html',
+  message: 'Home in Menlo parj',
+  lat_long: [37.4530, -122.1817],
+});
 addMarker({
   name: 'Kyra',
   iconUrl: 'images/kyra.jpg',
@@ -228,6 +262,7 @@ addMarker({
   message: 'brb swimming',
   lat_long: [-54.220285, 55.898438],
 })
+
 
 addMarker({
   name: 'Ross',
@@ -238,11 +273,35 @@ addMarker({
 })
 
 addMarker({
-  name: 'Chris',
-  iconUrl: 'images/chris.jpg',
-  url: 'people/chris.html',
-  message: 'Come visit me on the beach!',
-  lat_long: [26.699266, -80.035477],
+  name: 'Matthew',
+  iconUrl: 'images/matthewgoldstein.jpg',
+  url: 'people/matthewgoldstein.html',
+  message: 'where I am is where I am at any given moment #deep',
+  lat_long: [26.6862971,52.3974836],
+});
+
+addMarker({
+  name: 'Weijia',
+  iconUrl: 'images/weijia.jpg',
+  url: 'people/weijia.html',
+  message: 'Come visit me in Suzhou!',
+  lat_long: [31.299,120.5853],
+});
+
+addMarker({
+  name: 'Ian',
+  iconUrl: 'images/ianbateman.jpg',
+  url: 'people/ianbateman.html',
+  message: 'I am from Manasquan, NJ',
+  lat_long: [41.233,-70.499],
+});
+
+addMarker({
+  name: 'zuff',
+  iconUrl: 'images/zuff.jpg',
+  url: 'people/zuff.html',
+  message: 'i miss my cat',
+  lat_long: [39.9526, -75.1652],
 });
 
 //END SECTION FOR MARKERS
