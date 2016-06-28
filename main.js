@@ -36,6 +36,16 @@ const addMarker = function(options) {
 //
 // copy the following lines and change then as needed
 // look up the lat/long and change that as well.
+
+
+addMarker({
+  name: 'Alma',
+  iconUrl: 'images/almaspic.jpg',
+  url: 'people/alma.html',
+  message: 'Hello from Long Island',
+  lat_long: [40.75, -73.52]
+});
+
 addMarker({
   name: 'Froggy',
   iconUrl: 'images/froggy.jpg',
@@ -100,13 +110,6 @@ addMarker({
   lat_long: [28.6139,77.2090],
 });
 
-addMarker({
-  name: 'Alma',
-  iconUrl: 'images/almaspic.jpg',
-  url: 'people/alma.html',
-  message: 'Hello from Long Island',
-  lat_long: [40.75, -73.52]
-});
 
 addMarker({
   name: 'Virginia',
