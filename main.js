@@ -63,6 +63,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Mau',
+  iconUrl: 'images/mauricioesquivel.jpg',
+  url: 'people/mauesrog.html',
+  message: 'My favorite city',
+  lat_long: [19.432608,-99.133208],
+});
+
+addMarker({
   name: 'Jessie',
   iconUrl: 'images/jessie_anderson.jpg',
   url: 'people/jessie_anderson.html',
@@ -76,6 +84,14 @@ addMarker({
   url: 'people/sumanbera.html',
   message: 'Come visit me in Kolkata,India!',
   lat_long: [22.572646,88.363895],
+});
+
+addMarker({
+  name: 'James',
+  iconUrl: 'images/jamesw.jpg',
+  url: 'people/jamesw.html',
+  message: 'Come visit me in Belleuve, Washington!',
+  lat_long: [47.550768,-122.148483],
 });
 
 addMarker({
@@ -130,8 +146,8 @@ addMarker({
   name: 'Divya',
   iconUrl: 'images/flower.jpg',
   url: 'people/divya.html',
-  message: 'San Jose, CA',
-  lat_long: [37.3382,121.8863],
+  message: "San Jose, CA",
+  lat_long: [37.3382, 121.8863],
 });
 
 addMarker({
@@ -223,6 +239,14 @@ addMarker({
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
 })
+
+addMarker({
+  name: 'Brian Francis',
+  iconUrl: 'images/brian_francis.jpg',
+  url: 'people/brianfrancis.html',
+  message: 'Home in Menlo parj',
+  lat_long: [37.4530, -122.1817],
+});
 addMarker({
   name: 'Kyra',
   iconUrl: 'images/kyra.jpg',
