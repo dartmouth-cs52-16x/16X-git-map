@@ -106,6 +106,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Larissa Chen',
+  iconUrl: 'images/larissa.jpg',
+  url: 'people/larissa.html',
+  message: 'Where I live!',
+  lat_long: [42.0,80.0],
+});
+
+addMarker({
   name: 'Manmeet Gujral',
   iconUrl: 'images/manmeet.jpg',
   url: 'people/manmeet.html',
