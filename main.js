@@ -89,6 +89,14 @@ addMarker({
   message: 'Come visit me in Delhi',
   lat_long: [28.6139,77.2090],
 });
+
+addMarker({
+  name: 'Alex Beals',
+  iconUrl: 'images/alex.jpg',
+  url: 'people/alex.html',
+  message: 'This is where I spend my summers!',
+  lat_long: [45.373615,-121.695951],
+});
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
