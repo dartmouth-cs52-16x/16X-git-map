@@ -130,8 +130,8 @@ addMarker({
   name: 'Divya',
   iconUrl: 'images/flower.jpg',
   url: 'people/divya.html',
-  message: "San Jose, CA"
-  lat_long: [37.3382, 121.8863],
+  message: 'San Jose, CA',
+  lat_long: [37.3382,121.8863],
 });
 
 addMarker({
@@ -255,6 +255,15 @@ addMarker({
   message: 'Come visit me in Suzhou!',
   lat_long: [31.299,120.5853],
 });
+
+addMarker({
+  name: 'Ian',
+  iconUrl: 'images/ianbateman.jpg',
+  url: 'people/ianbateman.html',
+  message: 'I am from Manasquan, NJ',
+  lat_long: [41.233,-70.499],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
