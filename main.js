@@ -165,7 +165,7 @@ addMarker({
   iconUrl: 'images/segfault.jpg',
   url: 'people/rajivramaiah.html',
   message: 'Hello it is me, Rajiv!',
-  lat_long: [18.7669, 46.8691],
+  lat_long: [18.7669, -46.8691],
 })
 
 //END SECTION FOR MARKERS
