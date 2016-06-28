@@ -36,6 +36,16 @@ const addMarker = function(options) {
 //
 // copy the following lines and change then as needed
 // look up the lat/long and change that as well.
+
+
+addMarker({
+  name: 'Alma',
+  iconUrl: 'images/almaspic.jpg',
+  url: 'people/alma.html',
+  message: 'Hello from Long Island',
+  lat_long: [40.75, -73.52]
+});
+
 addMarker({
   name: 'Froggy',
   iconUrl: 'images/froggy.jpg',
@@ -43,12 +53,21 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
+
 addMarker({
   name: 'Robert',
   iconUrl: 'images/robert.jpg',
   url: 'people/robert.html',
   message: 'Hi I\'m Robert!',
   lat_long: [33.893791,35.501777],
+});
+
+addMarker({
+  name: 'Jessie',
+  iconUrl: 'images/jessie_anderson.jpg',
+  url: 'people/jessie_anderson.html',
+  message: 'Come visit me in Cleveland!',
+  lat_long: [41.499320,-81.694361],
 });
 
 addMarker({
@@ -65,6 +84,14 @@ addMarker({
   url: 'people/mx.html',
   message: 'Summer term is coming!',
   lat_long: [43.701958,-72.288905],
+});
+
+addMarker({
+  name: 'Luisa',
+  iconUrl: 'images/luisa.jpg',
+  url: 'people/luisa.html',
+  message: 'I was just here over break :)',
+  lat_long: [4.444676,-75.242438],
 });
 
 addMarker({
@@ -100,12 +127,13 @@ addMarker({
   lat_long: [28.6139,77.2090],
 });
 
+
 addMarker({
-  name: 'Alma',
-  iconUrl: 'images/almaspic.jpg',
-  url: 'people/alma.html',
-  message: 'Hello from Long Island',
-  lat_long: [40.75, -73.52]
+  name: 'Erin',
+  iconUrl: 'images/erin.jpg',
+  url: 'people/erin.html',
+  message: 'Come visit me in Atlanta!',
+  lat_long: [33.7490,-84.3880],
 });
 
 addMarker({
@@ -161,7 +189,15 @@ addMarker({
   url: 'people/jeanzhou.html',
   message: 'I\'m from Medfield, MA!',
   lat_long: [42.1876, -71.3065],
-})
+});
+
+addMarker({
+  name: 'Robin Jayaswal',
+  iconUrl: 'images/robin.png',
+  url: 'people/robin.html',
+  message: 'Where I\'m From',
+  lat_long: [55.6761, 12.5683],
+});
 
 addMarker({
   name: 'Rajiv',
@@ -178,6 +214,7 @@ addMarker({
   message: 'Let\'s hike Table Mountain!',
   lat_long: [-33.924869, 18.424055],
 })
+
 
 //END SECTION FOR MARKERS
 
