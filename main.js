@@ -243,11 +243,11 @@ addMarker({
 =======
 =======
 addMarker({
-  name: 'Chris',
-  iconUrl: 'images/chris.jpg',
-  url: 'people/chris.html',
-  message: 'Come visit me on the beach!',
-  lat_long: [26.699266, -80.035477],
+  name: 'Weijia',
+  iconUrl: 'images/weijia.jpg',
+  url: 'people/weijia.html',
+  message: 'Come visit me in Suzhou!',
+  lat_long: [31.299,120.5853],
 });
 >>>>>>> 183b114c79ae2de5d2f19ce37031b57c01a86a47
 
