@@ -120,6 +120,14 @@ addMarker({
   message: 'I\'m from Medfield, MA',
   lat_long: [42.1876, -71.3065],
 })
+
+addMarker({
+  name: 'Brian Francis',
+  iconUrl: 'images/brian_francis.jpg',
+  url: 'people/brianfrancis.html',
+  message: 'Home',
+  lat_long: [37.4530, 122.1817],
+});
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
