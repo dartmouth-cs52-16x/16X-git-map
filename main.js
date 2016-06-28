@@ -166,6 +166,8 @@ addMarker({
   message: 'Free Brady.',
   lat_long: [42.364506,-71.038887],
 });
+
+
 addMarker({
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
@@ -220,6 +222,7 @@ addMarker({
   message: 'brb swimming',
   lat_long: [-54.220285, 55.898438],
 })
+
 
 addMarker({
   name: 'Ross',
