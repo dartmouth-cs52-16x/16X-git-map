@@ -208,7 +208,7 @@ addMarker({
 
 addMarker({
   name: 'Rajiv',
-  iconUrl: 'images/segfault.jpg',
+  iconUrl: 'images/rajivramaiah.jpg',
   url: 'people/rajivramaiah.html',
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
