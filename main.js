@@ -31,8 +31,8 @@ const addMarker = function(options) {
 
 /* END SETUP */
 
-
-/*****************************/
+// START SECTION FOR MARKERS
+/* TODO: Add yourself to the map here! */
 //
 // copy the following lines and change then as needed
 // look up the lat/long and change that as well.
@@ -50,11 +50,6 @@ addMarker({
   message: 'Hi I\'m Robert!',
   lat_long: [33.893791,35.501777],
 });
-/****************************/
-
-
-/* TODO: Add yourself to the map here! */
-// START SECTION FOR MARKERS
 
 addMarker({
   name: 'Suman',
@@ -106,6 +101,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Alma',
+  iconUrl: 'images/almaspic.jpg',
+  url: 'people/alma.html',
+  message: 'Hello from Long Island',
+  lat_long: [40.75, -73.52]
+});
+
+addMarker({
   name: 'Virginia',
   iconUrl: 'images/virginia.jpg',
   url: 'people/virginia.html',
@@ -132,7 +135,7 @@ addMarker({
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
   url: 'people/henrywilson.html',
-  message: 'Find your beach',
+  message: 'Find your beach.',
   lat_long: [41.4901,-71.312845],
 });
 
