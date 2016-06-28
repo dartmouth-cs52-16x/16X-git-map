@@ -104,6 +104,14 @@ addMarker({
   message: 'This is where I spend my summers!',
   lat_long: [45.373615,-121.695951],
 });
+
+addMarker({
+  name: 'Jean',
+  iconUrl: 'images/jeanzhou.jpg',
+  url: 'people/jeanzhou.html',
+  message: 'I\'m from Medfield, MA',
+  lat_long: [42.1876, -71.3065],
+});
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
