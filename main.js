@@ -43,7 +43,17 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
+<<<<<<< HEAD
 
+=======
+addMarker({
+  name: 'Robert',
+  iconUrl: 'images/robert.jpg',
+  url: 'people/robert.html',
+  message: 'Hi I\'m Robert!',
+  lat_long: [33.893791,35.501777],
+});
+>>>>>>> 0a672b7130d06bfa4aefea44098862c4bf0e3799
 /****************************/
 
 
@@ -97,6 +107,11 @@ addMarker({
   url: 'people/erin.html',
   message: 'Come visit me in Atlanta!',
   lat_long: [33.7490,-84.3880],
+  name: 'Alex Beals',
+  iconUrl: 'images/alex.jpg',
+  url: 'people/alex.html',
+  message: 'This is where I spend my summers!',
+  lat_long: [45.373615,-121.695951],
 });
 //END SECTION FOR MARKERS
 
