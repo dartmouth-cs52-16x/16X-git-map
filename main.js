@@ -53,6 +53,7 @@ addMarker({
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
+
 addMarker({
   name: 'Robert',
   iconUrl: 'images/robert.jpg',
@@ -117,6 +118,13 @@ addMarker({
   lat_long: [37.2320967,-118.8578716],
 });
 
+addMarker({
+  name: 'Divya',
+  iconUrl: 'images/flower.jpg',
+  url: 'people/divya.html',
+  message: "San Jose, CA"
+  lat_long: [37.3382, 121.8863],
+});
 
 addMarker({
   name: 'Varun',
@@ -126,6 +134,14 @@ addMarker({
   lat_long: [28.6139,77.2090],
 });
 
+
+addMarker({
+  name: 'Erin',
+  iconUrl: 'images/erin.jpg',
+  url: 'people/erin.html',
+  message: 'Come visit me in Atlanta!',
+  lat_long: [33.7490,-84.3880],
+});
 
 addMarker({
   name: 'Virginia',
@@ -205,10 +221,35 @@ addMarker({
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
 })
+addMarker({
+  name: 'Kyra',
+  iconUrl: 'images/kyra.jpg',
+  url: 'people/kyra.html',
+  message: 'brb swimming',
+  lat_long: [-54.220285, 55.898438],
+})
 
+addMarker({
+  name: 'Ross',
+  iconUrl: 'images/rosspic.jpg',
+  url: 'people/rossy.html',
+  message: 'Let\'s hike Table Mountain!',
+  lat_long: [-33.924869, 18.424055],
+})
+
+<<<<<<< HEAD
 <<<<<<< HEAD
 >>>>>>> ba509088bde5bdea3f058337c46ced27febd3dee
 =======
+=======
+addMarker({
+  name: 'Chris',
+  iconUrl: 'images/chris.jpg',
+  url: 'people/chris.html',
+  message: 'Come visit me on the beach!',
+  lat_long: [26.699266, -80.035477],
+});
+>>>>>>> 183b114c79ae2de5d2f19ce37031b57c01a86a47
 
 >>>>>>> add8c2ff986c5adf680c2676fa9bffaf4d0d62d1
 //END SECTION FOR MARKERS
