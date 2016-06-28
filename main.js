@@ -118,6 +118,13 @@ addMarker({
   lat_long: [37.2320967,-118.8578716],
 });
 
+addMarker({
+  name: 'Divya',
+  iconUrl: 'images/flower.jpg',
+  url: 'people/divya.html',
+  message: "San Jose, CA"
+  lat_long: [37.3382, 121.8863],
+});
 
 addMarker({
   name: 'Varun',
@@ -205,6 +212,21 @@ addMarker({
   url: 'people/rajivramaiah.html',
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
+})
+addMarker({
+  name: 'Kyra',
+  iconUrl: 'images/kyra.jpg',
+  url: 'people/kyra.html',
+  message: 'brb swimming',
+  lat_long: [-54.220285, 55.898438],
+})
+
+addMarker({
+  name: 'Ross',
+  iconUrl: 'images/rosspic.jpg',
+  url: 'people/rossy.html',
+  message: 'Let\'s hike Table Mountain!',
+  lat_long: [-33.924869, 18.424055],
 })
 
 addMarker({
