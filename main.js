@@ -231,8 +231,7 @@ addMarker({
   url: 'people/kyra.html',
   message: 'brb swimming',
   lat_long: [-54.220285, 55.898438],
-})
-
+});
 
 addMarker({
   name: 'Brian Francis',
@@ -249,6 +248,15 @@ addMarker({
   message: 'Spent the best week of my life here!',
   lat_long: [-53.807139,-68.378906],
 });
+
+addMarker({
+  name: 'Ross',
+  iconUrl: 'images/rosspic.jpg',
+  url: 'people/rossy.html',
+  message: 'Let\'s hike Table Mountain!',
+  lat_long: [-33.924869, 18.424055],
+});
+
 
 //END SECTION FOR MARKERS
 
