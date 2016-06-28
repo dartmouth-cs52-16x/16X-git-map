@@ -264,6 +264,14 @@ addMarker({
   lat_long: [41.233,-70.499],
 });
 
+addMarker({
+  name: 'zuff',
+  iconUrl: 'images/zuff.jpg',
+  url: 'people/zuff.html',
+  message: 'i miss my cat',
+  lat_long: [39.9526, -75.1652],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
