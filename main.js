@@ -31,8 +31,8 @@ const addMarker = function(options) {
 
 /* END SETUP */
 
-
-/*****************************/
+// START SECTION FOR MARKERS
+/* TODO: Add yourself to the map here! */
 //
 // copy the following lines and change then as needed
 // look up the lat/long and change that as well.
@@ -50,11 +50,6 @@ addMarker({
   message: 'Hi I\'m Robert!',
   lat_long: [33.893791,35.501777],
 });
-/****************************/
-
-
-/* TODO: Add yourself to the map here! */
-// START SECTION FOR MARKERS
 
 addMarker({
   name: 'Suman',
@@ -81,6 +76,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Brophy',
+  iconUrl: 'images/brophy.jpg',
+  url: 'people/brophy.html',
+  message: 'I have a new puppy named Buck!',
+  lat_long: [40.712784, -74.005941],
+});
+
+addMarker({
   name: 'Tim',
   iconUrl: 'images/tim_round.jpg',
   url: 'people/tim.html',
@@ -98,6 +101,22 @@ addMarker({
 });
 
 addMarker({
+  name: 'Alma',
+  iconUrl: 'images/almaspic.jpg',
+  url: 'people/alma.html',
+  message: 'Hello from Long Island',
+  lat_long: [40.75, -73.52]
+});
+
+addMarker({
+  name: 'Virginia',
+  iconUrl: 'images/virginia.jpg',
+  url: 'people/virginia.html',
+  message: 'Amsterdam is a beautiful place!',
+  lat_long: [52.3702,4.8952],
+});
+
+addMarker({
   name: 'Alex Beals',
   iconUrl: 'images/alex.jpg',
   url: 'people/alex.html',
@@ -106,14 +125,13 @@ addMarker({
 });
 
 addMarker({
-<<<<<<< HEAD
   name: 'Josh Kerber',
   iconUrl: 'images/bsp.jpg',
   url: 'people/joshkerber.html',
   message: 'Free Brady.',
   lat_long: [42.364506,-71.038887],
 });
-=======
+addMarker({
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
   url: 'people/henrywilson.html',
@@ -130,14 +148,29 @@ addMarker({
 });
 
 addMarker({
+  name: 'Emma',
+  iconUrl: 'images/emma.jpg',
+  url: 'people/emma.html',
+  message: 'I was born in Miami',
+  lat_long: [25.76,-80.19],
+});
+
+addMarker({
   name: 'Jean',
   iconUrl: 'images/jeanzhou.jpg',
   url: 'people/jeanzhou.html',
-  message: 'I\'m from Medfield, MA',
+  message: 'I\'m from Medfield, MA!',
   lat_long: [42.1876, -71.3065],
 })
 
->>>>>>> ba509088bde5bdea3f058337c46ced27febd3dee
+addMarker({
+  name: 'Rajiv',
+  iconUrl: 'images/segfault.jpg',
+  url: 'people/rajivramaiah.html',
+  message: 'Hello it is me, Rajiv!',
+  lat_long: [18.7669, 46.8691],
+})
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
