@@ -144,6 +144,14 @@ addMarker({
   lat_long: [42.1876, -71.3065],
 })
 
+addMarker({
+  name: 'Rajiv',
+  iconUrl: 'images/segfault.jpg',
+  url: 'people/rajivramaiah.html',
+  message: 'Hello it is me, Rajiv!',
+  lat_long: [18.7669, 46.8691],
+})
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
