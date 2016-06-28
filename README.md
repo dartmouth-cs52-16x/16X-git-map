@@ -101,7 +101,7 @@ To view what we currently have the easiest way to start a local webserver is to 
 🚀 To run python based webserver in 💻:
 ```bash
 cd 16X-git-map # just make sure you are in the same dir as index.html
-python -m SimpleHTTPServer 9000 &
+python -m SimpleHTTPServer 9000
 ```
 
 ![](docs/imgs/simpleserver.png)<br>
