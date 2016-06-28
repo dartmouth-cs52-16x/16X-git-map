@@ -81,6 +81,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Brophy',
+  iconUrl: 'images/brophy.jpg',
+  url: 'people/brophy.html',
+  message: 'I have a new puppy named Buck!',
+  lat_long: [40.712784, -74.005941],
+});
+
+addMarker({
   name: 'Tim',
   iconUrl: 'images/tim_round.jpg',
   url: 'people/tim.html',
