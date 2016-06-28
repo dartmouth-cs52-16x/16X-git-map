@@ -79,6 +79,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Ahsan',
+  iconUrl: 'images/ahsan.jpg',
+  url: 'people/ahsan.html',
+  message: 'antarctica',
+  lat_long: [-82.862752,135.000000],
+});
+
+addMarker({
   name: 'Xing',
   iconUrl: 'images/Xing.jpg',
   url: 'people/mx.html',
@@ -166,6 +174,8 @@ addMarker({
   message: 'Free Brady.',
   lat_long: [42.364506,-71.038887],
 });
+
+
 addMarker({
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
@@ -208,7 +218,7 @@ addMarker({
 
 addMarker({
   name: 'Rajiv',
-  iconUrl: 'images/segfault.jpg',
+  iconUrl: 'images/rajivramaiah.jpg',
   url: 'people/rajivramaiah.html',
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
@@ -220,6 +230,7 @@ addMarker({
   message: 'brb swimming',
   lat_long: [-54.220285, 55.898438],
 })
+
 
 addMarker({
   name: 'Ross',
