@@ -236,7 +236,7 @@ addMarker({
   name: 'Brian Francis',
   iconUrl: 'images/brian_francis.jpg',
   url: 'people/brianfrancis.html',
-  message: 'Home',
+  message: 'Home in Menlo parj',
   lat_long: [37.4530, -122.1817],
 });
 
