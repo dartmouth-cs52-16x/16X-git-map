@@ -79,6 +79,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Ahsan',
+  iconUrl: 'images/ahsan.jpg',
+  url: 'people/ahsan.html',
+  message: 'antarctica',
+  lat_long: [-82.862752,135.000000],
+});
+
+addMarker({
   name: 'Xing',
   iconUrl: 'images/Xing.jpg',
   url: 'people/mx.html',
@@ -160,10 +168,6 @@ addMarker({
 });
 
 addMarker({
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-=======
   name: 'Josh Kerber',
   iconUrl: 'images/bsp.jpg',
   url: 'people/joshkerber.html',
@@ -173,7 +177,6 @@ addMarker({
 
 
 addMarker({
->>>>>>> add8c2ff986c5adf680c2676fa9bffaf4d0d62d1
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
   url: 'people/henrywilson.html',
@@ -182,15 +185,12 @@ addMarker({
 });
 
 addMarker({
->>>>>>> ba509088bde5bdea3f058337c46ced27febd3dee
   name: 'Manmeet Gujral',
   iconUrl: 'images/manmeet.jpg',
   url: 'people/manmeet.html',
   message: 'This is home!',
   lat_long: [42.704801,-73.754842],
 });
-<<<<<<< HEAD
-=======
 
 addMarker({
   name: 'Emma',
@@ -240,11 +240,14 @@ addMarker({
   lat_long: [-33.924869, 18.424055],
 })
 
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> ba509088bde5bdea3f058337c46ced27febd3dee
-=======
-=======
+addMarker({
+  name: 'Matthew',
+  iconUrl: 'images/matthewgoldstein.jpg',
+  url: 'people/matthewgoldstein.html',
+  message: 'where I am is where I am at any given moment #deep',
+  lat_long: [26.6862971,52.3974836],
+});
+
 addMarker({
   name: 'Weijia',
   iconUrl: 'images/weijia.jpg',
@@ -252,9 +255,6 @@ addMarker({
   message: 'Come visit me in Suzhou!',
   lat_long: [31.299,120.5853],
 });
->>>>>>> 183b114c79ae2de5d2f19ce37031b57c01a86a47
-
->>>>>>> add8c2ff986c5adf680c2676fa9bffaf4d0d62d1
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
