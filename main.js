@@ -112,6 +112,14 @@ addMarker({
   message: 'This is home!',
   lat_long: [42.704801,-73.754842],
 });
+
+addMarker({
+  name: 'Robin Jayaswal',
+  iconUrl: 'images/robin.png',
+  url: 'people/robin.html',
+  message: 'Where I\'m From',
+  lat_long: [55.6761, 12.5683],
+});
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
