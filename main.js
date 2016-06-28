@@ -135,7 +135,7 @@ addMarker({
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
   url: 'people/henrywilson.html',
-  message: 'Find your beach',
+  message: 'Find your beach.',
   lat_long: [41.4901,-71.312845],
 });
 
