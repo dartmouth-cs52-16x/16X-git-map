@@ -206,6 +206,13 @@ addMarker({
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
 })
+addMarker({
+  name: 'Kyra',
+  iconUrl: 'images/kyra.jpg',
+  url: 'people/kyra.html',
+  message: 'brb swimming',
+  lat_long: [-54.220285, 55.898438],
+})
 
 
 //END SECTION FOR MARKERS
