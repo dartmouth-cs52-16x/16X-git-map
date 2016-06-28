@@ -241,7 +241,6 @@ addMarker({
 })
 
 addMarker({
-<<<<<<< HEAD
   name: 'Matthew',
   iconUrl: 'images/matthewgoldstein.jpg',
   url: 'people/matthewgoldstein.html',
@@ -249,14 +248,13 @@ addMarker({
   lat_long: [26.6862971,52.3974836],
 });
 
-=======
+addMarker({
   name: 'Weijia',
   iconUrl: 'images/weijia.jpg',
   url: 'people/weijia.html',
   message: 'Come visit me in Suzhou!',
   lat_long: [31.299,120.5853],
 });
->>>>>>> cb4d13d54cf8d13f60bac7dbf5b369597e7edcdd
 
 //END SECTION FOR MARKERS
 
