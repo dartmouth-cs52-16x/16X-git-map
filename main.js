@@ -106,6 +106,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Virginia',
+  iconUrl: 'images/virginia.jpg',
+  url: 'people/virginia.html',
+  message: 'Amsterdam is a beautiful place!',
+  lat_long: [52.3702,4.8952],
+});
+
+addMarker({
   name: 'Alex Beals',
   iconUrl: 'images/alex.jpg',
   url: 'people/alex.html',
@@ -114,14 +122,13 @@ addMarker({
 });
 
 addMarker({
-<<<<<<< HEAD
   name: 'Josh Kerber',
   iconUrl: 'images/bsp.jpg',
   url: 'people/joshkerber.html',
   message: 'Free Brady.',
   lat_long: [42.364506,-71.038887],
 });
-=======
+addMarker({
   name: 'Henry Wilson',
   iconUrl: 'images/henrywilson.jpg',
   url: 'people/henrywilson.html',
@@ -145,7 +152,6 @@ addMarker({
   lat_long: [42.1876, -71.3065],
 })
 
->>>>>>> ba509088bde5bdea3f058337c46ced27febd3dee
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
