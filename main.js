@@ -89,6 +89,14 @@ addMarker({
   message: 'Come visit me in Delhi',
   lat_long: [28.6139,77.2090],
 });
+
+addMarker({
+  name: 'Virginia',
+  iconUrl: 'images/virginia.jpg',
+  url: 'people/virginia.html',
+  message: 'Amsterdam is a beautiful place!',
+  lat_long: [52.3702,4.8952],
+});
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
