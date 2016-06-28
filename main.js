@@ -187,7 +187,7 @@ addMarker({
 addMarker({
   name: 'James Edwards',
   iconUrl: 'images/james_edwards.jpg',
-  url: 'people/James.html',
+  url: 'people/james.html',
   message: 'I am from Santa Monica!!',
   lat_long: [34.016040,-118.450954],
 });
