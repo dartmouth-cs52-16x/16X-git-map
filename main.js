@@ -152,7 +152,6 @@ addMarker({
   message: 'Free Brady.',
   lat_long: [42.364506,-71.038887],
 });
-
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
