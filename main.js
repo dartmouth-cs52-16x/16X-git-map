@@ -110,7 +110,7 @@ addMarker({
   iconUrl: 'images/larissa.jpg',
   url: 'people/larissa.html',
   message: 'Where I live!',
-  lat_long: [42.0,80.0],
+  lat_long: [42.129224,-80.085059],
 });
 
 addMarker({
