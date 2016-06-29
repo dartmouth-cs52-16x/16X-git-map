@@ -144,6 +144,15 @@ addMarker({
   lat_long: [52.3702,4.8952],
 });
 
+
+addMarker({
+  name: 'Josh Kerber',
+  iconUrl: 'images/bsp.jpg',
+  url: 'people/joshkerber.html',
+  message: 'Free Brady.',
+  lat_long: [42.364506,-71.038887],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
