@@ -144,10 +144,10 @@ addMarker({
 
 addMarker({
   name: 'Divya',
-  iconUrl: 'images/flower.jpg',
+  iconUrl: 'images/divya.jpg',
   url: 'people/divya.html',
-  message: "San Jose, CA",
-  lat_long: [37.3382, 121.8863],
+  message: "Home in San Jose!",
+  lat_long: [37.3382, -121.8863],
 });
 
 addMarker({
@@ -269,7 +269,7 @@ addMarker({
   name: 'Ross',
   iconUrl: 'images/rosspic.jpg',
   url: 'people/rossy.html',
-  message: 'Let\'s hike Table Mountain!',
+  message: 'Let\'s hike Table Mountain!!',
   lat_long: [-33.924869, 18.424055],
 });
 
@@ -277,7 +277,7 @@ addMarker({
   name: 'Devina',
   iconUrl: 'images/devina.jpg',
   url: 'people/devina.html',
-  message: 'Seattle: home of Starbucks!',
+  message: 'Seattle: Starbucks and Seahawks',
   lat_long: [47.5327,-122.2301],
 });
 
@@ -303,6 +303,14 @@ addMarker({
   url: 'people/ianbateman.html',
   message: 'I am from Manasquan, NJ',
   lat_long: [41.233,-70.499],
+});
+
+addMarker({
+  name: 'Larissa',
+  iconUrl: 'images/larissa1.jpg',
+  url: 'people/larissa.html',
+  message: 'From Erie,PA',
+  lat_long: [42.129224,-80.085059],
 });
 
 addMarker({
