@@ -144,8 +144,8 @@ addMarker({
 
 addMarker({
   name: 'Divya',
-  iconUrl: 'images/divya.jpg',
-  url: 'people/divya.html',
+  iconUrl: 'images/divya2.jpg',
+  url: 'people/divya2.html',
   message: "Home in San Jose!",
   lat_long: [37.3382, -121.8863],
 });
