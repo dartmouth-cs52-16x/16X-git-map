@@ -3,7 +3,11 @@
   <head>
     <title>ahsan</title>
 
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
     <style>
+
       html, body {
         background-color: white;
         height: 100%;
@@ -19,14 +23,15 @@
       .main_heading {
         text-align: center;
         min-height: 100%;
-        background-color: black;
+        background-color: #000080;
         color: white;
-        font-variant: small-caps;
-        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        font-variant: normal;
+        /*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+        font-family: 'Source Code Pro';
         font-weight: 200;
         /*http://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container*/
         font-size: 15em;
-        font-size: 20vw;
+        font-size: 18vw;
         margin: 0px;
         border-top-style: solid;
         border-top-width: medium;
@@ -55,7 +60,7 @@
       }
 
       #footer {
-        font-family: Georgia, Serif;
+        font-family: 'Source Code Pro';
         background-color: black;
         line-height: 1.5em;
         text-align: center;
@@ -85,7 +90,8 @@
       }
 
       .sub_headings {
-        font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+        font-family: Orbitron;
+        background-color: white;
         font-size: 2em;
         line-height: 1.5em;
         font-weight: lighter;
@@ -96,6 +102,7 @@
         margin-left: 7px;
         padding-left: 30px;
         clear: left;
+        color: black;
       }
 
       .text_style {
@@ -126,7 +133,7 @@
       }
 
       .personal_img_small_container {
-        height:48px;
+        height:41px;
         width: auto;
       }
 
@@ -159,9 +166,10 @@
         border-bottom-width: thin;
       }
       .nav_bar_items {
-        font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+        /*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+        font-family: 'Orbitron';
         float: left;
-        font-variant: small-caps;
+        font-variant: normal;
       }
 
       .nav_bar_items a {
@@ -169,6 +177,7 @@
         color: white;
         text-align: center;
         padding: 14px 16px;
+        padding-bottom: 10px;
         text-decoration: none;
       }
 
@@ -222,13 +231,15 @@
           }, 500);
           return false;
         });
-        $("#nav_lorem_ipsum").click(function() {
-          $('html, body').animate({
-            scrollTop: $( "#lorem_ipsum" ).offset().top - 50
-          }, 500);
-          return false;
-        });
       });
+
+      // needed the underscore to blink, code taken from following link:
+      // http://www.computerhope.com/issues/ch001651.htm
+      function blinker() {
+      	$('.blinking').fadeOut(650);
+      	$('.blinking').fadeIn(650);
+      }
+      setInterval(blinker, 1350);
     </script>
   </head>
 
@@ -238,7 +249,6 @@
       <li class="nav_bar_items" id="nav_home"><a href=#home>Home</a></li>
       <li class="nav_bar_items" id="nav_this_website"><a href=#this_website>This Website</a></li>
       <li class="nav_bar_items" id="nav_contact"><a href=#contact>Contact</a></li>
-      <li class="nav_bar_items" id="nav_lorem_ipsum"><a href=#lorem_ipsum>Lorem Ipsum</a></li>
       <li class="nav_bar_items" id="nav_about"><a href=#about>About</a></li>
       <li class="nav_bar_items" style="float:right">
         <div class="personal_img_small_container">
@@ -246,8 +256,8 @@
         </div>
       </li>
     </ul>
-    <h1 class="main_heading" id="home">Ahsan<br>Azim</h1>
-    <h2 class="sub_headings" id="about">About me</h2>
+    <h1 class="main_heading" id="home">Ahsan<br>Azim<span class="blinking">|</span></h1>
+    <h2 class="sub_headings" id="about">About me<span class="blinking">_</span></h2>
     <div class="personal_img_container">
       <img id="personal_pic" src="https://raw.githubusercontent.com/ahsanazim/ahsanazim.me/gh-pages/official_photo.jpg">
     </div>
@@ -266,12 +276,12 @@
         <li><em>Government</em> : Comparative Politics</li>
       </ul>
     </div>
-    <h2 class="sub_headings" id="this_website">This website</h2>
+    <h2 class="sub_headings" id="this_website">This website<span class="blinking">_</span></h2>
     <div id="this_website_proxy"></div>
     <div id="text_info">
       <p id="cs_info">I created this website for my web dev class at
         Dartmouth. I've never done web development before, so it currently only uses
-        html and some rudimentary CSS. I'm planning to add some javascript too!</p>
+        html, CSS, and some pretty rudimentary javascript.</p>
       <p id="future_plans"> Later, once the course is over, I may adapt this website to my own needs.
         I'm not sure what I'll have up there - maybe descriptions of various
         personal projects? <br><br> For now, here's a
@@ -279,7 +289,7 @@
         to my linkedin page! It has a bit more detail on my experiences and interests.
       </p>
     </div>
-    <h2 class="sub_headings" id="contact">Contacting me</h2>
+    <h2 class="sub_headings" id="contact">Contacting me<span class="blinking">_</span></h2>
     <div id="contact_info">
       <p>
         I'm available on:
@@ -287,54 +297,6 @@
           <li>email (<scan class="blue">ahsan.azim.18@dartmouth.edu</scan>) </li>
           <li>phone (XXX-XXX-1255),</li>
           <li>and also through my aforementioned linkedin page!</li>
-      </p>
-    </div>
-    <h2 class="sub_headings" id="lorem_ipsum">Lorem Ipsum</h2>
-    <!-- Lorem ipsum generated from http://lorem-ipsum.perbang.dk -->
-    <div id="lorem_ipsum_text">
-      <p>
-        Lorem ipsum dolor sit amet, ut tincidunt, eget et, amet sapien orci
-        gravida sit cras, laoreet mauris porttitor, dolor adipiscing ligula
-        suscipit. Hendrerit gravida praesent aliquet ultrices sodales nam, cursus
-        tincidunt tellus. Proin donec ligula, a suscipit curabitur, feugiat arcu
-        erat aliquid elementum pede, erat pede lorem. Erat vestibulum eros lectus
-        blandit praesent, pretium hendrerit arcu scelerisque duis vel non. Magna
-        mollis imperdiet donec eget. Leo diam tempus non, ultrices sequi,
-        ultricies wisi risus, pede et est lacus. Nullam sapien proin saepe
-        tincidunt at, amet ipsum sollicitudin placerat aenean pellentesque amet,
-        condimentum id egestas cum, quis morbi in. Quis sit sit, id nisl dolor
-        enim auctor sit aenean.
-      </p>
-      <p>
-        Sit dui a. Eum tristique et in semper. Faucibus et nisl eu etiam, tempus
-        dolor eu orci eu est nunc, turpis cum et metus at sed pretium, nunc
-        vestibulum est. Morbi amet. Rutrum consectetuer sollicitudin porttitor
-        egestas eveniet pede, pellentesque adipiscing ligula dapibus, scelerisque
-        viverra suspendisse nec. Mollis sed mauris sed semper tellus elit, eu
-        aenean, velit odio commodo euismod risus augue fringilla, suspendisse
-        sapien fermentum. Lacinia lacus ut ut. Luctus scelerisque, praesent erat
-        pede eget nunc, vehicula sed. Id varius vestibulum duis, vel vitae nec in
-        semper lorem, wisi velit in consectetuer, fusce at tincidunt libero.
-        Tincidunt laoreet platea, vestibulum ullamcorper nam non purus rutrum
-        platea. Metus nec ac quam aenean amet ipsum, amet sit vel, libero eget
-        donec, quis lectus, porta arcu lacus pellentesque. Nam neque cum, risus
-        ut gravida lorem aliquam, ut sit, sit orci, hendrerit etiam nec magnis.
-      </p>
-      <p>
-        Dignissim rutrum sollicitudin, rutrum nullam fringilla. Cursus amet
-        porta, porta eu vel ut viverra, ac urna venenatis a sodales, tellus class
-        lectus risus mauris viverra eu, pede wisi. Wisi eros duis est orci
-        molestie, mauris sed. Sagittis metus condimentum tristique, mauris egestas
-        in sit orci qui. Sed nostra at nec sollicitudin purus. Ligula nunc mauris
-        cursus mattis et arcu, luctus arcu viverra purus.
-      </p>
-      <p>
-        Ad vitae congue dicta, orci lacus pellentesque, at vel ipsum phasellus
-        nunc faucibus, torquent dui nostra, nam in. Vitae tortor nunc, amet sit,
-        felis nunc tortor. Vestibulum lacus viverra hendrerit sapien enim. Etiam
-        sed cursus amet odio. Ut eros nostra laoreet vitae, tincidunt at odio
-        libero sollicitudin, lobortis tristique et enim ac, purus sit tristique
-        in dictumst eros.
       </p>
     </div>
     <div id="footer_div">
