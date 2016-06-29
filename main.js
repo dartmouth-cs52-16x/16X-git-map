@@ -129,6 +129,22 @@ addMarker({
 });
 
 addMarker({
+  name: 'Josh Kerber',
+  iconUrl: 'images/bsp.jpg',
+  url: 'people/joshkerber.html',
+  message: 'Free Brady.',
+  lat_long: [42.364506,-71.038887],
+});
+
+addMarker({
+  name: 'Henry Wilson',
+  iconUrl: 'images/henrywilson.jpg',
+  url: 'people/henrywilson.html',
+  message: 'Find your beach.',
+  lat_long: [41.4901,-71.312845],
+});
+
+addMarker({
   name: 'Manmeet Gujral',
   iconUrl: 'images/manmeet.jpg',
   url: 'people/manmeet.html',
