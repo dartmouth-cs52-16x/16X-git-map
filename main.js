@@ -63,6 +63,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Mau',
+  iconUrl: 'images/mauricioesquivel.jpg',
+  url: 'people/mauesrog.html',
+  message: 'My favorite city',
+  lat_long: [19.432608,-99.133208],
+});
+
+addMarker({
   name: 'Jessie',
   iconUrl: 'images/jessie_anderson.jpg',
   url: 'people/jessie_anderson.html',
@@ -193,6 +201,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'James Edwards',
+  iconUrl: 'images/james_edwards.jpg',
+  url: 'people/james.html',
+  message: 'I am from Santa Monica!!',
+  lat_long: [34.016040,-118.450954],
+});
+
+addMarker({
   name: 'Manmeet Gujral',
   iconUrl: 'images/manmeet.jpg',
   url: 'people/manmeet.html',
@@ -230,7 +246,7 @@ addMarker({
   url: 'people/rajivramaiah.html',
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
-})
+});
 
 addMarker({
   name: 'Brian Francis',
@@ -239,22 +255,31 @@ addMarker({
   message: 'Home in Menlo parj',
   lat_long: [37.4530, -122.1817],
 });
+
 addMarker({
   name: 'Kyra',
   iconUrl: 'images/kyra.jpg',
   url: 'people/kyra.html',
   message: 'brb swimming',
   lat_long: [-54.220285, 55.898438],
-})
+});
 
 
 addMarker({
   name: 'Ross',
   iconUrl: 'images/rosspic.jpg',
   url: 'people/rossy.html',
-  message: 'Let\'s hike Table Mountain!',
+  message: 'Let\'s hike Table Mountain!!',
   lat_long: [-33.924869, 18.424055],
-})
+});
+
+addMarker({
+  name: 'Devina',
+  iconUrl: 'images/devina.jpg',
+  url: 'people/devina.html',
+  message: 'Seattle: Starbucks and Seahawks',
+  lat_long: [47.5327,-122.2301],
+});
 
 addMarker({
   name: 'Matthew',
@@ -270,6 +295,62 @@ addMarker({
   url: 'people/weijia.html',
   message: 'Come visit me in Suzhou!',
   lat_long: [31.299,120.5853],
+});
+
+addMarker({
+  name: 'Ian',
+  iconUrl: 'images/ianbateman.jpg',
+  url: 'people/ianbateman.html',
+  message: 'I am from Manasquan, NJ',
+  lat_long: [41.233,-70.499],
+});
+
+addMarker({
+  name: 'Larissa',
+  iconUrl: 'images/larissa1.jpg',
+  url: 'people/larissa.html',
+  message: 'From Erie,PA',
+  lat_long: [42.129224,-80.085059],
+});
+
+addMarker({
+  name: 'zuff',
+  iconUrl: 'images/zuff.jpg',
+  url: 'people/zuff.html',
+  message: 'i miss my cat',
+  lat_long: [39.9526, -75.1652],
+});
+
+addMarker({
+  name: 'Xinwei',
+  iconUrl: 'images/xjiang.jpg',
+  url: 'people/xjiang.html',
+  message: 'Hello it is me!',
+  lat_long: [31.3407,121.4753],
+});
+
+addMarker({
+  name: 'Chris',
+  iconUrl: 'images/chris.jpg',
+  url: 'people/chris.html',
+  message: 'Come chill on the beach',
+  lat_long: [26.699266, -80.035477],
+});
+
+addMarker({
+  name: 'Sydni',
+  iconUrl: 'images/sydnitopper.jpg',
+  url: 'people/sydni.html',
+  message: 'Spent the best week of my life here!',
+  lat_long: [-53.807139,-68.378906],
+});
+
+addMarker({
+  name: 'Adam',
+  iconUrl: 'images/adam.jpg',
+  url: 'people/adam.html',
+  message: 'This is where I took this picture!',
+  lat_long: [-13.531950,-71.967463],
 });
 
 //END SECTION FOR MARKERS
