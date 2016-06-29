@@ -2,10 +2,68 @@
 <html>
   <head>
     <title>Mauricio Esquivel Rogel</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   </head>
   <body>
-    <div style="text-align: center;">
-      <img src="../images/mauesrog.jpg">
+    <div>
+      <img src="../images/mauesrog.jpg" class="frontImage">
+      <img src="../images/mauricioFriends2.jpg" class="backImage">
+      <img src="../images/mauricioFriends3.jpg" class="frontImage" id="last">
+      <h1 id="floating">Mauricio</h1>
+      <h1>Esquivel Rogel '18</h1>
     </div>
   </body>
+  <style>
+    body {
+      color: #FFF;
+      text-align: center;
+      font-size: 70px;
+      margin:0 0;
+      background-color: #000;
+    }
+    img.frontImage {
+      position: relative;
+      z-index: 10;
+    }
+    img.backImage {
+      z-index: 1;
+      opacity: 0.4;
+      position: relative;
+    }
+    h1 {
+      position: relative;
+      border: 0 0;
+      top: -525px;
+    }
+    h1#floating {
+      position: absolute;
+      font-size: 240px;
+      top: 900px;
+      right: 200px;
+    }
+  </style>
+  <script>
+    try {
+      $('img').css('width', $(window).width());
+      $('#last').css('top', '-500px');
+
+      $('body, div').css('height', $("#floating").offset().top - 700);
+
+      console.log($("#floating").offset());
+
+      $(window).scroll(function(){
+        try {
+          $('.backImage').css('top', -($(this).scrollTop()/3)+"px");
+
+        } catch(err){
+          console.error(err);
+        }
+      });
+
+    } catch(err){
+      console.error(err);
+    }
+    // var firstImage = document.getElementById('firstImage');
+    // firstImage.style.width = window.innerWidth + "px";
+  </script>
 </html>
