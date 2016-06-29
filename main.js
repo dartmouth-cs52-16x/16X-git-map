@@ -113,6 +113,7 @@ addMarker({
 });
 
 addMarker({
+<<<<<<< 7e9c04b87347cb07807378273980ee22023cae9f
   name: 'Alex Beals',
   iconUrl: 'images/alex.jpg',
   url: 'people/alex.html',
@@ -159,6 +160,14 @@ addMarker({
   url: 'people/robin.html',
   message: 'Where I\'m From',
   lat_long: [55.6761, 12.5683],
+});
+
+addMarker({
+  name: 'Alma',
+  iconUrl: 'images/almaspic.jpg',
+  url: 'people/alma.html',
+  message: 'Hello from Long Island',
+  lat_long: [40.75, -73.52]
 });
 //END SECTION FOR MARKERS
 
