@@ -288,6 +288,22 @@ addMarker({
   lat_long: [31.299,120.5853],
 });
 
+addMarker({
+  name: 'Ian',
+  iconUrl: 'images/ianbateman.jpg',
+  url: 'people/ianbateman.html',
+  message: 'I am from Manasquan, NJ',
+  lat_long: [41.233,-70.499],
+});
+
+addMarker({
+  name: 'zuff',
+  iconUrl: 'images/zuff.jpg',
+  url: 'people/zuff.html',
+  message: 'i miss my cat',
+  lat_long: [39.9526, -75.1652],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
