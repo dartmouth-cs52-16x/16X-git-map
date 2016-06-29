@@ -321,6 +321,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Larissa',
+  iconUrl: 'images/larissa.jpg',
+  url: 'people/larissa.html',
+  message: 'From Erie,PA',
+  lat_long: [42.129224,-80.085059],
+});
+
+addMarker({
   name: 'zuff',
   iconUrl: 'images/zuff.jpg',
   url: 'people/zuff.html',
