@@ -329,6 +329,14 @@ addMarker({
   lat_long: [-53.807139,-68.378906],
 });
 
+addMarker({
+  name: 'Adam',
+  iconUrl: 'images/adam.jpg',
+  url: 'people/adam.html',
+  message: 'This is where I took this picture!',
+  lat_long: [-13.531950,-71.967463],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
