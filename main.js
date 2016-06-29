@@ -161,14 +161,6 @@ addMarker({
 });
 
 addMarker({
-  name: 'Larissa Chen',
-  iconUrl: 'images/larissa.jpg',
-  url: 'people/larissa.html',
-  message: 'Where I live!',
-  lat_long: [42.129224,-80.085059],
-});
-
-addMarker({
   name: 'Josh Kerber',
   iconUrl: 'images/bsp.jpg',
   url: 'people/joshkerber.html',
@@ -237,7 +229,6 @@ addMarker({
   iconUrl: 'images/rajivramaiah.jpg',
   url: 'people/rajivramaiah.html',
   message: 'Hello it is me, Rajiv!',
-<<<<<<< beb6b08e1eb8ad43662a9ab405981e534ba3bf11
   lat_long: [18.7669, 46.8691],
 });
 
@@ -247,9 +238,6 @@ addMarker({
   url: 'people/kyra.html',
   message: 'brb swimming',
   lat_long: [-54.220285, 55.898438],
-=======
-  lat_long: [33.893791,35.501777],
->>>>>>> Fixing merge
 });
 
 addMarker({
@@ -261,22 +249,21 @@ addMarker({
 });
 
 addMarker({
-<<<<<<< beb6b08e1eb8ad43662a9ab405981e534ba3bf11
+
   name: 'Sydni',
   iconUrl: 'images/sydnitopper.jpg',
   url: 'people/sydni.html',
   message: 'Spent the best week of my life here!',
   lat_long: [-53.807139,-68.378906],
 });
-=======
+
+addMarker({
   name: 'Kyra',
   iconUrl: 'images/kyra.jpg',
   url: 'people/kyra.html',
   message: 'brb swimming',
   lat_long: [-54.220285, 55.898438],
 });
-
->>>>>>> Fixing merge
 
 addMarker({
   name: 'Ross',
@@ -287,8 +274,6 @@ addMarker({
 });
 
 addMarker({
-<<<<<<< beb6b08e1eb8ad43662a9ab405981e534ba3bf11
-=======
   name: 'Devina',
   iconUrl: 'images/devina.jpg',
   url: 'people/devina.html',
@@ -296,7 +281,7 @@ addMarker({
   lat_long: [47.5327,-122.2301],
 });
 
->>>>>>> Fixing merge
+addMarker({
   name: 'Matthew',
   iconUrl: 'images/matthewgoldstein.jpg',
   url: 'people/matthewgoldstein.html',
@@ -353,27 +338,11 @@ addMarker({
 });
 
 addMarker({
-  name: 'Sydni',
-  iconUrl: 'images/sydnitopper.jpg',
-  url: 'people/sydni.html',
-  message: 'Spent the best week of my life here!',
-  lat_long: [-53.807139,-68.378906],
-});
-
-addMarker({
   name: 'Adam',
   iconUrl: 'images/adam.jpg',
   url: 'people/adam.html',
   message: 'This is where I took this picture!',
   lat_long: [-13.531950,-71.967463],
-});
-
-addMarker({
-  name: 'Devina',
-  iconUrl: 'images/devina.jpg',
-  url: 'people/devina.html',
-  message: 'Seattle: home of Starbucks!',
-  lat_long: [47.5327,-122.2301],
 });
 
 //END SECTION FOR MARKERS
