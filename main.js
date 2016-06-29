@@ -232,6 +232,7 @@ addMarker({
 });
 
 addMarker({
+<<<<<<< e6982c9c88d51aa7768f3afa197f258d156e18e5
   name: 'Jean',
   iconUrl: 'images/jeanzhou.jpg',
   url: 'people/jeanzhou.html',
@@ -253,6 +254,13 @@ addMarker({
   url: 'people/sydni.html',
   message: 'Spent the best week of my life here!',
   lat_long: [-53.807139,-68.378906],
+=======
+  name: 'Chris',
+  iconUrl: 'images/chris.jpg',
+  url: 'people/chris.html',
+  message: 'Come visit me on the beach!',
+  lat_long: [26.699266, -80.035477],
+>>>>>>> fixed image size and added location
 });
 
 >>>>>>> added myself to the map
