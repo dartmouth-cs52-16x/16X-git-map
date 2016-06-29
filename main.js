@@ -353,6 +353,14 @@ addMarker({
   lat_long: [-13.531950,-71.967463],
 });
 
+addMarker({
+  name: 'Ben',
+  iconUrl: 'images/BenCooper.jpg',
+  url: 'people/BenCooper.html',
+  message: 'This is my favorite place to be in the summer!!',
+  lat_long: [41.349623, -70.514041],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
