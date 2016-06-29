@@ -136,6 +136,14 @@ addMarker({
   lat_long: [42.704801,-73.754842],
 });
 
+addMarker({
+  name: 'Virginia',
+  iconUrl: 'images/virginia.jpg',
+  url: 'people/virginia.html',
+  message: 'Amsterdam is a beautiful place!',
+  lat_long: [52.3702,4.8952],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
