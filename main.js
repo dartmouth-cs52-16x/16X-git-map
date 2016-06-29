@@ -216,7 +216,6 @@ addMarker({
   message: 'Home',
   lat_long: [37.4530, 122.1817],
 });
-
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
