@@ -281,6 +281,7 @@ addMarker({
   lat_long: [47.5327,-122.2301],
 });
 
+addMarker({
   name: 'Matthew',
   iconUrl: 'images/matthewgoldstein.jpg',
   url: 'people/matthewgoldstein.html',
