@@ -269,7 +269,7 @@ addMarker({
   name: 'Ross',
   iconUrl: 'images/rosspic.jpg',
   url: 'people/rossy.html',
-  message: 'Let\'s hike Table Mountain!',
+  message: 'Let\'s hike Table Mountain!!',
   lat_long: [-33.924869, 18.424055],
 });
 
