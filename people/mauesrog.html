@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Mauricio Esquivel Rogel</title>
+    <link href='https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope' rel='stylesheet' type='text/css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
   </head>
   <body>
@@ -11,6 +12,7 @@
       <img src="../images/mauricioFriends3.jpg" class="frontImage" id="last">
       <h1 id="floating">Mauricio</h1>
       <h1>Esquivel Rogel '18</h1>
+      <h1 id="scroll">Scroll down!</h1>
     </div>
   </body>
   <style>
@@ -35,25 +37,34 @@
       border: 0 0;
       top: -525px;
     }
+    h1#scroll{
+      position: relative;
+      text-align: right;
+      top: -3400px;
+      right: 100px;
+      z-index: 15;
+      font-family: 'Annie Use Your Telescope', cursive;
+    }
     h1#floating {
       position: absolute;
       font-size: 240px;
-      top: 900px;
       right: 200px;
     }
   </style>
   <script>
     try {
       $('img').css('width', $(window).width());
-      $('#last').css('top', '-500px');
+      $('h1#floating').css('top', $(window).height() * 1.38);
+      $('#last').css('top', "-"+($(window).height() * 0.767)+'px');
 
       $('body, div').css('height', $("#floating").offset().top - 700);
 
-      console.log($("#floating").offset());
+      // console.log($("#floating").offset());
 
       $(window).scroll(function(){
         try {
           $('.backImage').css('top', -($(this).scrollTop()/3)+"px");
+          $('#scroll').css('top', (-3400 + ($(this).scrollTop()/2))+"px");
 
         } catch(err){
           console.error(err);
