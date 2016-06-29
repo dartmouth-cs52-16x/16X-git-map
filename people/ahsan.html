@@ -1,24 +1,308 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>ahsan</title>
-</head>
-<body>
-<div style="text-align: center;">
-  <img src="../images/ahsan.jpg" style="width:100%"/>
-  <p id="bio">My name is Ahsan Azim!<br><br>I'm "from" Lahore, Pakistan, although
-    my dad's job has meant that I've lived variously in New York, the Netherlands,
-    and (kind of) Italy.<br><br> Currently, I'm a sophomore at Dartmouth
-    College, in Hanover, New Hampshire. I'm studying Computer Science, Math,
-    and Government. I really enjoy each of those subjects, and plan for a
-    career that somehow mixes at least two of them <br><br>
-    If you want to get specific, then my academic interests are as follows:</p>
-  <ul id="academic_interests_list">
-    <li><em>Computer Science</em> : Machine Learning, Data Analysis, NLP,
-      iOS App Development</li>
-    <li><em>Mathematics</em> : Statistics, Linear Algebra, Pure Mathematics</li>
-    <li><em>Government</em> : Comparative Politics</li>
-  </ul>
-</div>
-</body>
+  <head>
+    <title>ahsan</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+
+    <style>
+
+      html, body {
+        background-color: white;
+        height: 100%;
+        margin: 0;
+      }
+
+      /* Making the main heading (i.e. "Ahsan Azim") full screen
+         was achieved by adapting code from the following
+         link:
+         http://stackoverflow.com/questions/1719452/how-to-make-a-div-always-full-screen
+      */
+
+      .main_heading {
+        text-align: center;
+        min-height: 100%;
+        background-color: #000080;
+        color: white;
+        font-variant: normal;
+        /*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+        font-family: 'Source Code Pro';
+        font-weight: 200;
+        /*http://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container*/
+        font-size: 15em;
+        font-size: 18vw;
+        margin: 0px;
+        border-top-style: solid;
+        border-top-width: medium;
+        border-top-color: white;
+        padding: 10px;
+        padding-top: 50px;
+      }
+
+      p {
+        color: black;
+        font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+        line-height: 1.5em;
+        margin-left: 20px;
+        margin-right:7px;
+        width: 65%;
+      }
+
+      #footer_div {
+        border-top-color: white;
+        border-top-width: thick;
+        border-top-style: dashed;
+        font-family: Cambria, Georgia, serif;
+        background-color: black;
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      #footer {
+        font-family: 'Source Code Pro';
+        background-color: black;
+        line-height: 1.5em;
+        text-align: center;
+        font-size: 1.0em;
+        color: white;
+        width: 100%;
+        padding: 15px;
+        margin-left: 0px;
+        margin-right: 0px;
+      }
+
+      #text_info {
+        clear: left;
+        padding: 3px;
+      }
+
+      #academic_interests_list {
+        padding: 4px;
+        font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+        line-height: 1.5em;
+        overflow: hidden;
+        list-style-position:inside;
+      }
+
+      .blue {
+        color: #00CCFF;
+      }
+
+      .sub_headings {
+        font-family: Orbitron;
+        background-color: white;
+        font-size: 2em;
+        line-height: 1.5em;
+        font-weight: lighter;
+        border-bottom-style: solid;
+        border-bottom-color: lightslategrey;
+        border-bottom-width: thin;
+        padding: 7px;
+        margin-left: 7px;
+        padding-left: 30px;
+        clear: left;
+        color: black;
+      }
+
+      .text_style {
+        color: black;
+        font-family: "HelveticaNeue-Light","Helvetica","Lucida Grande", "Arial", sans-serif;
+        line-height: 1.5em;
+      }
+
+      /* Changing image sizes in the way outlined
+        below was adapted, and in some cases
+        copied, from the following link:
+        http://stackoverflow.com/questions/15685666/changing-image-sizes-proportionally-using-css
+      */
+      .personal_img_container {
+        width: 200px;
+        height: 120px;
+      }
+
+      .personal_img_container img {
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-left:5px;
+        margin-top:10px;
+        margin-right: 5px;
+        margin-bottom: 5px;
+        padding-bottom: 10px;
+      }
+
+      .personal_img_small_container {
+        height:41px;
+        width: auto;
+      }
+
+      .personal_img_small_container img {
+        height:100%;
+        width: auto;
+      }
+
+      .bio_text {
+        float: right;
+      }
+
+      /* Note that the techniques and much of the code
+       for the navigation bar was adapted, and in some
+       cases copied, from the following link:
+        http://www.w3schools.com/css/css_navbar.asp
+      */
+
+      #nav_bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        border-bottom-color: white;
+        border-bottom-style: solid;
+        border-bottom-width: thin;
+      }
+      .nav_bar_items {
+        /*font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;*/
+        font-family: 'Orbitron';
+        float: left;
+        font-variant: normal;
+      }
+
+      .nav_bar_items a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        padding-bottom: 10px;
+        text-decoration: none;
+      }
+
+      /* Change the link color to #111 (black) on hover */
+      .nav_bar_items a:hover {
+        background-color: #505050;
+      }
+    </style>
+    <script type = "text/javascript" src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script type = "text/javascript">
+      // the following link was used to achieve the pulsating
+      // effect of the main heading (i.e. "Ahsan Azim"):
+      // http://www.tutorialspoint.com/jquery/effect-pulsate.htm
+
+      // the following link was used to achieve the effect of the
+      // navigation bar appear after a delay - in this case, only
+      // when the main heading has stopped pulsating:
+      // https://teamtreehouse.com/community/how-to-make-a-button-and-text-appear-after-a-delay
+
+      // the following link was used to achieve a smooth scrolling
+      // effect for when clicking on objects in the navigation bar:
+      // http://stackoverflow.com/questions/21835012/onclick-function-based-on-element-id
+
+      $(document).ready(function() {
+        $("#nav_bar").hide().delay(2500).fadeIn();
+        $(".main_heading").effect( "pulsate", {times:2}, 2500);
+        $("#nav_home").click(function() {
+          console.log("activated as well");
+          $('html, body').animate({
+            scrollTop: $( "#home_proxy" ).offset().top
+          }, 500);
+          return false;
+        });
+        $("#nav_this_website").click(function() {
+          console.log("activated");
+          $('html, body').animate({
+            scrollTop: $( "#this_website_proxy" ).offset().top - 50
+          }, 500);
+          return false;
+        });
+        $("#nav_contact").click(function() {
+          $('html, body').animate({
+            scrollTop: $( "#contact" ).offset().top - 50
+          }, 500);
+          return false;
+        });
+        $("#nav_about").click(function() {
+          $('html, body').animate({
+            scrollTop: $( "#about" ).offset().top - 50
+          }, 500);
+          return false;
+        });
+      });
+
+      // needed the underscore to blink, code taken from following link:
+      // http://www.computerhope.com/issues/ch001651.htm
+      function blinker() {
+      	$('.blinking').fadeOut(650);
+      	$('.blinking').fadeIn(650);
+      }
+      setInterval(blinker, 1350);
+    </script>
+  </head>
+
+  <body>
+    <div id="home_proxy"></div>
+    <ul id="nav_bar">
+      <li class="nav_bar_items" id="nav_home"><a href=#home>Home</a></li>
+      <li class="nav_bar_items" id="nav_this_website"><a href=#this_website>This Website</a></li>
+      <li class="nav_bar_items" id="nav_contact"><a href=#contact>Contact</a></li>
+      <li class="nav_bar_items" id="nav_about"><a href=#about>About</a></li>
+      <li class="nav_bar_items" style="float:right">
+        <div class="personal_img_small_container">
+          <img id="personal_pic_small" src="https://raw.githubusercontent.com/ahsanazim/ahsanazim.me/gh-pages/official_photo.jpg">
+        </div>
+      </li>
+    </ul>
+    <h1 class="main_heading" id="home">Ahsan<br>Azim<span class="blinking">|</span></h1>
+    <h2 class="sub_headings" id="about">About me<span class="blinking">_</span></h2>
+    <div class="personal_img_container">
+      <img id="personal_pic" src="https://raw.githubusercontent.com/ahsanazim/ahsanazim.me/gh-pages/official_photo.jpg">
+    </div>
+    <div class="bio_text">
+      <p id="bio">My name is Ahsan Azim!<br><br>I'm "from" Lahore, Pakistan, although
+        my dad's job has meant that I've lived variously in New York, the Netherlands,
+        and (kind of) Italy.<br><br> Currently, I'm a sophomore at Dartmouth
+        College, in Hanover, New Hampshire. I'm studying Computer Science, Math,
+        and Government. I really enjoy each of those subjects, and plan for a
+        career that somehow mixes at least two of them <br><br>
+        If you want to get specific, then my academic interests are as follows:</p>
+      <ul id="academic_interests_list">
+        <li><em>Computer Science</em> : Machine Learning, Data Analysis, NLP,
+          iOS App Development</li>
+        <li><em>Mathematics</em> : Statistics, Linear Algebra, Pure Mathematics</li>
+        <li><em>Government</em> : Comparative Politics</li>
+      </ul>
+    </div>
+    <h2 class="sub_headings" id="this_website">This website<span class="blinking">_</span></h2>
+    <div id="this_website_proxy"></div>
+    <div id="text_info">
+      <p id="cs_info">I created this website for my web dev class at
+        Dartmouth. I've never done web development before, so it currently only uses
+        html, CSS, and some pretty rudimentary javascript.</p>
+      <p id="future_plans"> Later, once the course is over, I may adapt this website to my own needs.
+        I'm not sure what I'll have up there - maybe descriptions of various
+        personal projects? <br><br> For now, here's a
+        <a target="_blank" class="blue" href="https://www.linkedin.com/in/ahsanazim1">link </a>
+        to my linkedin page! It has a bit more detail on my experiences and interests.
+      </p>
+    </div>
+    <h2 class="sub_headings" id="contact">Contacting me<span class="blinking">_</span></h2>
+    <div id="contact_info">
+      <p>
+        I'm available on:
+        <ul class="text_style">
+          <li>email (<scan class="blue">ahsan.azim.18@dartmouth.edu</scan>) </li>
+          <li>phone (XXX-XXX-1255),</li>
+          <li>and also through my aforementioned linkedin page!</li>
+      </p>
+    </div>
+    <div id="footer_div">
+      <p id="footer">
+        &copy; Ahsan Azim, 2016
+      </p>
+    </div>
+  </body>
 </html>
