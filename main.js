@@ -307,7 +307,7 @@ addMarker({
 
 addMarker({
   name: 'Larissa',
-  iconUrl: 'images/larissa.jpg',
+  iconUrl: 'images/larissa1.jpg',
   url: 'people/larissa.html',
   message: 'From Erie,PA',
   lat_long: [42.129224,-80.085059],
