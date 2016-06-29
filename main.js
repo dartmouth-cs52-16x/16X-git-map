@@ -277,7 +277,7 @@ addMarker({
   name: 'Devina',
   iconUrl: 'images/devina.jpg',
   url: 'people/devina.html',
-  message: 'Seattle: home of Starbucks!',
+  message: 'Seattle: Starbucks and Seahawks',
   lat_long: [47.5327,-122.2301],
 });
 
