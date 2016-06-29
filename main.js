@@ -171,6 +171,14 @@ addMarker({
   lat_long: [18.7669, 46.8691],
 })
 
+addMarker({
+  name: 'Devina',
+  iconUrl: 'images/devina.jpg',
+  url: 'people/devina.html',
+  message: 'Seattle: home of Starbucks!',
+  lat_long: [47.5327,-122.2301],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
