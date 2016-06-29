@@ -232,6 +232,16 @@ addMarker({
   message: 'Home',
   lat_long: [37.4530, 122.1817],
 });
+
+addMarker({
+  name: 'Sydni',
+  iconUrl: 'images/sydnitopper.jpg',
+  url: 'people/sydni.html',
+  message: 'Spent the best week of my life here!',
+  lat_long: [-53.807139,-68.378906],
+});
+
+>>>>>>> added myself to the map
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
