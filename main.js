@@ -320,6 +320,14 @@ addMarker({
   lat_long: [26.699266, -80.035477],
 });
 
+addMarker({
+  name: 'Sydni',
+  iconUrl: 'images/sydnitopper.jpg',
+  url: 'people/sydni.html',
+  message: 'Spent the best week of my life here!',
+  lat_long: [-53.807139,-68.378906],
+});
+
 //END SECTION FOR MARKERS
 
 /* DO NOT MODIFY BELOW THIS LINE */
