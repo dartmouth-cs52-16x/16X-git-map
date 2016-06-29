@@ -186,6 +186,14 @@ addMarker({
 });
 
 addMarker({
+  name: 'Jean',
+  iconUrl: 'images/jeanzhou.jpg',
+  url: 'people/jeanzhou.html',
+  message: 'I\'m from Medfield, MA!',
+  lat_long: [42.1876, -71.3065],
+});
+
+addMarker({
   name: 'Robin Jayaswal',
   iconUrl: 'images/robin.png',
   url: 'people/robin.html',
