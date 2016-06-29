@@ -237,6 +237,7 @@ addMarker({
   iconUrl: 'images/rajivramaiah.jpg',
   url: 'people/rajivramaiah.html',
   message: 'Hello it is me, Rajiv!',
+<<<<<<< beb6b08e1eb8ad43662a9ab405981e534ba3bf11
   lat_long: [18.7669, 46.8691],
 });
 
@@ -246,6 +247,9 @@ addMarker({
   url: 'people/kyra.html',
   message: 'brb swimming',
   lat_long: [-54.220285, 55.898438],
+=======
+  lat_long: [33.893791,35.501777],
+>>>>>>> Fixing merge
 });
 
 addMarker({
@@ -257,12 +261,22 @@ addMarker({
 });
 
 addMarker({
+<<<<<<< beb6b08e1eb8ad43662a9ab405981e534ba3bf11
   name: 'Sydni',
   iconUrl: 'images/sydnitopper.jpg',
   url: 'people/sydni.html',
   message: 'Spent the best week of my life here!',
   lat_long: [-53.807139,-68.378906],
 });
+=======
+  name: 'Kyra',
+  iconUrl: 'images/kyra.jpg',
+  url: 'people/kyra.html',
+  message: 'brb swimming',
+  lat_long: [-54.220285, 55.898438],
+});
+
+>>>>>>> Fixing merge
 
 addMarker({
   name: 'Ross',
@@ -273,6 +287,16 @@ addMarker({
 });
 
 addMarker({
+<<<<<<< beb6b08e1eb8ad43662a9ab405981e534ba3bf11
+=======
+  name: 'Devina',
+  iconUrl: 'images/devina.jpg',
+  url: 'people/devina.html',
+  message: 'Seattle: home of Starbucks!',
+  lat_long: [47.5327,-122.2301],
+});
+
+>>>>>>> Fixing merge
   name: 'Matthew',
   iconUrl: 'images/matthewgoldstein.jpg',
   url: 'people/matthewgoldstein.html',
