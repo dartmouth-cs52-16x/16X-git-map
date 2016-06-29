@@ -11,7 +11,7 @@
       <img src="../images/mauricioFriends2.jpg" class="backImage">
       <img src="../images/mauricioFriends3.jpg" class="frontImage" id="last">
       <h1 id="floating">Mauricio</h1>
-      <h1>Esquivel Rogel '18</h1>
+      <h1>Esquivel Rogel</h1>
       <h1 id="scroll">Scroll down!</h1>
     </div>
   </body>
@@ -38,6 +38,7 @@
       top: -525px;
     }
     h1#scroll{
+      text-shadow: 2px 2px 2px #000;
       position: relative;
       text-align: right;
       top: -3400px;
@@ -64,7 +65,7 @@
       $(window).scroll(function(){
         try {
           $('.backImage').css('top', -($(this).scrollTop()/3)+"px");
-          $('#scroll').css('top', (-3400 + ($(this).scrollTop()/2))+"px");
+          $('#scroll').css('top', (-3400 + ($(this).scrollTop()/2.5))+"px");
 
         } catch(err){
           console.error(err);
