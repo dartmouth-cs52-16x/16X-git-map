@@ -246,7 +246,7 @@ addMarker({
   url: 'people/rajivramaiah.html',
   message: 'Hello it is me, Rajiv!',
   lat_long: [33.893791,35.501777],
-})
+});
 
 addMarker({
   name: 'Brian Francis',
@@ -262,7 +262,7 @@ addMarker({
   url: 'people/kyra.html',
   message: 'brb swimming',
   lat_long: [-54.220285, 55.898438],
-})
+});
 
 
 addMarker({
@@ -271,16 +271,16 @@ addMarker({
   url: 'people/rossy.html',
   message: 'Let\'s hike Table Mountain!',
   lat_long: [-33.924869, 18.424055],
-})
+});
 
 addMarker({
-<<<<<<< HEAD
   name: 'Devina',
   iconUrl: 'images/devina.jpg',
   url: 'people/devina.html',
   message: 'Seattle: home of Starbucks!',
   lat_long: [47.5327,-122.2301],
-=======
+});
+
   name: 'Matthew',
   iconUrl: 'images/matthewgoldstein.jpg',
   url: 'people/matthewgoldstein.html',
@@ -342,7 +342,6 @@ addMarker({
   url: 'people/adam.html',
   message: 'This is where I took this picture!',
   lat_long: [-13.531950,-71.967463],
->>>>>>> 286063cc581560e9d0bac44ce9428ddcdd22e827
 });
 
 //END SECTION FOR MARKERS
