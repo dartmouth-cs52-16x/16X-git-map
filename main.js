@@ -55,14 +55,6 @@ addMarker({
 });
 
 addMarker({
-  name: 'Robert',
-  iconUrl: 'images/robert.jpg',
-  url: 'people/robert.html',
-  message: 'Hi I\'m Robert!',
-  lat_long: [33.893791,35.501777],
-});
-
-addMarker({
   name: 'Mau',
   iconUrl: 'images/mauricioesquivel.jpg',
   url: 'people/mauesrog.html',
@@ -144,10 +136,10 @@ addMarker({
 
 addMarker({
   name: 'Divya',
-  iconUrl: 'images/flower.jpg',
+  iconUrl: 'images/divya2.jpg',
   url: 'people/divya.html',
-  message: "San Jose, CA",
-  lat_long: [37.3382, 121.8863],
+  message: "Home in San Jose!",
+  lat_long: [37.3382, -121.8863],
 });
 
 addMarker({
@@ -158,6 +150,14 @@ addMarker({
   lat_long: [28.6139,77.2090],
 });
 
+
+addMarker({
+  name: 'Gary',
+  iconUrl: 'images/gary.jpeg',
+  url: 'people/gary.html',
+  message: 'Come visit me in East Brunswick, NJ!',
+  lat_long: [40.4317, -74.4050],
+});
 
 addMarker({
   name: 'Erin',
@@ -269,7 +269,7 @@ addMarker({
   name: 'Ross',
   iconUrl: 'images/rosspic.jpg',
   url: 'people/rossy.html',
-  message: 'Let\'s hike Table Mountain!',
+  message: 'Let\'s hike Table Mountain!!',
   lat_long: [-33.924869, 18.424055],
 });
 
@@ -307,7 +307,7 @@ addMarker({
 
 addMarker({
   name: 'Larissa',
-  iconUrl: 'images/larissa.jpg',
+  iconUrl: 'images/larissa1.jpg',
   url: 'people/larissa.html',
   message: 'From Erie,PA',
   lat_long: [42.129224,-80.085059],
@@ -325,8 +325,8 @@ addMarker({
   name: 'Xinwei',
   iconUrl: 'images/xjiang.jpg',
   url: 'people/xjiang.html',
-  message: 'Hello it is me!',
-  lat_long: [31.3407,121.4753],
+  message: 'Hi, it is me!',
+  lat_long: [31.2304,121.4737],
 });
 
 addMarker({
@@ -351,6 +351,21 @@ addMarker({
   url: 'people/adam.html',
   message: 'This is where I took this picture!',
   lat_long: [-13.531950,-71.967463],
+});
+
+addMarker({
+  name: 'Ben',
+  iconUrl: 'images/BenCooper.jpg',
+  url: 'people/BenCooper.html',
+  message: 'This is my favorite place to be in the summer!!',
+  lat_long: [41.349623, -70.514041],
+});
+addMarker({
+  name: 'Robert',
+  iconUrl: 'images/robert.jpg',
+  url: 'people/robert.html',
+  message: 'Hi I\'m Robert!',
+  lat_long: [33.893791,35.501777],
 });
 
 //END SECTION FOR MARKERS
