@@ -2,10 +2,58 @@
 <html>
 <head>
   <title>Jean Zhou</title>
+  <style>
+
+    body {
+      font-family: Verdana, Geneva, sans-serif;
+      font-weight: bold;
+      background-color: #9899a3;
+      color: #283a7c;
+      text-align: center;
+      font-size: 16px;
+    }
+
+    h1 {
+      font-family: "Arial Black", Gadget, sans-serif;
+      font-size: 40px;
+      color: pink;
+    }
+
+    div {
+      text-align: center;
+    }
+
+    #portrait {
+      width:25%;
+      text-align: center;
+      border-radius: 100px;
+    }
+
+    #map {
+      width:25%;
+      text-align: center;
+      border-radius: 20px;
+      opacity: 0.0;
+      transition-property: all;
+      transition-duration: 2s;
+      transition-timing-function: linear;
+    }
+
+    #map:hover {
+      opacity: 1.0;
+    }
+
+  </style>
 </head>
 <body>
 <div style="text-align: center;">
-  <img src="../images/jeanzhou.jpg" style="width:100%"/>
+  <h1>Jean Zhou's Map Page</h1>
+  <img id="portrait" src="../images/jeanzhou.jpg"/>
+  <br>
+  <p>I'm from Medfield, MA!
+  <br> Hover directly below to reveal a map showing Medfield.</p>
+  <img id="map" src="../images/jeanzhou_medfieldmap.gif"/>
+  <!-- image source: http://www.maliving.com/wp-content/uploads/2012/08/medfieldmap.gif -->
 </div>
 </body>
 </html>
