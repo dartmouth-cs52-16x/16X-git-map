@@ -101,7 +101,7 @@ To view what we currently have the easiest way to start a local webserver is to 
 🚀 To run python based webserver in 💻:
 ```bash
 cd 16X-git-map # just make sure you are in the same dir as index.html
-python -m SimpleHTTPServer 9000 &
+python -m SimpleHTTPServer 9000
 ```
 
 ![](docs/imgs/simpleserver.png)<br>
@@ -216,7 +216,7 @@ Once you have your conflict file the way you want it — ie. fixed and without a
 
 ###You've now published a page!
 
-If you go to http://dartmouth-cs52.github.io/16X-git-map/yournewpage.html now you'll be able to see your new page.
+If you go to http://dartmouth-cs52.github.io/16X-git-map/people/yournewpage.html now you'll be able to see your new page.
 
 
 ## 8) Map and Javascript
