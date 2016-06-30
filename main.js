@@ -164,7 +164,7 @@ addMarker({
   iconUrl: 'images/gary.jpeg',
   url: 'people/gary.html',
   message: 'Come visit me in East Brunswick, NJ!',
-  lat_long: [40.4317, 74.4050],
+  lat_long: [40.4317, -74.4050],
 });
 
 addMarker({
