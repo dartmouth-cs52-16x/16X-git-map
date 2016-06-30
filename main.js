@@ -55,14 +55,6 @@ addMarker({
 });
 
 addMarker({
-  name: 'Robert',
-  iconUrl: 'images/robert.jpg',
-  url: 'people/robert.html',
-  message: 'Hi I\'m Robert!',
-  lat_long: [33.893791,35.501777],
-});
-
-addMarker({
   name: 'Mau',
   iconUrl: 'images/mauricioesquivel.jpg',
   url: 'people/mauesrog.html',
@@ -367,6 +359,13 @@ addMarker({
   url: 'people/BenCooper.html',
   message: 'This is my favorite place to be in the summer!!',
   lat_long: [41.349623, -70.514041],
+});
+addMarker({
+  name: 'Robert',
+  iconUrl: 'images/robert.jpg',
+  url: 'people/robert.html',
+  message: 'Hi I\'m Robert!',
+  lat_long: [33.893791,35.501777],
 });
 
 //END SECTION FOR MARKERS
