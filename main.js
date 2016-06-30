@@ -307,10 +307,10 @@ addMarker({
 
 addMarker({
   name: 'Ian',
-  iconUrl: 'images/ianbateman.jpg',
+  iconUrl: 'images/ianbatemanprofile.jpg',
   url: 'people/ianbateman.html',
   message: 'I am from Manasquan, NJ',
-  lat_long: [41.233,-70.499],
+  lat_long: [40.1137,-74.0376],
 });
 
 addMarker({
