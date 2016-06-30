@@ -293,7 +293,7 @@ addMarker({
   name: 'Weijia',
   iconUrl: 'images/weijia.jpg',
   url: 'people/weijia.html',
-  message: 'Come visit me in Suzhou!',
+  message: 'I am from Suzhou, China!',
   lat_long: [31.299,120.5853],
 });
 
