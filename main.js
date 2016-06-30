@@ -74,7 +74,7 @@ addMarker({
   name: 'Jon',
   iconUrl: 'images/jon.jpg',
   url: 'people/jongonzalez.html',
-  message: 'Where all my family is from!',
+  message: 'Where all my family is from!!',
   lat_long: [6.253041,-75.564574],
 });
 
