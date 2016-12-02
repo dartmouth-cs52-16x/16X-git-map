@@ -1,23 +1,22 @@
-# Design Onboarding
+# Design Task
 
 ## Purpose
 To gain familiarity with Sketch, a powerful UI/UX design application, and to get your design chops warmed up before the beginning of the term!
 
-# Design Task
+# Before you begin
+1. Download a free trial of Sketch from: https://sketchapp.com.  
+2. Watch the short Sketch tutorials on *Introducing Symbols*, *Symbol Resizing*, and *Using Masks*: https://sketchapp.com/learn/.
 
-## Before you begin
-Watch the short Sketch tutorials on *Introducing Symbols*, *Symbol Resizing*, and *Using Masks*. Available here: https://sketchapp.com/learn/.
+# Page Requirements
 
-## What you'll make
-Use Sketch to design a web page telling us about yourself. Be creative! Your design should tell us something about your personality, so consider this when you make design choices about type, color, and decisions about your layout. 
-
-You can download a free trial of Sketch from: https://sketchapp.com. 
-
-### Your page will have two sections:
+### Your page should include 2 sections:
 1. Your bio
 2. A style guide
 
-### Information to include in the design of your bio:
+### Bio
+
+The design of your bio should include:
+
 * A picture
 * Your name
 * Where you’re from/where you live
@@ -28,4 +27,16 @@ You can download a free trial of Sketch from: https://sketchapp.com.
 
 * Create a mask to crop some content on your page.
 
-# Submit your design
+### Style Guide
+
+Your style guide should include:
+
+1. A short description/rationale explaining your design choices
+2. Type styles — include the name of the typeface, sizes, styles, and colors used
+3. Color palette — include swatches and hex codes
+
+
+# Submit Your Design
+
+You'll submit a JPG of your final design.
+
