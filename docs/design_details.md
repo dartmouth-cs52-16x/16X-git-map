@@ -13,7 +13,7 @@ To gain familiarity with Sketch, a powerful UI/UX design application, and to get
 1. Your bio
 2. A style guide
 
-### Bio
+### For Your Bio:
 
 The design of your bio should include:
 
@@ -27,7 +27,7 @@ The design of your bio should include:
 
 * Create a mask to crop some content on your page.
 
-### Style Guide
+### For Your Style Guide:
 
 Your style guide should include:
 
