@@ -153,6 +153,19 @@ Lets check out what we have made: http://localhost:9000
 Note: to quit the python server type: ctrl+c
 (this is a default for many commandline processes).
 
+
+### Add Some Content
+
+* A picture of yourself
+* Your name
+* Where you’re from/where you live
+* A short bio telling us about yourself (you might include/mention: design/programming applications you know, what you enjoy most about ui/ux design/development, why you’re excited to work with DALI.)
+* Something interesting about yourself :-)
+
+#### Learn some HTML/CSS
+
+Go here to learn some: http://learn.shayhowe.com/html-css/
+
 ### Git Add
 
 ```bash
