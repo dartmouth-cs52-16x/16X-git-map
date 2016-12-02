@@ -1,6 +1,6 @@
 # Design Task
 
-This task is to help you gain familiarity with Sketch, a powerful UI/UX design application, and to get your design chops warmed up before the beginning of the term!
+This task is to help you gain familiarity with Sketch, a powerful UI/UX design application, to get your design chops warmed up before the beginning of the term! And to get set up with Atom and Git.
 
 ## Before you begin
 1. Download a free trial of Sketch from: https://sketchapp.com.  
@@ -78,7 +78,7 @@ This is a good overview image for the things you'll be doing — it'll all make 
 1. Export your page design as a JPG from Sketch
 2. Move this file to your local project repro. If you're not sure where Git set this up, you can right-click the 17W-mappy repo in the Git app, and select Open in Finder.
 3. Add 2 images to the images directory:
-  * A bio pic — must be square, 200 x 200px (this will show up on the map)
+  * A bio pic — must be square, 200 x 200px (this will show up on the map). If you don't have a favorite tool for this try [resizeimage](http://resizeimage.net/)
   * The JPG of the design you created in Sketch
 
 ### Step 2) Commit Your Changes
@@ -86,27 +86,32 @@ Committing files tells git that you want to name and save the changes you have m
 
 1. Writ a short summary of the changes you're making/what you're doing, e.g. adding bio images.
 2. Click the Commit
-3. Sync your changes with the server
+3. Sync your changes with the server (this will run a Git pull to update your changes, and then a push to update the server with your changes)
 
 
-### 4) Git Commit
-**What this does:** Committing files tells git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
+### Step 3) Update the Map and Javascript
 
-  - 🚀**Commit your changes:** ```git commit -am "i made some changes"```
-    - ``-a`` means all changes
-    - ``-m`` indicates that your commit message follows directly, a commit message is required.
-  - Example of sample commit chains that adds new payments feature to an e-commerce website:
-    - "Setup and initialize new Charge Table"
-    - "Add API call to generate a new Charge"
-    - "Add task that processes new charges"
-    - "Add tests to make sure charge amounts are accurate between server and client"
+Now lets publish that bio pic you uploaded earlier to the DALI Map!
 
-### 5) Git Pull
-**What this does:** Git pull will try to fetch and merge the remote repository with your workspace.
+1. Open `main.js` in atom.
 
-  - 🚀**Pull others' changes:** `git pull`
-    - This will check the github remote server for any changes and download and merge them into your local version.
-    - 🍸Protip: Try using ```git pull --rebase```, this is typically the way open source projects manage their Git workflow.  The difference is that rebasing will pull in all changes from the remote and then apply your commits on top rather than creating a a new "merge" commit. This gives you a cleaner unified git history. Here's a [2 minute read](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) on the differences between merging and rebasing.
+2. 🚀Find where we run the method `addMarker` to create a marker for Froggy. Copy that function call and paste it in somewhere in the `SECTION FOR MARKERS`.  
+
+3. Change the `iconUrl` field to point to your bio pic in the images directory
+
+4. Change the `url` field to point to the JPG of the design you created earlier in Sketch!
+
+5. Find a lat long: http://www.latlong.net/
+
+6. Save the file in Atom
+
+7. Commit the changes in Gitapp
+
+8. Sync changes to the server
+
+
+
+
 
 ### 6) Merge Conflicts
 
@@ -155,20 +160,3 @@ Once you have your conflict file the way you want it — ie. fixed and without a
 If you go to https://dali-lab.github.io/17W-mappy/people/yournewpage.html now you'll be able to see your new page.
 
 
-### Map and Javascript
-
-
-Now lets add a picture of yourself and a lat long for a place that you like or are from.
-
-Open `main.js` in atom.
-
-🚀Find where we run the method `addMarker` to create a marker for Froggy.
-Copy that function call and paste it in somewhere in the `SECTION FOR MARKERS`.  
-
-Add an image of yourself into `images`.   It would probably be a good idea to resize your image to be 200x200 pixels. If you don't have a favorite tool for this try [resizeimage](http://resizeimage.net/)
-
-For the `url` field use the new page that you made earlier!
-
-Find a lat long: http://www.latlong.net/
-
-🚀Play around with it till you have a working badge visible on your local dev site:  http://localhost:9000/ and when click on the badge it is able to load in the page you made into the modal.
