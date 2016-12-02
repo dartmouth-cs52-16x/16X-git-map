@@ -62,8 +62,8 @@ git is a code collaboration tool! If you've previously used git on your computer
 
 ### Add the Project Repro in Atom
 
-In Atom, go to: File -> Add Project Folder
-Select the 17w-mappy repro
+In Atom, go to: File -> Add Project Folder and select the 17w-mappy repro.
 
-# Next Step: Set up your domain & publish your page!
+# Final Step: Set up your domain & publish your page!
+Follow these steps to set up your domain, create a simple html page with your design, and add your homepage to the DALI Map!
 
