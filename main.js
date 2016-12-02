@@ -55,6 +55,14 @@ addMarker({
   lat_long: [37.2320967,-118.8578716],
 });
 
+addMarker({
+  name: 'Kate',
+  iconUrl: 'images/kate.jpg',
+  url: 'images/kate-page.jpg',
+  message: 'I love snow!',
+  lat_long: [44.227173,-71.747907],
+});
+
 
 //END SECTION FOR MARKERS
 
