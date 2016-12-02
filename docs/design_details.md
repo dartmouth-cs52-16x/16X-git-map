@@ -3,11 +3,11 @@
 ## Purpose
 To gain familiarity with Sketch, a powerful UI/UX design application, and to get your design chops warmed up before the beginning of the term!
 
-# Before you begin
+## Before you begin
 1. Download a free trial of Sketch from: https://sketchapp.com.  
 2. Watch the short Sketch tutorials on *Introducing Symbols*, *Symbol Resizing*, and *Using Masks*: https://sketchapp.com/learn/.
 
-# Page Requirements
+## Page Requirements
 
 ### Your page should include 2 sections:
 1. Your bio
@@ -36,7 +36,7 @@ Your style guide should include:
 3. Color palette — include swatches and hex codes
 
 
-# Submit Your Design
+## Submit Your Design
 
 You'll submit a JPG of your final design.
 
