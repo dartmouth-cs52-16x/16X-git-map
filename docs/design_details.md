@@ -35,7 +35,7 @@ Your style guide should include:
 3. Color palette — include swatches and hex codes
 
 
-## Part 2: Setup Git & Atom, Add Your Images to Your Local Repo
+## Part 2: Setup Git & Atom
 
 You'll use Atom and the Github app to submit a JPG of your final design. Follow the instructions below to add your page to the DALI Map!
 
@@ -65,7 +65,15 @@ git is a code collaboration tool! If you've previously used git on your computer
 
 In Atom, go to: File -> Add Project Folder, and select the 17w-mappy repo.
 
-### Add Your Images to Your Local Git Repo
+
+## Part 3: Use Git to Publish Your Work
+Now you'll use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.
+
+This is a good overview image for the things you'll be doing — it'll all make sense eventually.
+
+![](imgs/git_data_transport.png)
+
+### Step 1) Add Your Images to Your Local Git Repo
 
 1. Export your page design as a JPG from Sketch
 2. Move this file to your local project repro. If you're not sure where Git set this up, you can right-click the 17W-mappy repo in the Git app, and select Open in Finder.
@@ -73,25 +81,12 @@ In Atom, go to: File -> Add Project Folder, and select the 17w-mappy repo.
   * A bio pic — must be square, 200 x 200px (this will show up on the map)
   * The JPG of the design you created in Sketch
 
-## Part 3: Use Git to Publish Your Work
-Now you'll use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.
+### Step 2) Commit Your Changes
+Committing files tells git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
 
-
-This is a good overview image for the things you'll be doing — it'll all make sense eventually.
-
-![](imgs/git_data_transport.png)
-
-### 1) Git Add
-
-**What this does:** The add step tells git which files from the workspace you want it to track, or add to the index.
-
-  - 🚀**Check your status:** Use `git status` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.
-  - 🚀**Add Untracked Files:** Use `git add filename` on those files to tell git to track them.
-    - You might also used `git add .` to add all untracked files recursively from the current directory.
-  - 🚀Go ahead a try to add your new files now. Run `git status` to make sure they are added.
-
-Here's what this looked like while editing this README:
-![git status](imgs/git_status.png)
+1. Writ a short summary of the changes you're making/what you're doing, e.g. adding bio images.
+2. Click the Commit
+3. Sync your changes with the server
 
 
 ### 4) Git Commit
