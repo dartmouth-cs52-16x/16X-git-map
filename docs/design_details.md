@@ -6,7 +6,7 @@ This task is to help you gain familiarity with Sketch, a powerful UI/UX design a
 1. Download a free trial of Sketch from: https://sketchapp.com.  
 2. Watch the short Sketch tutorials on *Introducing Symbols*, *Symbol Resizing*, and *Using Masks*: https://sketchapp.com/learn/.
 
-## Page Requirements
+## Design Your Page Using Sketch
 
 ### Your page should include 2 sections:
 1. Your bio
