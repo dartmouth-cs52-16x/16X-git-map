@@ -66,7 +66,7 @@ git is a code collaboration tool! If you've previously used git on your computer
 In Atom, go to: File -> Add Project Folder, and select the 17w-mappy repo.
 
 
-## Part 3: Use Git to Publish Your Work
+## Part 3: Use Atom & Git to Publish Your Work
 Now you'll use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.
 
 This is a good overview image for the things you'll be doing — it'll all make sense eventually.
@@ -80,38 +80,60 @@ This is a good overview image for the things you'll be doing — it'll all make 
 3. Add 2 images to the images directory:
   * A bio pic — must be square, 200 x 200px (this will show up on the map). If you don't have a favorite tool for this try [resizeimage](http://resizeimage.net/)
   * The JPG of the design you created in Sketch
+  
+### Step 2) Create an HTML Page for Your Design
+1. In Atom, Create a new file
 
-### Step 2) Commit Your Changes
-Committing files tells git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
+2. Paste the following HTML into your new file:
 
-1. Writ a short summary of the changes you're making/what you're doing, e.g. adding bio images.
-2. Click the Commit
-3. Sync your changes with the server (this will run a Git pull to update your changes, and then a push to update the server with your changes)
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kate Stinson</title>
+</head>
+<body>
+<div style="text-align: center;">
+  <img src="../images/kate-page.png" style="width:100%"/>
+</div>
+</body>
+</html>
+```
+
+3. Update the img src tag to point to the image file of your design.
+
+4. Save your file to the people directory in the 17W-mappy repo.
 
 
-### Step 3) Update the Map and Javascript
+### Step 3) Create a Javascript Marker on the Map
 
-Now lets publish that bio pic you uploaded earlier to the DALI Map!
+Now you're ready to create a marker on the DALI Map with your bio pic! This will link to the html page you created in the previous step.
 
 1. Open `main.js` in atom.
 
-2. 🚀Find where we run the method `addMarker` to create a marker for Froggy. Copy that function call and paste it in somewhere in the `SECTION FOR MARKERS`.  
+2. Find where we run the method `addMarker` to create a marker for Froggy. Copy that function call and paste it in somewhere in the `SECTION FOR MARKERS`.  
 
-3. Change the `iconUrl` field to point to your bio pic in the images directory
+3. Change the `iconUrl` field to point to your bio pic, which should be saved in the images directory.
 
-4. Change the `url` field to point to the JPG of the design you created earlier in Sketch!
+4. Change the `url` field to point to the HTML file that will display the PNG of the design you created earlier in Sketch!
 
-5. Find a lat long: http://www.latlong.net/
+5. Add a lat long: http://www.latlong.net/
 
 6. Save the file in Atom
 
-7. Commit the changes in Gitapp
 
-8. Sync changes to the server
+### Step 3) Commit & Sync Your Changes with Gitapp
+Committing files tells git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
 
+In Gitapp:
 
+1. In the short summary field, add a quick not about what you did. e.g. added images and html file.
 
+2. Commit your changes.
 
+3. Sync your changes with the server (this will run a Git pull to update your changes locally, and then a push to update the Github server).
+
+## Help with Conflicts
 
 ### 6) Merge Conflicts
 
