@@ -35,7 +35,7 @@ Your style guide should include:
 3. Color palette — include swatches and hex codes
 
 
-## Part 2: Submit Your Design Using Git & Atom
+## Part 2: Setup Git & Atom, Add Your Images to Your Local Repo
 
 You'll use Atom and the Github app to submit a JPG of your final design. Follow the instructions below to add your page to the DALI Map!
 
