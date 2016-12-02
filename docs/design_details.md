@@ -51,12 +51,12 @@ git is a code collaboration tool! If you've previously used git on your computer
 
 1. Install the github app from here: Mac or PC.
 2. Run the GitHub app, and set up with your new account.
-![Github Account Setup](images/github-app-1config.png)
+![Github Account Setup](imgs/github-app-1config.png)
 
 3. Go to Preferences -> Advanced and fill in your information with the same email you used for your github account and then click Install Command Line Tools
 
 4. From your Github app, clone the 17W-mappy repro
-![Cloning a Project Repro](images/github-app-2clone-mappy.png)
+![Cloning a Project Repro](imgs/github-app-2clone-mappy.png)
 
 5. Exit the app
 
