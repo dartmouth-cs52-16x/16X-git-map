@@ -36,7 +36,34 @@ Your style guide should include:
 3. Color palette — include swatches and hex codes
 
 
-## Submit Your Design
+## Submitting Your Design
 
-You'll submit a JPG of your final design.
+You'll use Atom and the Github app to submit a JPG of your final design. Follow the instructions below to add your page to the DALI Map!
+
+### Download & Install Atom
+Atom is a great code editor, it is cross platform and looks pretty. If you prefer a different editor you can use that one instead. If you already have Atom installed, you can skip this section.
+
+1. Install from atom.io
+2. Open Atom and then do: Atom -> Install Shell Commands
+
+### Create A Github Account & Install the Desktop App
+git is a code collaboration tool! If you've previously used git on your computer, you can skip this section.
+
+1. Install the github app from here: Mac or PC.
+2. Run the GitHub app, and set up with your new account.
+![Github Account Setup](images/github-app-1config.png)
+
+3. Go to Preferences -> Advanced and fill in your information with the same email you used for your github account and then click Install Command Line Tools
+
+4. From your Github app, clone the 17W-mappy repro
+![Cloning a Project Repro](images/github-app-2clone-mappy.png)
+
+5. Exit the app
+
+### Add the Project Repro in Atom
+
+In Atom, go to: File -> Add Project Folder
+Select the 17w-mappy repro
+
+# Next Step: Set up your domain & publish your page!
 
