@@ -3,6 +3,21 @@
 We're going to be making a website from domain name to design and html/css.
 
 
+
+(screenshot examples are from cs52)
+
+
+## Steps At a Glance
+Here's what we're going to do!
+
+1. Setup Local Dev environment
+1. Download some tools
+1. Register a domain
+1. Create and clone a github repo
+1. Create a webpage
+1. Set up hosting and DNS
+
+
 ## Local Dev Environment
 
 First things first.  You need a local development environment.  
@@ -73,18 +88,18 @@ We'll use NameCheap as our registrar.  Namecheap is a good [net citizen](https:/
 🚀go to: [https://nc.me/](https://nc.me/)
 and lets register you a domain!
 
-![](img/check.png)
+![](imgs/check.png)
 
 🚀I'm going to grab one for cs52 now too!
 
-![](img//buy.png)
+![](imgs//buy.png)
 
 🚀When prompted choose Github Pages Setup
-![](img//choose_github_pages.png)
+![](imgs//choose_github_pages.png)
 
 🚀Great, now we'll do the rest of the setup manually so when prompted to setup github — instead to do advance setup.
 
-![](img//justclickhere.png)
+![](imgs//justclickhere.png)
 
 ## Create a GitHub Repo
 
@@ -92,11 +107,11 @@ and lets register you a domain!
 
 🚀 create a new repo for your domain, probably best to name it with your domain name.
 
-![](img//create_repo.png)
+![](imgs//create_repo.png)
 
 Grab the URL for the repository (either SSH or HTML depending on how you have git setup.  If SSH gives you trouble just try HTML.)
 
-**Note:**  the following are transcripts of MY terminal session while setting up **cs52.me** with my github URL.  You should replace anything with cs52.me with your repo name and your github URL instead.
+**Note:**  the following are transcripts of MY terminal session while setting up **cs52.me** with my github URL.  You should replace anything with `cs52.me` with your own repo name and your github URL instead.
 
 ### Clone Repo
 
@@ -117,7 +132,7 @@ Checking connectivity... done.
 ```
 🚀basically just start Atom and create a file called `index.html` in your cloned workspace.
 
-![](img//index_html.png)
+![](imgs//index_html.png)
 
 
 ### Test Locally
@@ -129,11 +144,11 @@ Serving HTTP on 0.0.0.0 port 9000 ...
 ```
 *If you are running python3 try: `python -m http.server 9000` instead.*
 
-❓does anybody remember what `127.0.0.1` is the address for?
+❓does anybody know what `127.0.0.1` is the address for?
 
 Lets check out what we have made: http://localhost:9000
 
-![](img//localhost.png)
+![](imgs//localhost.png)
 
 Note: to quit the python server type: ctrl+c
 (this is a default for many commandline processes).
@@ -202,9 +217,9 @@ By default GitHub Pages, when it sees a branch named `gh-pages`, will publish it
 
 You can make sure of this by going to Settings for your repository.
 
-![settings](img//settings.png)
+![settings](imgs//settings.png)
 
-![default hosting](img//default_hosting.png)
+![default hosting](imgs//default_hosting.png)
 
 
 ### CNAME hosting
@@ -213,7 +228,7 @@ But we want our domain!
 
 Ok. Add another file to your local workspace named `CNAME`.  Inside this file put in just one line with your domain name.
 
-![cname](img//cname.png)
+![cname](imgs//cname.png)
 
 🚀 Now you have to `git add` and `git commit` and `git push` this new file.  See [Git Add](#git-add) section (skip branching as thats a one time thing).
 
@@ -221,7 +236,7 @@ Ok. Add another file to your local workspace named `CNAME`.  Inside this file pu
 
 As soon as you `git push` your site should become available at your URL!  *Note: actually it might take up to 5 minutes for it to start working with your domain name as github pushes your content to various servers.*
 
-![](img//done.png)
+![](imgs//done.png)
 
 
 ### What About DNS?!?!
@@ -230,7 +245,7 @@ You didn't actually have to do any DNS setup,  what happened?
 
 NameCheap set up all the right Domain Name Service Records automatically for you. In NameCheap you can inspect what it did:
 
-![](img//github_dns_already_setup.png)
+![](imgs//github_dns_already_setup.png)
 
 Take a look at your settings in your Namecheap Dashboard.
 
@@ -246,14 +261,3 @@ Note the 2 IP addresses in the `A Record` fields,  those are github servers.
 Wait,  but how does pages.github.com know? Does that machine serve lots of addresses?
 
 Yes, those IPs point to load balancers that direct requests based on the transport packet which happens to have the domain name requested in it.  This is where that magical `CNAME` file comes in.  That tells GitHub Pages that your repository should be served when requests come in for that domain. :cool:
-
-
-### To Turn In
-
-1. GitHub repository URL (should be public so we can see it)
-1. your working domain name URL
-
-### Extra Credit
-
-* Make your page more interesting than mine.
-* Add in some CSS even though we haven't talked about it yet.
