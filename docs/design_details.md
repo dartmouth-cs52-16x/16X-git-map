@@ -59,7 +59,6 @@ git is a code collaboration tool! If you've previously used git on your computer
 4. Clone the 17W-mappy repo: click the + Add a Repository dropdown, select clone, and choose the 17W-mappy
 ![Cloning a Project Repro](imgs/github-app-2clone-mappy.png)
 
-5. Exit the app
 
 ### Add the Project Repo in Atom
 
@@ -100,26 +99,27 @@ This is a good overview image for the things you'll be doing — it'll all make 
 </html>
 ```
 
-3. Update the img src tag to point to the image file of your design.
+3. Put your name in the title tag of the page
 
-4. Save your file to the people directory in the 17W-mappy repo.
+4. Update the img src tag to point to your design (e.g. mine was: kate-page.png).
+
+5. Save your file to the people directory in the 17W-mappy repo.
 
 
 ### Step 3) Create a Javascript Marker on the Map
 
-Now you're ready to create a marker on the DALI Map with your bio pic! This will link to the html page you created in the previous step.
+Now you're ready to create a marker on the DALI Map with your bio pic! This marker will be placed at a lat long you specify and will link to the html page you created in the previous step.
 
 1. Open `main.js` in atom.
 
 2. Find where we run the method `addMarker` to create a marker for Froggy. Copy that function call and paste it in somewhere in the `SECTION FOR MARKERS`.  
 
-3. Change the `iconUrl` field to point to your bio pic, which should be saved in the images directory.
+3. Update the Javascript function to call your information:
+  * Change the `iconUrl` field to point to your bio pic, which should be saved in the images directory.
+  * Change the `url` field to point to the HTML file that will display the PNG of the design you created earlier in Sketch!
+  * Add a lat long: http://www.latlong.net/.
 
-4. Change the `url` field to point to the HTML file that will display the PNG of the design you created earlier in Sketch!
-
-5. Add a lat long: http://www.latlong.net/
-
-6. Save the file in Atom
+4. Save the file.
 
 
 ### Step 3) Commit & Sync Your Changes with Gitapp
@@ -127,7 +127,7 @@ Committing files tells git that you want to name and save the changes you have m
 
 In Gitapp:
 
-1. In the short summary field, add a quick not about what you did. e.g. added images and html file.
+1. Write some text in the summary field to add a quick not about what you did/the changes you made. e.g. added images and html file.
 
 2. Commit your changes.
 
