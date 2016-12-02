@@ -1,7 +1,6 @@
 # Design Task
 
-## Purpose
-To gain familiarity with Sketch, a powerful UI/UX design application, and to get your design chops warmed up before the beginning of the term!
+This task is to help you gain familiarity with Sketch, a powerful UI/UX design application, and to get your design chops warmed up before the beginning of the term!
 
 ## Before you begin
 1. Download a free trial of Sketch from: https://sketchapp.com.  
@@ -43,27 +42,27 @@ You'll use Atom and the Github app to submit a JPG of your final design. Follow 
 ### Download & Install Atom
 Atom is a great code editor, it is cross platform and looks pretty. If you prefer a different editor you can use that one instead. If you already have Atom installed, you can skip this section.
 
-1. Install from atom.io
+1. Install from http://atom.io
+
 2. Open Atom and then do: Atom -> Install Shell Commands
 
-### Create A Github Account & Install the Desktop App
-git is a code collaboration tool! If you've previously used git on your computer, you can skip this section.
+### Install Github Desktop App & Add The Project Repo
+git is a code collaboration tool! If you've previously used git on your computer, you can skip the install step.
 
-1. Install the github app from here: Mac or PC.
-2. Run the GitHub app, and set up with your new account.
+1. Install the github app from: https://desktop.github.com/
+
+2. Run the GitHub app, and set it up with your new account.
 ![Github Account Setup](imgs/github-app-1config.png)
 
 3. Go to Preferences -> Advanced and fill in your information with the same email you used for your github account and then click Install Command Line Tools
 
-4. From your Github app, clone the 17W-mappy repro
+4. Clone the 17W-mappy repo: click the + Add a Repository dropdown, select clone, and choose the 17W-mappy
 ![Cloning a Project Repro](imgs/github-app-2clone-mappy.png)
 
 5. Exit the app
 
-### Add the Project Repro in Atom
+### Add the Project Repo in Atom
 
-In Atom, go to: File -> Add Project Folder and select the 17w-mappy repro.
+In Atom, go to: File -> Add Project Folder, and select the 17w-mappy repo.
 
-# Final Step: Set up your domain & publish your page!
-Follow these steps to set up your domain, create a simple html page with your design, and add your homepage to the DALI Map!
 
