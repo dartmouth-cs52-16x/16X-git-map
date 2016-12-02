@@ -113,7 +113,7 @@ Here's what this looked like while editing this README:
     - This will check the github remote server for any changes and download and merge them into your local version.
     - 🍸Protip: Try using ```git pull --rebase```, this is typically the way open source projects manage their Git workflow.  The difference is that rebasing will pull in all changes from the remote and then apply your commits on top rather than creating a a new "merge" commit. This gives you a cleaner unified git history. Here's a [2 minute read](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) on the differences between merging and rebasing.
 
-### 6) Merge Conflicts
+### 6) Mergy Merge Conflicts
 
 At this point after a `git pull` you may get a message that looks like this:
 
@@ -177,7 +177,3 @@ For the `url` field use the new page that you made earlier!
 Find a lat long: http://www.latlong.net/
 
 🚀Play around with it till you have a working badge visible on your local dev site:  http://localhost:9000/ and when click on the badge it is able to load in the page you made into the modal.
-
-
-
-
