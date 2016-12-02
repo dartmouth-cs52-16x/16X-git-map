@@ -6,7 +6,7 @@ This task is to help you gain familiarity with Sketch, a powerful UI/UX design a
 1. Download a free trial of Sketch from: https://sketchapp.com.  
 2. Watch the short Sketch tutorials on *Introducing Symbols*, *Symbol Resizing*, and *Using Masks*: https://sketchapp.com/learn/.
 
-## Design Your Page Using Sketch
+## Part 1: Design Your Page Using Sketch
 
 ### Your page should include 2 sections:
 1. Your bio
@@ -35,7 +35,7 @@ Your style guide should include:
 3. Color palette — include swatches and hex codes
 
 
-## Submit Your Design Using Git & Atom
+## Part 2: Submit Your Design Using Git & Atom
 
 You'll use Atom and the Github app to submit a JPG of your final design. Follow the instructions below to add your page to the DALI Map!
 
@@ -73,7 +73,7 @@ In Atom, go to: File -> Add Project Folder, and select the 17w-mappy repo.
   * A bio pic — must be square, 200 x 200px (this will show up on the map)
   * The JPG of the design you created in Sketch
 
-## Use Git to Publish Your Work
+## Part 3: Use Git to Publish Your Work
 Now you'll use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.
 
 
@@ -106,7 +106,7 @@ Here's what this looked like while editing this README:
     - "Add task that processes new charges"
     - "Add tests to make sure charge amounts are accurate between server and client"
 
-## 5) Git Pull
+### 5) Git Pull
 **What this does:** Git pull will try to fetch and merge the remote repository with your workspace.
 
   - 🚀**Pull others' changes:** `git pull`
@@ -160,7 +160,7 @@ Once you have your conflict file the way you want it — ie. fixed and without a
 If you go to https://dali-lab.github.io/17W-mappy/people/yournewpage.html now you'll be able to see your new page.
 
 
-## 8) Map and Javascript
+### Map and Javascript
 
 
 Now lets add a picture of yourself and a lat long for a place that you like or are from.
