@@ -108,11 +108,7 @@ Committing files tells git that you want to name and save the changes you have m
     - This will check the github remote server for any changes and download and merge them into your local version.
     - 🍸Protip: Try using ```git pull --rebase```, this is typically the way open source projects manage their Git workflow.  The difference is that rebasing will pull in all changes from the remote and then apply your commits on top rather than creating a a new "merge" commit. This gives you a cleaner unified git history. Here's a [2 minute read](https://git-scm.com/book/en/v2/Git-Branching-Rebasing) on the differences between merging and rebasing.
 
-<<<<<<< HEAD
-### 6) Merge Conflicts mergy
-=======
-### 6) Mergy merge merge Conflicts !
->>>>>>> origin/gh-pages
+### 6) Merge Conflicts
 
 At this point after a `git pull` you may get a message that looks like this:
 
