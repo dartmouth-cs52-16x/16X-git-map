@@ -39,14 +39,6 @@ const addMarker = function(options) {
 
 
 addMarker({
-  name: 'Alma',
-  iconUrl: 'images/almaspic.jpg',
-  url: 'people/alma.html',
-  message: 'Hello from Long Island',
-  lat_long: [40.75, -73.52]
-});
-
-addMarker({
   name: 'Froggy',
   iconUrl: 'images/froggy.jpg',
   url: 'people/froggy.html',
@@ -54,327 +46,23 @@ addMarker({
   lat_long: [9.6660971,-85.0621176],
 });
 
-addMarker({
-  name: 'Mau',
-  iconUrl: 'images/mauricioesquivel.jpg',
-  url: 'people/mauesrog.html',
-  message: 'My favorite city',
-  lat_long: [19.432608,-99.133208],
-});
-
-addMarker({
-  name: 'Jessie',
-  iconUrl: 'images/jessie_anderson.jpg',
-  url: 'people/jessie_anderson.html',
-  message: 'Come visit me in Cleveland!',
-  lat_long: [41.499320,-81.694361],
-});
-
-addMarker({
-  name: 'Jon',
-  iconUrl: 'images/jon.jpg',
-  url: 'people/jongonzalez.html',
-  message: 'Where all my family is from!!',
-  lat_long: [6.253041,-75.564574],
-});
-
-addMarker({
-  name: 'Suman',
-  iconUrl: 'images/suman.jpg',
-  url: 'people/sumanbera.html',
-  message: 'Come visit me in Kolkata,India!',
-  lat_long: [22.572646,88.363895],
-});
-
-addMarker({
-  name: 'James',
-  iconUrl: 'images/jamesw.jpg',
-  url: 'people/jamesw.html',
-  message: 'Come visit me in Belleuve, Washington!',
-  lat_long: [47.550768,-122.148483],
-});
-
-addMarker({
-  name: 'Ahsan',
-  iconUrl: 'images/ahsan.jpg',
-  url: 'people/ahsan.html',
-  message: 'antarctica',
-  lat_long: [-82.862752,135.000000],
-});
-
-addMarker({
-  name: 'Xing',
-  iconUrl: 'images/Xing.jpg',
-  url: 'people/mx.html',
-  message: 'Summer term is coming!',
-  lat_long: [43.701958,-72.288905],
-});
-
-addMarker({
-  name: 'Luisa',
-  iconUrl: 'images/luisa.jpg',
-  url: 'people/luisa.html',
-  message: 'I was just here over break :)',
-  lat_long: [4.444676,-75.242438],
-});
-
-addMarker({
-  name: 'Yvonne',
-  iconUrl: 'images/yvonne.jpg',
-  url: 'people/Yvonne.html',
-  message: 'Come visit me in Beijing!',
-  lat_long: [39.904211,116.407395],
-});
-
-addMarker({
-  name: 'Brophy',
-  iconUrl: 'images/brophy.jpg',
-  url: 'people/brophy.html',
-  message: 'I have a new puppy named Buck!',
-  lat_long: [40.712784, -74.005941],
-});
 
 addMarker({
   name: 'Tim',
   iconUrl: 'images/tim_round.jpg',
-  url: 'people/tim.html',
+  url: 'http://www.zingweb.com',
   message: 'I went hiking here!',
   lat_long: [37.2320967,-118.8578716],
 });
 
 addMarker({
-  name: 'Divya',
-  iconUrl: 'images/divya2.jpg',
-  url: 'people/divya.html',
-  message: "Home in San Jose!",
-  lat_long: [37.3382, -121.8863],
+  name: 'Kate',
+  iconUrl: 'images/kate.jpg',
+  url: 'people/kate.html',
+  message: 'I love snow!',
+  lat_long: [44.227173,-71.747907],
 });
 
-addMarker({
-  name: 'Varun',
-  iconUrl: 'images/varun.jpg',
-  url: 'people/varun.html',
-  message: 'Come visit me in Delhi',
-  lat_long: [28.6139,77.2090],
-});
-
-
-addMarker({
-  name: 'Gary',
-  iconUrl: 'images/gary.jpeg',
-  url: 'people/gary.html',
-  message: 'Come visit me in East Brunswick, NJ!',
-  lat_long: [40.4317, -74.4050],
-});
-
-addMarker({
-  name: 'Erin',
-  iconUrl: 'images/erin.jpg',
-  url: 'people/erin.html',
-  message: 'Come visit me in Atlanta!',
-  lat_long: [33.7490,-84.3880],
-});
-
-addMarker({
-  name: 'Virginia',
-  iconUrl: 'images/virginia.jpg',
-  url: 'people/virginia.html',
-  message: 'Amsterdam is a beautiful place!',
-  lat_long: [52.3702,4.8952],
-});
-
-addMarker({
-  name: 'Alex Beals',
-  iconUrl: 'images/alex.jpg',
-  url: 'people/alex.html',
-  message: 'This is where I spend my summers!',
-  lat_long: [45.373615,-121.695951],
-});
-
-addMarker({
-  name: 'Josh Kerber',
-  iconUrl: 'images/bsp.jpg',
-  url: 'people/joshkerber.html',
-  message: 'Free Brady.',
-  lat_long: [42.364506,-71.038887],
-});
-
-
-addMarker({
-  name: 'Henry Wilson',
-  iconUrl: 'images/henrywilson.jpg',
-  url: 'people/henrywilson.html',
-  message: 'Find your beach.',
-  lat_long: [41.4901,-71.312845],
-});
-
-addMarker({
-  name: 'James Edwards',
-  iconUrl: 'images/james_edwards.jpg',
-  url: 'people/james.html',
-  message: 'I am from Santa Monica!!',
-  lat_long: [34.016040,-118.450954],
-});
-
-addMarker({
-  name: 'Manmeet Gujral',
-  iconUrl: 'images/manmeet.jpg',
-  url: 'people/manmeet.html',
-  message: 'This is home!',
-  lat_long: [42.704801,-73.754842],
-});
-
-addMarker({
-  name: 'Emma',
-  iconUrl: 'images/emma.jpg',
-  url: 'people/emma.html',
-  message: 'I was born in Miami',
-  lat_long: [25.76,-80.19],
-});
-
-addMarker({
-  name: 'Jean',
-  iconUrl: 'images/jeanzhou.jpg',
-  url: 'people/jeanzhou.html',
-  message: 'I\'m from Medfield, MA!',
-  lat_long: [42.1876, -71.3065],
-});
-
-addMarker({
-  name: 'Robin Jayaswal',
-  iconUrl: 'images/robin.png',
-  url: 'people/robin.html',
-  message: 'Where I\'m From',
-  lat_long: [55.6761, 12.5683],
-});
-
-addMarker({
-  name: 'Rajiv',
-  iconUrl: 'images/rajivramaiah.jpg',
-  url: 'people/rajivramaiah.html',
-  message: 'Hello it is me, Rajiv!',
-  lat_long: [40.893791,40.501777],
-});
-
-addMarker({
-  name: 'Brian Francis',
-  iconUrl: 'images/brian_francis.jpg',
-  url: 'people/brianfrancis.html',
-  message: 'Home in Menlo parj',
-  lat_long: [37.4530, -122.1817],
-});
-
-addMarker({
-  name: 'Kyra',
-  iconUrl: 'images/kyra.jpg',
-  url: 'people/kyra.html',
-  message: 'brb swimming',
-  lat_long: [-54.220285, 55.898438],
-});
-
-
-addMarker({
-  name: 'Ross',
-  iconUrl: 'images/rosspic.jpg',
-  url: 'people/rossy.html',
-  message: 'Let\'s hike Table Mountain!!',
-  lat_long: [-33.924869, 18.424055],
-});
-
-addMarker({
-  name: 'Devina',
-  iconUrl: 'images/devina.jpg',
-  url: 'people/devina.html',
-  message: 'Seattle: Starbucks and Seahawks',
-  lat_long: [47.5327,-122.2301],
-});
-
-addMarker({
-  name: 'Matthew',
-  iconUrl: 'images/matthewgoldstein.jpg',
-  url: 'people/matthewgoldstein.html',
-  message: 'where I am is where I am at any given moment #deep',
-  lat_long: [26.6862971,52.3974836],
-});
-
-addMarker({
-  name: 'Weijia',
-  iconUrl: 'images/weijia.jpg',
-  url: 'people/weijia.html',
-  message: 'I am from Suzhou, China!',
-  lat_long: [31.299,120.5853],
-});
-
-addMarker({
-  name: 'Ian',
-  iconUrl: 'images/ianbatemanprofile.jpg',
-  url: 'people/ianbateman.html',
-  message: 'I am from Manasquan, NJ',
-  lat_long: [40.1137,-74.0376],
-});
-
-addMarker({
-  name: 'Larissa',
-  iconUrl: 'images/larissa1.jpg',
-  url: 'people/larissa.html',
-  message: 'From Erie,PA',
-  lat_long: [42.129224,-80.085059],
-});
-
-addMarker({
-  name: 'zuff',
-  iconUrl: 'images/zuff.jpg',
-  url: 'people/zuff.html',
-  message: 'i miss my cat',
-  lat_long: [39.9526, -75.1652],
-});
-
-addMarker({
-  name: 'Xinwei',
-  iconUrl: 'images/xjiang.jpg',
-  url: 'people/xjiang.html',
-  message: 'Hi, it is me!',
-  lat_long: [31.2304,121.4737],
-});
-
-addMarker({
-  name: 'Chris',
-  iconUrl: 'images/chris.jpg',
-  url: 'people/chris.html',
-  message: 'Come chill on the beach',
-  lat_long: [26.699266, -80.035477],
-});
-
-addMarker({
-  name: 'Sydni',
-  iconUrl: 'images/sydnitopper.jpg',
-  url: 'people/sydni.html',
-  message: 'Spent the best week of my life here!',
-  lat_long: [-53.807139,-68.378906],
-});
-
-addMarker({
-  name: 'Adam',
-  iconUrl: 'images/adam.jpg',
-  url: 'people/adam.html',
-  message: 'This is where I took this picture!',
-  lat_long: [-13.531950,-71.967463],
-});
-
-addMarker({
-  name: 'Ben',
-  iconUrl: 'images/BenCooper.jpg',
-  url: 'people/BenCooper.html',
-  message: 'This is my favorite place to be in the summer!!',
-  lat_long: [41.349623, -70.514041],
-});
-addMarker({
-  name: 'Robert',
-  iconUrl: 'images/robert.jpg',
-  url: 'people/robert.html',
-  message: 'Hi I\'m Robert!',
-  lat_long: [33.893791,35.501777],
-});
 
 //END SECTION FOR MARKERS
 
@@ -399,7 +87,7 @@ var info = L.control();
 
 info.onAdd = function (map) {
     this._div = L.DomUtil.create('div', 'info'); // create a div with a class "info"
-    this._div.innerHTML = '<a href="/"><h4>Dartmouth CS52 16X</h4></a><p><a href="https://github.com/dartmouth-cs52/16X-git-map">code on github</p></a>';
+    this._div.innerHTML = '<a href="/"><h4>DALI 17W</h4></a><p><a href="https://github.com/dali-lab/17W-mappy">code on github</p></a>';
     return this._div;
 };
 
