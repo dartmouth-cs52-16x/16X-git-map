@@ -11,24 +11,23 @@ Here's what we're going to do!
   - Put a picture of yourself in your repo
   - add a location to the map
 1. `add` a file to source control
-1. `commit` your changes
-1. `pull` master
-1. create a `branch`
+1. `commit` your changes locally
+1. `pull` to update from github
 1. if you need to resolve conflicts
   - fix the conflicts
   - add the fixed files as you did previously
   - `commit`
-1. `push`
+1. `push` your changes to github
 
 #### Branches
-1. `pull` master
-1. Create a `branch`
+1. `pull` to update from github
+1. Create a `branch` locally
 1. Make some edits
-1. `commit`
-1. `rebase`
+1. `commit` your changes locally
+1. `rebase` your changes on top of any updates from github
 
 #### Pull Requests
-1. `push` our feature branch to github
+1. `push` your feature branch to github
 1. issue a Pull Request and approve it
 1. pull request will merge our changes into the main branch
 1. view our work!
@@ -46,7 +45,7 @@ Key: <br />
 You should already have this. If not, install from [atom.io](http://atom.io).  Open Atom and then do: *Atom -> Install Shell Commands*
 
 **[git+github](http://www.github.com)**
-git is a code collaboration tool! You might be able to skip this step if you've previously used git on your computer.
+git is a code collaboration tool! You might be able to skip this step if you've previously used git on your computer. Best way to install commandline tools on a mac is to use HomeBrew
 
 *On Windows use Git Shell for all the Terminal commands*
 
@@ -94,7 +93,7 @@ cd 16X-git-map # just make sure you are in the same dir as index.html
 python -m SimpleHTTPServer 9000
 ```
 
-![](docs/imgs/simpleserver.png)<br>
+![](imgs/simpleserver.png)<br>
 this will start a simple little webserver so you can now access the page in your browser at: [http://localhost:9000](http://localhost:9000)
 
 *If you have Windows you may not have python installed. Install version 2.7.x from [python.org](http://python.org)*
@@ -127,7 +126,7 @@ Now that you've made some changes to the site, we'll go over how to use git to a
 
 This is a good overview image for the things you'll be doing — it'll all make sense eventually.
 
-![](docs/imgs/git_data_transport.png)
+![](imgs/git_data_transport.png)
 
 
 ## 3) Git Add
@@ -140,7 +139,7 @@ This is a good overview image for the things you'll be doing — it'll all make 
   - 🚀Go ahead a try to add your new files now. Run `git status` to make sure they are added.
 
 Here's what this looked like while editing this README:
-![git status](docs/imgs/git_status.png)
+![git status](imgs/git_status.png)
 
 
 ## 4) Git Commit
@@ -190,7 +189,7 @@ var h = 'Hi!';
 where the line between  `<<<HEAD` and `====` is the line/lines of code that are relevant in your file, and between  `====` and `>>>> cb1abc6` are from the remote repository (the repository that you see on github.com). The crazy characters refer to the commit that the change comes from.
 
 Since we've been using Atom so far there is a nice plugin to help visualize this a little better. *Atom -> Preferences -> Install -> search* for merge-conflicts
-![merge-conflict](docs/imgs/merge-conflicts.gif)
+![merge-conflict](imgs/merge-conflicts.gif)
 
 Once you have your conflict file the way you want it — ie. fixed and without any more of the conflict markers...
 
@@ -291,13 +290,13 @@ The best flow to merge your feature into the main branch is to issue a pull requ
 
 🚀Go to Github (or use the Github Desktop App) and submit a *New Pull Request* (choosing whatever branch you just pushed), add a quick description. Possibly do code review or just approve the request yourself. The idea here is that this is a checkpoint spot before adding your feature to the main branch so that everybody on your teams knows what is happening.
 
-![pull-request](docs/imgs/pull-request.png)
+![pull-request](imgs/pull-request.png)
 
 Ensure that you are comparing the correct two branches. Set "base" branch to be the branch where you want to commit your changes and "compare" branch to be the branch where your commits reside (see above image).
 
 To do a code review, @mention a peer in the pull request. Once approved, your code changes will be merged. You can also merge pull requests after carefully reviewing all the changes.
 
-![merge-pull-request](docs/imgs/merge-pull-request.png)
+![merge-pull-request](imgs/merge-pull-request.png)
 
 Alternatively you can merge your changes in to the master branch without a pull request, but this should only be done if you are using git on your own or with a very small team!
 
@@ -309,7 +308,7 @@ git merge your_feature_branch_name
 **Once you no longer need a branch you should delete it!**
 You can do this on github.
 
-![delete-branch](docs/imgs/delete-branch.png)
+![delete-branch](imgs/delete-branch.png)
 
 You can also do this locally with `git branch -d your_feature_branch_name`.
 Note: you have to delete it in both places, as just deleting it remotely won't delete it locally.
@@ -374,19 +373,19 @@ where xxxxxx is the commit id, which you can get from `git log`.
 
 To squash a commit into the previous one, replace "pick" with "s" or "squash" and save the file.
 
-![Rebase Interactive](docs/imgs/rebase-interactive.png)
+![Rebase Interactive](imgs/rebase-interactive.png)
 
 This is the screen you will see after typing `git rebase -i`.
 This file will be launched in your default text editor.
 You have many different options, typically `squash` is the most useful.
 
-![Squash](docs/imgs/squash.png)
+![Squash](imgs/squash.png)
 
 By changing the character in front of the second commit to `s`,
 we are "combining" the second commit into the first commit.
 To finish, save and exit on your text editor (:wq in Vim).
 
-![Commit Messages](docs/imgs/commit-messages.png)
+![Commit Messages](imgs/commit-messages.png)
 
 After squashing, you have to write a new commit message.
 Again to finish, save and exit on your text editor. Done!
