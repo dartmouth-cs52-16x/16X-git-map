@@ -129,7 +129,7 @@ If you were to do this by hand, git takes the pretty code you wrote and injects 
 ### 6) Merge Conflict mergy
 =======
 ### 6) Mergy merge merge Conflicts !
->>>>>>> *origin/ghpages*
+>>>>>>> origin/ghpages
 ```
 where the line between  `<<<HEAD` and `====` is the line/lines of code that are relevant in your file, and between  `====` and `>>>> origin/ghpages` are from the remote repository (the repository that you see on github.com). This line refers to the commit that the change came from.
 
