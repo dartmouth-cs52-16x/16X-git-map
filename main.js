@@ -58,7 +58,7 @@ addMarker({
 addMarker({
   name: 'Kate',
   iconUrl: 'images/kate.jpg',
-  url: 'people/kate.html',
+  url: 'images/kate-page.pdf',
   message: 'I love snow!',
   lat_long: [44.227173,-71.747907],
 });
