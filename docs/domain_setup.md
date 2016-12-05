@@ -1,14 +1,14 @@
-# 1 Hour Make A Website
+# DALI Collaborative Coding and Design Developer Details
 
-We're going to be making a website from domain name to design and html/css.
+We're going to be making a website from domain name to design and html/css. Then we will add an pin and image onto a shared map with a link to your new website.
 
-
-
-(screenshot examples are from cs52)
+(some screenshot examples are from cs52)
 
 
 ## Steps At a Glance
 Here's what we're going to do!
+
+### Domain Setup
 
 1. Setup Local Dev environment
 1. Download some tools
@@ -16,6 +16,44 @@ Here's what we're going to do!
 1. Create and clone a github repo
 1. Create a webpage
 1. Set up hosting and DNS
+
+<!--
+#### Basic git
+1. Clone this repo
+1. Create a `branch`
+1. Make some edits
+  - Modify `index.html`
+  - Put a picture of yourself in your repo
+  - add a location to the map
+1. `add` a file to source control
+1. `commit` your changes locally
+1. `pull` to update from github
+1. if you need to resolve conflicts
+  - fix the conflicts
+  - add the fixed files as you did previously
+  - `commit`
+1. `push` your changes to github
+
+#### Branches
+1. `pull` to update from github
+1. Create a `branch` locally
+1. Make some edits
+1. `commit` your changes locally
+1. `rebase` your changes on top of any updates from github
+
+#### Pull Requests
+1. `push` your feature branch to github
+1. issue a Pull Request and approve it
+1. pull request will merge our changes into the main branch
+1. view our work!
+-->
+
+Key: <br />
+🚀steps to definitely pay attention to <br/>
+💻run this in Terminal<br />
+🍸pro tip<br />
+
+
 
 
 ## Local Dev Environment
@@ -113,6 +151,40 @@ Grab the URL for the repository (either SSH or HTML depending on how you have gi
 
 **Note:**  the following are transcripts of MY terminal session while setting up **cs52.me** with my github URL.  You should replace anything with `cs52.me` with your own repo name and your github URL instead.
 
+
+### Git global configs:
+🚀 Setup your global config variables in *Terminal* if you haven't yet:
+
+  💻`git config --global user.name "Jane Doe"`
+
+  💻`git config --global user.email janedoe@example.com`
+
+Ensure that the configs are set up with `cat ~/.gitconfig`. *Email* and *Name* should be filled out.
+
+This is important, if you don't do this github won't really know who you are and you won't get credited for your commits.
+
+
+## 1) Clone the Repository
+**What this does:** The repository is what git uses to store your project's information. It contains commits and references to commits (more on this later). The folder on your computer becomes your *workspace*.
+
+From the command line (where you will run all future commands):
+
+1. 🚀 Navigate to where you want the repo to end up on your computer. For example:
+```bash
+💻 mkdir ~/Documents/DALI
+💻 cd ~/Documents/DALI
+```
+1. 🚀 Clone the repo:
+```bash
+💻 git clone YOUR_REPO_URL
+```
+1. 🚀 change directory to this new workspace:
+```bash
+💻 cd YOUR_REPO_NAME
+```
+
+
+<!--
 ### Clone Repo
 
 ```bash
@@ -123,7 +195,7 @@ Checking connectivity... done.
 💻 cd cs52.me/
 💻 pwd  #checking current working directory
 /Users/tim/Sandbox/cs52.me
-```
+``` -->
 
 ### Create some HTML
 
@@ -146,7 +218,7 @@ Serving HTTP on 0.0.0.0 port 9000 ...
 
 ❓does anybody know what `127.0.0.1` is the address for?
 
-Lets check out what we have made: http://localhost:9000
+Lets check out what we have made in Chrome: http://localhost:9000
 
 ![](imgs//localhost.png)
 
@@ -154,7 +226,7 @@ Note: to quit the python server type: ctrl+c
 (this is a default for many commandline processes).
 
 
-### Add Some Content
+### Now Add Some Content
 
 * A picture of yourself
 * Your name
@@ -162,11 +234,39 @@ Note: to quit the python server type: ctrl+c
 * A short bio telling us about yourself (you might include/mention: design/programming applications you know, what you enjoy most about ui/ux design/development, why you’re excited to work with DALI.)
 * Something interesting about yourself :-)
 
-#### Learn some HTML/CSS
+Go here to learn some HTML/CSS: http://learn.shayhowe.com/html-css/
 
-Go here to learn some: http://learn.shayhowe.com/html-css/
+🎆 Have fun with this part - experiment. To see your changes just refresh the page in your browser.
+
+### Images
+To insert a new image just put a .jpg or .png in an `images` folder and use the syntax in your html.
+
+```
+<img src="images/nameofyourimage.jpg">
+```
+
+More here: http://learn.shayhowe.com/html-css/adding-media/#adding-images
+
+
+
+## An Overview of Git
+Now that you've made some changes to the site, we'll go over how to use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.
+
+
+This is a good overview image for the things you'll be doing — it'll all make sense eventually.
+
+![](imgs/git_data_transport.png)
+
 
 ### Git Add
+
+**What this does:** The add step tells git which files from the workspace you want it to track, or add to the index.
+
+  - 🚀**Check your status:** Use `git status` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.
+  - 🚀**Add Untracked Files:** Use `git add filename` on those files to tell git to track them.
+    - You might also used `git add .` to add all untracked files recursively from the current directory.
+  - 🚀Go ahead a try to add your new files now. Run `git status` to make sure they are added.
+
 
 ```bash
 💻 git status  #check and see what the story is
@@ -191,6 +291,22 @@ Changes to be committed:
 
   new file:   index.html
 
+
+```
+
+## 4) Git Commit
+**What this does:** Committing files tells git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
+
+  - 🚀**Commit your changes:** ```git commit -am "i made some changes"```
+    - ``-a`` means all changes
+    - ``-m`` indicates that your commit message follows directly, a commit message is required.
+  - Example of sample commit chains that adds new payments feature to an e-commerce website:
+    - "Setup and initialize new Charge Table"
+    - "Add API call to generate a new Charge"
+    - "Add task that processes new charges"
+    - "Add tests to make sure charge amounts are accurate between server and client"
+
+```
 💻 git commit -am "its hideous"   #please make yours prettier 😃
 [master (root-commit) 93a5c69] its hideous
  1 file changed, 10 insertions(+)
@@ -274,3 +390,17 @@ Note the 2 IP addresses in the `A Record` fields,  those are github servers.
 Wait,  but how does pages.github.com know? Does that machine serve lots of addresses?
 
 Yes, those IPs point to load balancers that direct requests based on the transport packet which happens to have the domain name requested in it.  This is where that magical `CNAME` file comes in.  That tells GitHub Pages that your repository should be served when requests come in for that domain. :cool:
+
+
+
+
+## Add Yourself To The DALI 17W Map!
+
+Now that you have a personal page up.  Let's add
+
+### Clone The Repo
+
+1. 🚀Clone the repo:
+`git clone https://github.com/dali-lab/17W-mappy.git`
+1. 🚀change directory to this new workspace:
+`cd 17W-mappy`
