@@ -34,17 +34,8 @@ Your style guide should include:
 * Type styles — include the name of the typeface, sizes, styles, and colors used
 * Color palette — include swatches and hex codes
 
-## Part 2: Register Your Domain
 
-Lets start off right and get you set up with a domain of your own!
-
-We'll use NameCheap as our registrar. Namecheap is a good net citizen and have free domains for students.
-
-Go to: https://nc.me/ and register your domain!
-![] (imgs/namecheap_hp.png)
-
-
-## Part 3: Setup Git & Atom
+## Part 2: Setup Git & Atom
 
 You'll use Atom and the Github app to submit a PDF of your final design. Follow the instructions below to add your page to the DALI Map!
 
@@ -74,14 +65,14 @@ git is a code collaboration tool! If you've previously used git on your computer
 In Atom, go to: File -> Add Project Folder, and select the 17w-mappy repo.
 
 
-## Part 4: Use Atom & Git to Publish Your Work
+## Part 3: Use Atom & Git to Publish Your Work
 Now you'll use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.
 
 This is a good overview image for the things you'll be doing — it'll all make sense eventually.
 
 ![](imgs/git_data_transport.png)
 
-### Step 1. Add Your Images to Your Local Git Repo
+### Step 1. Add Your Image to Your Local Git Repo
 
 1. Export your design from Sketch as a PDF 
 2. Locate the images directory in your local project repo. If you're not sure where Git set this up, you can right-click the 17W-mappy repo in the Git app, and select Open in Finder.
@@ -119,6 +110,8 @@ In Gitapp:
 
 Check the map to make sure your bio picture is showing and the page you designed in Sketch shows up when you click your photo!
 https://dali-lab.github.io/17W-mappy/
+
+
 
 
 ## Help & Troubleshooting
@@ -194,5 +187,53 @@ Once you have your conflict file the way you want it — ie. fixed and without a
 ### You've Published a Page!
 
 If you go to https://dali-lab.github.io/17W-mappy/ and click your marker on the map, you'll be able to see your new page!
+
+
+## Optional: Create Your Own Domain
+
+### Step 1. Register Your Domain
+
+Namecheap has free domains for students. Go to: https://nc.me/ and register your domain!
+![] (imgs/namecheap_hp.png)
+
+1. Add your domain
+![Add Your Domain] (imgs/dalikate-1.png)
+
+2. Select your options and enter your dartmouth.edu email address
+![Domain Options] (imgs/dalikate-2-options.png)
+
+3. Check your email and click the button to verify your email
+![Verify Your Email] (imgs/dalikate-3-verifyemail.png)
+
+4. Click "Register"
+![Register] (imgs/dalikate-4-clickregister.png)
+
+5. Fill out the form and then confirm your order
+![Confirm Your Order] (imgs/dalikate-5-confirm.png)
+
+6. Set up Your Git Account
+![Set up Git] (imgs/dalikate-6-gotogit.png)
+
+### Step 2. Create a New Repo for Your Domain
+If the previous step didn't take you over to Github, go to: http://github.com and log in to your account if you're not already logged in.
+
+1. Create a new repository. (Use the domain name you just registered with namecheap, e.g. my new repo is called "dalikate".)
+
+2. You can either click the "Setup in Desktop" button, or hop over to Gitapp to create a clone of your new repository like we did in Part 2.
+
+Click the + Add a Repository dropdown, select clone, and choose the name of your new repo.
+
+3. Locate the repo locally on your machine (right-click, Open in Finder)
+
+4. Copy the PDF you exported from Sketch to your local repo
+
+5. In Gitapp, commit the changes and click Publish
+
+Github.com 
+
+Go to settings, scroll down to GitHub Pages, under Source, select "Master Branch" and save.
+
+### Domain Trouble
+If, for some reason, you have trouble registering your domain, add your PDF file to your local repository and update the `url` in `main.js` to point to your PDF. Then, in Gitapp, commit and sync your changes. Check the map and make sure your PDF loads when you click your marker!
 
 
