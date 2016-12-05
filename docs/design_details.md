@@ -39,14 +39,14 @@ Your style guide should include:
 
 You'll use Atom and the Github app to submit a PDF of your final design. Follow the instructions below to add your page to the DALI Map!
 
-### Download & Install Atom
+### Step 1. Download & Install Atom
 Atom is a great code editor, it is cross platform and looks pretty. If you prefer a different editor you can use that one instead. If you already have Atom installed, you can skip this section.
 
 1. Install from http://atom.io
 
 2. Open Atom and then do: Atom -> Install Shell Commands
 
-### Install Github Desktop App & Add The Project Repo
+### Step 2. Install Github Desktop App & Add The Project Repo
 git is a code collaboration tool! If you've previously used git on your computer, you can skip the install step.
 
 1. Install the github app from: https://desktop.github.com/
@@ -60,7 +60,7 @@ git is a code collaboration tool! If you've previously used git on your computer
 ![Cloning a Project Repro](imgs/github-app-2clone-mappy.png)
 
 
-### Add the Project Repo in Atom
+### Step 3. Add the Project Repo in Atom
 
 In Atom, go to: File -> Add Project Folder, and select the 17w-mappy repo.
 
@@ -72,7 +72,7 @@ This is a good overview image for the things you'll be doing — it'll all make 
 
 ![](imgs/git_data_transport.png)
 
-### Step 1) Add Your Images to Your Local Git Repo
+### Step 1. Add Your Images to Your Local Git Repo
 
 1. Export your design from Sketch as a PDF 
 2. Locate the images directory in your local project repo. If you're not sure where Git set this up, you can right-click the 17W-mappy repo in the Git app, and select Open in Finder.
@@ -80,7 +80,7 @@ This is a good overview image for the things you'll be doing — it'll all make 
   * A bio pic — must be square, 200 x 200px (this will show up on the map). If you don't have a favorite tool for this try [resizeimage](http://resizeimage.net/)
   * The PDF of the design you created in Sketch
   
-### Step 2) Create a Javascript Marker on the Map
+### Step 2. Create a Javascript Marker on the Map
 
 Now you're ready to create a marker on the DALI Map with your bio pic! This marker will be placed at a geographic location you specify and will link to the pdf file you exported from Sketch.
 
@@ -95,7 +95,7 @@ Now you're ready to create a marker on the DALI Map with your bio pic! This mark
 
 4. Save the file.
 
-### Step 3) Commit & Sync Your Changes with Gitapp
+### Step 3. Commit & Sync Your Changes with Gitapp
 Committing files tells Git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
 
 In Gitapp:
