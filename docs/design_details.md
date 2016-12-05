@@ -30,9 +30,9 @@ The design of your bio should include:
 
 Your style guide should include:
 
-1. A short description/rationale explaining your design choices
-2. Type styles — include the name of the typeface, sizes, styles, and colors used
-3. Color palette — include swatches and hex codes
+* A short description/rationale explaining your design choices
+* Type styles — include the name of the typeface, sizes, styles, and colors used
+* Color palette — include swatches and hex codes
 
 
 ## Part 2: Setup Git & Atom
