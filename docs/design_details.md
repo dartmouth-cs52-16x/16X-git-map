@@ -106,6 +106,8 @@ In Gitapp:
 
 3. Sync your changes with the server (this will run a pull to update your changes locally, and then a push to update the Github server).
 
+![Gitapp-Commit](imgs/github-app-commit-notes.png)
+
 Check the map to make sure your bio picture is showing and the page you designed in Sketch shows up when you click your photo!
 https://dali-lab.github.io/17W-mappy/
 
@@ -114,49 +116,43 @@ https://dali-lab.github.io/17W-mappy/
 ### Git Conflicts
 Since multiple people can be working on the same file at the same time, it's possible that you might edit the exact same line in a file as someone else. When this happens, Git doesn't know how to automatically resolve it and you will get message that looks like this:
 
-```
-CONFLICT (content): Merge conflict in somefile
-Automatic merge failed; fix conflicts and then commit the result.
-```
+![merge-conflict](imgs/github-app-mergeconflict.png)
+
 This happens and is normal, so don't worry! To fix you just need to pick apart the conflict and merge it in.
 
-#### Deciphering Merge Conflicts
+### Deciphering Merge Conflicts
 
 If you were to do this by hand, git takes the pretty code you wrote and injects terrible "conflict markers" that look like this:
 
 ```
 <<<<<<< HEAD
-var h = 'hello, world';
+### 6) Merge Conflict mergy
 =======
-var h = 'Hi!';
->>>>>>> cb1abc6bd98cfc84317f8aa95a7662815417802d
+### 6) Mergy merge merge Conflicts !
+>>>>>>> *origin/ghpages*
 ```
+where the line between  `<<<HEAD` and `====` is the line/lines of code that are relevant in your file, and between  `====` and `>>>> origin/ghpages` are from the remote repository (the repository that you see on github.com). This line refers to the commit that the change came from.
 
-where the line between  `<<<HEAD` and `====` is the line/lines of code that are relevant in your file, and between  `====` and `>>>> cb1abc6` are from the remote repository (the repository that you see on github.com). The crazy characters refer to the commit that the change comes from.
+In atom, this looks like:
+![merge-conflict-atom](imgs/github-app-mergeconflict-atom.png)
+
+* `origin` is the remote you are pushing to and is named origin by default
+* `gh-pages` is the branch you are pushing. It happens that because we are hosting this on github.io the default branch is `gh-pages`. Usually you'll be using your own branch or the default which is usually `master`.
 
 Since we've been using Atom so far there is a nice plugin to help visualize this a little better. *Atom -> Preferences -> Install -> search* for merge-conflicts
-![merge-conflict](imgs/merge-conflicts.gif)
 
-Once you have your conflict file the way you want it — ie. fixed and without any more of the conflict markers... all you have to do to continue is:
+![merge-conflict](imgs/github-app-mergeconflict-plugin.png)
+
+![merge-conflict-atom](imgs/github-app-mergeconflict-atom-fixed.png)
+
+Once you have your conflict file the way you want it — ie. fixed and without any more of the conflict markers, all you have to do to continue is:
 * Save your file in Atom
 * Commit the change in Gitapp
 * And sync!
+   
 
+### You've Published a Page!
 
-
-
-`git add thefixedfile` which indicates to git that you have resolved the conflict. Then `git commit` with no options will complete the merge and automatically create a commit message.
-
-### 7) Push Your Commits
-**What this does:** Now that you've resolved any conflicts you're ready to push your local changes to the remote repository!
-
-  - 🚀`git push origin gh-pages`
-    - `origin` is the remote you are pushing to and is named origin by default
-    - `gh-pages` is the branch you are pushing. It happens that because we are hosting this on github.io the default branch is `gh-pages`. Usually you'll be using your own branch or the default which is usually `master`.
-    - if this fails, redo step [5](#5\)-Git-Pull)
-
-###You've now published a page!
-
-If you go to https://dali-lab.github.io/17W-mappy/people/yournewpage.html now you'll be able to see your new page.
+If you go to https://dali-lab.github.io/17W-mappy/ and click your marker on the map, you'll be able to see your new page!
 
 
