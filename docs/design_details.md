@@ -37,7 +37,7 @@ Your style guide should include:
 
 ## Part 2: Setup Git & Atom
 
-You'll use Atom and the Github app to submit a JPG of your final design. Follow the instructions below to add your page to the DALI Map!
+You'll use Atom and the Github app to submit a PDF of your final design. Follow the instructions below to add your page to the DALI Map!
 
 ### Download & Install Atom
 Atom is a great code editor, it is cross platform and looks pretty. If you prefer a different editor you can use that one instead. If you already have Atom installed, you can skip this section.
@@ -74,79 +74,51 @@ This is a good overview image for the things you'll be doing — it'll all make 
 
 ### Step 1) Add Your Images to Your Local Git Repo
 
-1. Export your page design as a JPG from Sketch
-2. Move this file to your local project repro. If you're not sure where Git set this up, you can right-click the 17W-mappy repo in the Git app, and select Open in Finder.
-3. Add 2 images to the images directory:
+1. Export your design from Sketch as a PDF 
+2. Locate the images directory in your local project repo. If you're not sure where Git set this up, you can right-click the 17W-mappy repo in the Git app, and select Open in Finder.
+3. Add 2 files to the images directory:
   * A bio pic — must be square, 200 x 200px (this will show up on the map). If you don't have a favorite tool for this try [resizeimage](http://resizeimage.net/)
-  * The JPG of the design you created in Sketch
+  * The PDF of the design you created in Sketch
   
-### Step 2) Create an HTML Page for Your Design
-1. In Atom, Create a new file
+### Step 2) Create a Javascript Marker on the Map
 
-2. Paste the following HTML into your new file:
-
-```
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Kate Stinson</title>
-</head>
-<body>
-<div style="text-align: center;">
-  <img src="../images/kate-page.png" style="width:100%"/>
-</div>
-</body>
-</html>
-```
-
-3. Put your name in the title tag of the page
-
-4. Update the img src tag to point to your design (e.g. mine was: kate-page.png).
-
-5. Save your file to the people directory in the 17W-mappy repo.
-
-
-### Step 3) Create a Javascript Marker on the Map
-
-Now you're ready to create a marker on the DALI Map with your bio pic! This marker will be placed at a lat long you specify and will link to the html page you created in the previous step.
+Now you're ready to create a marker on the DALI Map with your bio pic! This marker will be placed at a geographic location you specify and will link to the pdf file you exported from Sketch.
 
 1. Open `main.js` in atom.
 
 2. Find where we run the method `addMarker` to create a marker for Froggy. Copy that function call and paste it in somewhere in the `SECTION FOR MARKERS`.  
 
 3. Update the Javascript function to call your information:
-  * Change the `iconUrl` field to point to your bio pic, which should be saved in the images directory.
-  * Change the `url` field to point to the HTML file that will display the PNG of the design you created earlier in Sketch!
-  * Add a lat long: http://www.latlong.net/.
+  * Change the `iconUrl` field to point to your bio pic, which should be saved in the images directory
+  * Change the `url` field to point to the PDF file
+  * Add a lat long: http://www.latlong.net/
 
 4. Save the file.
 
-
 ### Step 3) Commit & Sync Your Changes with Gitapp
-Committing files tells git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
+Committing files tells Git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
 
 In Gitapp:
 
-1. Write some text in the summary field to add a quick not about what you did/the changes you made. e.g. added images and html file.
+1. Write a short note in the summary field about what you did/what changes you made (e.g. added images and html file).
 
 2. Commit your changes.
 
-3. Sync your changes with the server (this will run a Git pull to update your changes locally, and then a push to update the Github server).
+3. Sync your changes with the server (this will run a pull to update your changes locally, and then a push to update the Github server).
 
-## Help with Conflicts
+Check the map to make sure your bio picture is showing and the page you designed in Sketch shows up when you click your photo!
+https://dali-lab.github.io/17W-mappy/
 
-### 6) Merge Conflicts
 
-At this point after a `git pull` you may get a message that looks like this:
+## Help & Troubleshooting
+### Git Conflicts
+Since multiple people can be working on the same file at the same time, it's possible that you might edit the exact same line in a file as someone else. When this happens, Git doesn't know how to automatically resolve it and you will get message that looks like this:
 
 ```
 CONFLICT (content): Merge conflict in somefile
 Automatic merge failed; fix conflicts and then commit the result.
 ```
-
-This is when the fun starts.  How do you fix this?
-
-The cause for merge conflicts is that you edited the exact same line as someone else and git doesn't know how to automatically resolve that.  This happens and is normal, don't worry.  So to fix you just need to pick apart the conflict and merge it in — continue to the next section to see how this happens!
+This happens and is normal, so don't worry! To fix you just need to pick apart the conflict and merge it in.
 
 #### Deciphering Merge Conflicts
 
@@ -165,9 +137,15 @@ where the line between  `<<<HEAD` and `====` is the line/lines of code that are 
 Since we've been using Atom so far there is a nice plugin to help visualize this a little better. *Atom -> Preferences -> Install -> search* for merge-conflicts
 ![merge-conflict](imgs/merge-conflicts.gif)
 
-Once you have your conflict file the way you want it — ie. fixed and without any more of the conflict markers...
+Once you have your conflict file the way you want it — ie. fixed and without any more of the conflict markers... all you have to do to continue is:
+* Save your file in Atom
+* Commit the change in Gitapp
+* And sync!
 
-- All you have to do to continue is:  `git add thefixedfile` which indicates to git that you have resolved the conflict. Then `git commit` with no options will complete the merge and automatically create a commit message.
+
+
+
+`git add thefixedfile` which indicates to git that you have resolved the conflict. Then `git commit` with no options will complete the merge and automatically create a commit message.
 
 ### 7) Push Your Commits
 **What this does:** Now that you've resolved any conflicts you're ready to push your local changes to the remote repository!
