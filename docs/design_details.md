@@ -6,6 +6,7 @@ This task is to help you gain familiarity with Sketch, a powerful UI/UX design a
 1. Download a free trial of Sketch from: https://sketchapp.com.  
 2. Watch the short Sketch tutorials on *Introducing Symbols*, *Symbol Resizing*, and *Using Masks*: https://sketchapp.com/learn/.
 
+***
 ## Part 1: Design Your Page Using Sketch
 
 ### Your page should include 2 sections:
@@ -34,7 +35,7 @@ Your style guide should include:
 * Type styles — include the name of the typeface, sizes, styles, and colors used
 * Color palette — include swatches and hex codes
 
-
+***
 ## Part 2: Setup Git & Atom
 
 You'll use Atom and the Github app to submit a PDF of your final design. Follow the instructions below to add your page to the DALI Map!
@@ -64,7 +65,7 @@ git is a code collaboration tool! If you've previously used git on your computer
 
 In Atom, go to: File -> Add Project Folder, and select the 17w-mappy repo.
 
-
+***
 ## Part 3: Use Atom & Git to Publish Your Work
 Now you'll use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.
 
@@ -100,7 +101,7 @@ Committing files tells Git that you want to name and save the changes you have m
 
 In Gitapp:
 
-1. Write a short note in the summary field about what you did/what changes you made (e.g. added images and html file).
+1. Write a short note in the summary field about what you did/what changes you made (e.g. added bio image and pdf).
 
 2. Commit your changes.
 
@@ -113,6 +114,7 @@ https://dali-lab.github.io/17W-mappy/
 
 
 
+***
 
 ## Help & Troubleshooting
 ### Git Conflicts
@@ -124,8 +126,10 @@ This happens and is normal, so don't worry! To fix you just need to pick apart t
 
 ### Deciphering Merge Conflicts
 
-Let's say Tim and I were both adding our markers to `main.js` in the same spot, at the same time. We'd get a merge conflict error (shown above), and if we look at `main.js` in Atom, we'll see that Git has injected some "conflict markers" that look like this:
+Let's say Tim and I were both adding our markers to `main.js` in the same spot, at the same time. We'd get a merge conflict error (shown above), and if we look at `main.js` in Atom, we'll see that Git has added some "conflict markers" that look like this: 
+`<<<HEAD` and `====` and `>>>> origin/ghpages`
 
+With the code, they look like this:
 ```
 <<<<<<< HEAD
 addMarker({
@@ -145,7 +149,14 @@ addMarker({
 });
 >>>> origin/ghpages
 ```
-The lines between  `<<<HEAD` and `====` and `====` and `>>>> origin/ghpages` are the lines that are in conflict. `>>>> origin/ghpages` refers to the commit that the change came from. Because you see someone else's marker here, you'll want to edit the code to keep their marker info as well as yours. To do this, just remove the conflict markers. Your edit would look like this:
+The lines between  `<<<HEAD` and `====` and `====` and `>>>> origin/ghpages` are the lines that are in conflict. `>>>> origin/ghpages` refers to the commit that the change came from.
+
+* `origin` is the remote you are pushing to and is named origin by default
+* `gh-pages` is the branch you are pushing. It happens that because we are hosting this on github.io the default branch is `gh-pages`. Usually you'll be using your own branch or the default which is usually `master`.
+
+### Resolving Conflicts
+
+Since I see the code for Tim's marker, I want to resolve the conflict by keeping his block of code as well as my own. To do this, I need to remove the conflict markers and save my file. Your edit would look like this:
 
 ```
 addMarker({
@@ -165,41 +176,33 @@ addMarker({
 });
 
 ```
-
-In atom, this looks like:
-![merge-conflict-atom](imgs/github-app-mergeconflict-atom.png)
-
-* `origin` is the remote you are pushing to and is named origin by default
-* `gh-pages` is the branch you are pushing. It happens that because we are hosting this on github.io the default branch is `gh-pages`. Usually you'll be using your own branch or the default which is usually `master`.
-
-Since we've been using Atom so far there is a nice plugin to help visualize this a little better. *Atom -> Preferences -> Install -> search* for merge-conflicts
-
-![merge-conflict](imgs/github-app-mergeconflict-plugin.png)
-
-![merge-conflict-atom](imgs/github-app-mergeconflict-atom-fixed.png)
-
-Once you have your conflict file the way you want it — ie. fixed and without any more of the conflict markers, all you have to do to continue is:
+Once you have your conflict resolved — fixed and without any more of the conflict markers, all you have to do to continue is:
 * Save your file in Atom
 * Commit the change in Gitapp
 * And sync!
-   
 
-### You've Published a Page!
-
+### Conflict Resolved!
 If you go to https://dali-lab.github.io/17W-mappy/ and click your marker on the map, you'll be able to see your new page!
 
+### Helpful Plugins
+Since we've been using Atom, there is a nice plugin to help visualize merge conflicts. To install it: Atom -> Preferences -> Install. Search for "merge-conflicts" and click install.
 
+![merge-conflict](imgs/github-app-mergeconflict-plugin.png)
+
+
+
+***
 ## Optional: Create Your Own Domain
 
 ### Step 1. Register Your Domain
 
 Namecheap has free domains for students. Go to: https://nc.me/ and register your domain!
-![] (imgs/namecheap_hp.png)
+![Namecheap Domains] (imgs/namecheap_hp.png)
 
 1. Add your domain
 ![Add Your Domain] (imgs/dalikate-1.png)
 
-2. Select your options and enter your dartmouth.edu email address
+2. Select your options, scroll down, and enter your dartmouth.edu email address
 ![Domain Options] (imgs/dalikate-2-options.png)
 
 3. Check your email and click the button to verify your email
@@ -208,7 +211,7 @@ Namecheap has free domains for students. Go to: https://nc.me/ and register your
 4. Click "Register"
 ![Register] (imgs/dalikate-4-clickregister.png)
 
-5. Fill out the form and then confirm your order
+5. Fill out the form and confirm your order
 ![Confirm Your Order] (imgs/dalikate-5-confirm.png)
 
 6. Set up Your Git Account
@@ -218,10 +221,12 @@ Namecheap has free domains for students. Go to: https://nc.me/ and register your
 If the previous step didn't take you over to Github, go to: http://github.com and log in to your account if you're not already logged in.
 
 1. Create a new repository. (Use the domain name you just registered with namecheap, e.g. my new repo is called "dalikate".)
+![Create New Repo] (imgs/dalikate-git1-newrepo.png)
 
-2. You can either click the "Setup in Desktop" button, or hop over to Gitapp to create a clone of your new repository like we did in Part 2.
+2. You can either click the "Setup in Desktop" button, or hop over to Gitapp to create a clone of your new repository like we did earlier in Part 2.
+![Set Up Repo In Desktop] (imgs/dalikate-git2-newrepo-created.png)
 
-Click the + Add a Repository dropdown, select clone, and choose the name of your new repo.
+To add manually in Gitapp: Click the + Add a Repository dropdown, select clone, and choose the name of your new repo.
 
 3. Locate the repo locally on your machine (right-click, Open in Finder)
 
@@ -229,11 +234,11 @@ Click the + Add a Repository dropdown, select clone, and choose the name of your
 
 5. In Gitapp, commit the changes and click Publish
 
-Github.com 
+Github.com
 
 Go to settings, scroll down to GitHub Pages, under Source, select "Master Branch" and save.
 
 ### Domain Trouble
-If, for some reason, you have trouble registering your domain, add your PDF file to your local repository and update the `url` in `main.js` to point to your PDF. Then, in Gitapp, commit and sync your changes. Check the map and make sure your PDF loads when you click your marker!
+If, for some reason, you have trouble registering your domain, go back to https://nc.me/ and re-enter your domain. If you received and verified an email, you should be able to log in with your Namecheap account info. 
 
 
