@@ -34,8 +34,17 @@ Your style guide should include:
 * Type styles — include the name of the typeface, sizes, styles, and colors used
 * Color palette — include swatches and hex codes
 
+## Part 2: Register Your Domain
 
-## Part 2: Setup Git & Atom
+Lets start off right and get you set up with a domain of your own!
+
+We'll use NameCheap as our registrar. Namecheap is a good net citizen and have free domains for students.
+
+Go to: https://nc.me/ and register your domain!
+![] (imgs/namecheap_hp.png)
+
+
+## Part 3: Setup Git & Atom
 
 You'll use Atom and the Github app to submit a PDF of your final design. Follow the instructions below to add your page to the DALI Map!
 
@@ -65,7 +74,7 @@ git is a code collaboration tool! If you've previously used git on your computer
 In Atom, go to: File -> Add Project Folder, and select the 17w-mappy repo.
 
 
-## Part 3: Use Atom & Git to Publish Your Work
+## Part 4: Use Atom & Git to Publish Your Work
 Now you'll use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.
 
 This is a good overview image for the things you'll be doing — it'll all make sense eventually.
@@ -122,16 +131,47 @@ This happens and is normal, so don't worry! To fix you just need to pick apart t
 
 ### Deciphering Merge Conflicts
 
-If you were to do this by hand, git takes the pretty code you wrote and injects terrible "conflict markers" that look like this:
+Let's say Tim and I were both adding our markers to `main.js` in the same spot, at the same time. We'd get a merge conflict error (shown above), and if we look at `main.js` in Atom, we'll see that Git has injected some "conflict markers" that look like this:
 
 ```
 <<<<<<< HEAD
-### 6) Merge Conflict mergy
+addMarker({
+  name: 'Tim',
+  iconUrl: 'images/tim_round.jpg',
+  url: 'http://www.zingweb.com',
+  message: 'I went hiking here!',
+  lat_long: [37.2320967,-118.8578716],
+});
 =======
-### 6) Mergy merge merge Conflicts !
->>>>>>> origin/ghpages
+addMarker({
+  name: 'Kate',
+  iconUrl: 'images/kate.jpg',
+  url: 'images/kate-page.pdf',
+  message: 'I love snow!',
+  lat_long: [44.227173,-71.747907],
+});
+>>>> origin/ghpages
 ```
-where the line between  `<<<HEAD` and `====` is the line/lines of code that are relevant in your file, and between  `====` and `>>>> origin/ghpages` are from the remote repository (the repository that you see on github.com). This line refers to the commit that the change came from.
+The lines between  `<<<HEAD` and `====` and `====` and `>>>> origin/ghpages` are the lines that are in conflict. `>>>> origin/ghpages` refers to the commit that the change came from. Because you see someone else's marker here, you'll want to edit the code to keep their marker info as well as yours. To do this, just remove the conflict markers. Your edit would look like this:
+
+```
+addMarker({
+  name: 'Tim',
+  iconUrl: 'images/tim_round.jpg',
+  url: 'http://www.zingweb.com',
+  message: 'I went hiking here!',
+  lat_long: [37.2320967,-118.8578716],
+});
+
+addMarker({
+  name: 'Kate',
+  iconUrl: 'images/kate.jpg',
+  url: 'images/kate-page.pdf',
+  message: 'I love snow!',
+  lat_long: [44.227173,-71.747907],
+});
+
+```
 
 In atom, this looks like:
 ![merge-conflict-atom](imgs/github-app-mergeconflict-atom.png)
