@@ -160,14 +160,12 @@ If the previous step didn't take you over to Github, go to: http://github.com an
 1. Create a new repository. (Use the domain name you just registered with namecheap, e.g. my new repo is called "dalikate".)
 ![Create New Repo] (imgs/dalikate-git1-newrepo.png)
 
-2. You can either click the "Setup in Desktop" button, or hop over to Gitapp to create a clone of your new repository like we did earlier in Part 2.
+2. You can either click the "Setup in Desktop" button, or hop over to Gitapp to create a clone of your new repository like we did earlier in Part 2. (To add manually in Gitapp: Click the + Add a Repository dropdown, select clone, and choose the name of your new repo — revisit Part 2, Step 4 if you don't remember this.)
 ![Set Up Repo In Desktop] (imgs/dalikate-git2-newrepo-created.png)
 
-To add manually in Gitapp: Click the + Add a Repository dropdown, select clone, and choose the name of your new repo.
-
-* Locate the repo locally on your machine (right-click, Open in Finder)
-* Copy the PDF you exported from Sketch to your local repo
-* In Gitapp, commit the changes and click Publish
+3. Locate the repo locally on your machine (right-click, Open in Finder)
+4. Copy the PDF you exported from Sketch to your local repo
+5. In Gitapp, commit the changes and click Publish
 
 #### Set up GitHub Pages & Link to Your Domain
 To set up GitHub pages, go to http://github.com.
@@ -178,14 +176,11 @@ To set up GitHub pages, go to http://github.com.
 2. Select "Repositories" and click the name of the repository you just created for your new domain.
 ![New Repo] (imgs/git-domain-2-repo.png)
 
-3. Go to Settings and scroll down to GitHub Pages. Under "Source", select "Master Branch", and save.
+3. Go to Settings and scroll down to GitHub Pages. Under "Source", select "Master Branch", and save. Under "Custom Domain", add your new domain, and save.
 ![Repo Settings] (imgs/git-domain-3-settings.png)
-![Master Branch] (imgs/dalikate-git4-settings.png)
-
-4. Under "Custom Domain", add your new domain, and save.
 ![Add Custom Domain] (imgs/dalikate-git5-customdomain.png)
 
-5. In your web browser, open a new tab and go to: yournewdomain.me/your-page.pdf. If you see the page you designed in Sketch, update your marker block in `main.js` so the `url` field points to your PDF on your new domain (the URL you just visited). Commit and sync the changes!
+4. In your web browser, open a new tab and go to: yournewdomain.me/your-page.pdf. If you see the page you designed in Sketch, update your marker block in `main.js` so the `url` field points to your PDF on your new domain (the URL you just visited). Commit and sync the changes!
 
 Congrats, you've published your page and set up your new domain!
 
