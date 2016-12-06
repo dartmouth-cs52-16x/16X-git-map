@@ -228,17 +228,21 @@ If the previous step didn't take you over to Github, go to: http://github.com an
 
 To add manually in Gitapp: Click the + Add a Repository dropdown, select clone, and choose the name of your new repo.
 
-3. Locate the repo locally on your machine (right-click, Open in Finder)
+* Locate the repo locally on your machine (right-click, Open in Finder)
+* Copy the PDF you exported from Sketch to your local repo
+* In Gitapp, commit the changes and click Publish
 
-4. Copy the PDF you exported from Sketch to your local repo
+3. Set up GitHub pages on http://github.com
+Go to settings, scroll down to GitHub Pages. Under "Source", select "Master Branch", and save.
+![Set Up Repo In Desktop] (imgs/dalikate-git4-settings.png)
 
-5. In Gitapp, commit the changes and click Publish
+4. Under "Custom Domain", add your new domain, and save.
+![Add Custom Domain] (imgs/dalikate-git5-customdomain.png)
 
-Github.com
+In your web browser, open a new tab and go to: yournewdomain.me/your-page.pdf. If you see the page you designed in Sketch, update your marker block in `main.js` so the `url` points to your PDF on your new domain. Commit and sync the changes!
 
-Go to settings, scroll down to GitHub Pages, under Source, select "Master Branch" and save.
+Congrats, you've published your page and set up your new domain!
 
 ### Domain Trouble
 If, for some reason, you have trouble registering your domain, go back to https://nc.me/ and re-enter your domain. If you received and verified an email, you should be able to log in with your Namecheap account info. 
-
 
