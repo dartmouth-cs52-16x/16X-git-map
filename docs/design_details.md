@@ -168,19 +168,17 @@ If the previous step didn't take you over to Github, go to: http://github.com an
 5. In Gitapp, commit the changes and click Publish
 
 #### Set up GitHub Pages & Link to Your Domain
-To set up GitHub pages, go to http://github.com.
-
-1. Go to "Your Profile"
+To set up GitHub pages, go to http://github.com and go to your profile.
 ![Git Profile] (imgs/git-domain-1-profile.png)
 
-2. Select "Repositories" and click the name of the repository you just created for your new domain.
+1. Select "Repositories" and click the name of the repository you just created for your new domain.
 ![New Repo] (imgs/git-domain-2-repo.png)
 
-3. Go to Settings and scroll down to GitHub Pages. Under "Source", select "Master Branch", and save. Under "Custom Domain", add your new domain, and save.
+2. Go to Settings and scroll down to GitHub Pages. Under "Source", select "Master Branch", and save. Under "Custom Domain", add your new domain, and save.
 ![Repo Settings] (imgs/git-domain-3-settings.png)
 ![Add Custom Domain] (imgs/dalikate-git5-customdomain.png)
 
-4. In your web browser, open a new tab and go to: yournewdomain.me/your-page.pdf. If you see the page you designed in Sketch, update your marker block in `main.js` so the `url` field points to your PDF on your new domain (the URL you just visited). Commit and sync the changes!
+3. In your web browser, open a new tab and go to: yournewdomain.me/your-page.pdf. If you see the page you designed in Sketch, update your marker block in `main.js` so the `url` field points to your PDF on your new domain (the URL you just visited). Commit and sync the changes!
 
 Congrats, you've published your page and set up your new domain!
 
