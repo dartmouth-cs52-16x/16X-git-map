@@ -67,7 +67,7 @@ addMarker({
   name: 'Theo',
   iconUrl: 'images/Theo.jpg',
   url: 'images/TheoSite.pdf',
-  message: 'I like poptarts',
+  message: 'I like poptarts!',
   lat_long: [42.373616,-71.109734],
 });
 
