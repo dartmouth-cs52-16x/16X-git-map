@@ -112,7 +112,65 @@ In Gitapp:
 Check the map to make sure your bio picture is showing and the page you designed in Sketch shows up when you click your photo!
 https://dali-lab.github.io/17W-mappy/
 
+If you need help resolving a merge conflict error, scroll down to Help & Troubleshooting and read how to resolve it.
 
+If everything works, you're all set! To learn how to set up your own domain, and get more practice with Git, move on to the next section! This is optional, so it's up to you!
+
+
+***
+## Optional: Create Your Own Domain!
+
+### Step 1. Register Your Domain
+
+Namecheap has free domains for students. Go to: https://nc.me/ and register your domain!
+![Namecheap Domains] (imgs/namecheap_hp.png)
+
+1. Add your domain
+![Add Your Domain] (imgs/dalikate-1.png)
+
+2. Select your options, scroll down, and enter your dartmouth.edu email address
+![Domain Options] (imgs/dalikate-2-options.png)
+
+3. Check your email and click the button to verify your email
+![Verify Your Email] (imgs/dalikate-3-verifyemail.png)
+
+4. Click "Register"
+![Register] (imgs/dalikate-4-clickregister.png)
+
+5. Fill out the form and confirm your order
+![Confirm Your Order] (imgs/dalikate-5-confirm.png)
+
+6. Set up Your Git Account
+![Set up Git] (imgs/dalikate-6-gotogit.png)
+
+### Step 2. Create a New Repo for Your Domain
+If the previous step didn't take you over to Github, go to: http://github.com and log in to your account if you're not already logged in.
+
+1. Create a new repository. (Use the domain name you just registered with namecheap, e.g. my new repo is called "dalikate".)
+![Create New Repo] (imgs/dalikate-git1-newrepo.png)
+
+2. You can either click the "Setup in Desktop" button, or hop over to Gitapp to create a clone of your new repository like we did earlier in Part 2.
+![Set Up Repo In Desktop] (imgs/dalikate-git2-newrepo-created.png)
+
+To add manually in Gitapp: Click the + Add a Repository dropdown, select clone, and choose the name of your new repo.
+
+* Locate the repo locally on your machine (right-click, Open in Finder)
+* Copy the PDF you exported from Sketch to your local repo
+* In Gitapp, commit the changes and click Publish
+
+3. Set up GitHub pages on http://github.com
+Go to settings, scroll down to GitHub Pages. Under "Source", select "Master Branch", and save.
+![Set Up Repo In Desktop] (imgs/dalikate-git4-settings.png)
+
+4. Under "Custom Domain", add your new domain, and save.
+![Add Custom Domain] (imgs/dalikate-git5-customdomain.png)
+
+5. In your web browser, open a new tab and go to: yournewdomain.me/your-page.pdf. If you see the page you designed in Sketch, update your marker block in `main.js` so the `url` points to your PDF on your new domain. Commit and sync the changes!
+
+Congrats, you've published your page and set up your new domain!
+
+### Domain Trouble
+If, for some reason, you have trouble registering your domain, go back to https://nc.me/ and re-enter the domain you just registered. If you received confirmation and verified your email, you should be able to log in with your Namecheap account info. You should see your new domain in your domain list. If you see it, you're all set and yournewdomain.me/your-page.pdf should work. If you don't see your domain listed, the registration didn't go through and you may need to contact Namecheap support for help. 
 
 ***
 
@@ -191,58 +249,5 @@ Since we've been using Atom, there is a nice plugin to help visualize merge conf
 
 
 
-***
-## Optional: Create Your Own Domain
 
-### Step 1. Register Your Domain
-
-Namecheap has free domains for students. Go to: https://nc.me/ and register your domain!
-![Namecheap Domains] (imgs/namecheap_hp.png)
-
-1. Add your domain
-![Add Your Domain] (imgs/dalikate-1.png)
-
-2. Select your options, scroll down, and enter your dartmouth.edu email address
-![Domain Options] (imgs/dalikate-2-options.png)
-
-3. Check your email and click the button to verify your email
-![Verify Your Email] (imgs/dalikate-3-verifyemail.png)
-
-4. Click "Register"
-![Register] (imgs/dalikate-4-clickregister.png)
-
-5. Fill out the form and confirm your order
-![Confirm Your Order] (imgs/dalikate-5-confirm.png)
-
-6. Set up Your Git Account
-![Set up Git] (imgs/dalikate-6-gotogit.png)
-
-### Step 2. Create a New Repo for Your Domain
-If the previous step didn't take you over to Github, go to: http://github.com and log in to your account if you're not already logged in.
-
-1. Create a new repository. (Use the domain name you just registered with namecheap, e.g. my new repo is called "dalikate".)
-![Create New Repo] (imgs/dalikate-git1-newrepo.png)
-
-2. You can either click the "Setup in Desktop" button, or hop over to Gitapp to create a clone of your new repository like we did earlier in Part 2.
-![Set Up Repo In Desktop] (imgs/dalikate-git2-newrepo-created.png)
-
-To add manually in Gitapp: Click the + Add a Repository dropdown, select clone, and choose the name of your new repo.
-
-* Locate the repo locally on your machine (right-click, Open in Finder)
-* Copy the PDF you exported from Sketch to your local repo
-* In Gitapp, commit the changes and click Publish
-
-3. Set up GitHub pages on http://github.com
-Go to settings, scroll down to GitHub Pages. Under "Source", select "Master Branch", and save.
-![Set Up Repo In Desktop] (imgs/dalikate-git4-settings.png)
-
-4. Under "Custom Domain", add your new domain, and save.
-![Add Custom Domain] (imgs/dalikate-git5-customdomain.png)
-
-In your web browser, open a new tab and go to: yournewdomain.me/your-page.pdf. If you see the page you designed in Sketch, update your marker block in `main.js` so the `url` points to your PDF on your new domain. Commit and sync the changes!
-
-Congrats, you've published your page and set up your new domain!
-
-### Domain Trouble
-If, for some reason, you have trouble registering your domain, go back to https://nc.me/ and re-enter your domain. If you received and verified an email, you should be able to log in with your Namecheap account info. 
 
