@@ -63,6 +63,14 @@ addMarker({
   lat_long: [44.227173,-71.747907],
 });
 
+addMarker({
+  name: 'Theo',
+  iconUrl: 'images/Theo.jpg',
+  url: 'images/TheoSite.pdf',
+  message: 'I like poptarts',
+  lat_long: [42.373616,-71.109734],
+});
+
 
 //END SECTION FOR MARKERS
 
