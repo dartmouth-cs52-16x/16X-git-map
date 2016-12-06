@@ -6,7 +6,7 @@ This task will help you gain familiarity with Sketch, a powerful UI/UX design ap
 1. Download a free trial of Sketch from: https://sketchapp.com.  
 2. Watch the short Sketch tutorials on *Introducing Symbols*, *Symbol Resizing*, and *Using Masks*: https://sketchapp.com/learn/.
 
-If you want to see an example of what you'll be doing, go to the map, zoom in and look at me (Kate) and Theo. https://dali-lab.github.io/17W-mappy/ (If you're using Safari and don't see the map at all, switch to Chrome.) 
+If you want to see an example of what you'll be doing, go to the map, zoom in and look at me (Kate) and Theo. Map is here: https://dali-lab.github.io/17W-mappy/ (If you're using Safari and don't see the map at all, switch to Chrome.) 
 
 ![design examples](imgs/design_example.png)
 
