@@ -1,10 +1,14 @@
 # Design Task
 
-This task is to help you gain familiarity with Sketch, a powerful UI/UX design application, to get your design chops warmed up before the beginning of the term! And to get set up with Atom and Git.
+This task will help you gain familiarity with Sketch, a powerful UI/UX design application. You'll get some practice designing in the application before the beginning of term, explaining your design decisions, creating a simple style guide, and you'll also get set up with Atom and Git.
 
 ## Before you begin
 1. Download a free trial of Sketch from: https://sketchapp.com.  
 2. Watch the short Sketch tutorials on *Introducing Symbols*, *Symbol Resizing*, and *Using Masks*: https://sketchapp.com/learn/.
+
+If you want to see an example of what you'll be doing, go to the map, zoom in and look at me (Kate) and Theo. https://dali-lab.github.io/17W-mappy/ (If you're using Safari and don't see the map at all, switch to Chrome.) 
+
+![design examples](imgs/design_example.png)
 
 ***
 ## Part 1: Design Your Page Using Sketch
@@ -48,16 +52,16 @@ Atom is a great code editor, it is cross platform and looks pretty. If you prefe
 2. Open Atom and then do: Atom -> Install Shell Commands
 
 ### Step 2. Install Github Desktop App & Add The Project Repo
-git is a code collaboration tool! If you've previously used git on your computer, you can skip the install step.
+Git is a code collaboration tool. If you've previously used git on your computer, you can skip the install step. If you haven't used GitHub before, you'll have to create a new account before you begin. Be sure to verify your email address before you start these next steps or you'll have trouble publishing your work in the next part! After you've created your account, Git will send you an email asking you to verify your email. Go to: https://github.com/ to sign up.
 
-1. Install the github app from: https://desktop.github.com/
+1. Install the github app from: https://desktop.github.com/ 
 
 2. Run the GitHub app, and set it up with your new account.
 ![Github Account Setup](imgs/github-app-1config.png)
 
-3. Go to Preferences -> Advanced and fill in your information with the same email you used for your github account and then click Install Command Line Tools
+3. Go to Preferences -> Advanced and fill in your information with the same email you used for your github account and then click Install Command Line Tools.
 
-4. Clone the 17W-mappy repo: click the + Add a Repository dropdown, select clone, and choose the 17W-mappy
+4. Clone the 17W-mappy repo: click the + Add a Repository dropdown, select clone, and choose the 17W-mappy.
 ![Cloning a Project Repro](imgs/github-app-2clone-mappy.png)
 
 
@@ -73,7 +77,7 @@ This is a good overview image for the things you'll be doing — it'll all make 
 
 ![](imgs/git_data_transport.png)
 
-### Step 1. Add Your Image to Your Local Git Repo
+### Step 1. Add Your Files to Your Local Git Repo
 
 1. Export your design from Sketch as a PDF 
 2. Locate the images directory in your local project repo. If you're not sure where Git set this up, you can right-click the 17W-mappy repo in the Git app, and select Open in Finder.
@@ -99,7 +103,7 @@ Now you're ready to create a marker on the DALI Map with your bio pic! This mark
 ### Step 3. Commit & Sync Your Changes with Gitapp
 Committing files tells Git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
 
-In Gitapp:
+In Gitapp, you'll do the following (read through the steps and look at the screenshot below):
 
 1. Write a short note in the summary field about what you did/what changes you made (e.g. added bio image and pdf).
 
@@ -112,9 +116,15 @@ In Gitapp:
 Check the map to make sure your bio picture is showing and the page you designed in Sketch shows up when you click your photo!
 https://dali-lab.github.io/17W-mappy/
 
-If you need help resolving a merge conflict error, scroll down to Help & Troubleshooting and read how to resolve it.
+If everything works, you're all set! To learn how to set up your own domain, and get more practice with Git, move on to the next section! This part is optional, so it's up to you!
 
-If everything works, you're all set! To learn how to set up your own domain, and get more practice with Git, move on to the next section! This is optional, so it's up to you!
+If you're having trouble getting things to work, you might check the following:
+
+* If you don't see your photo on the map, it might take a minute or two for it to display. Try refreshing your browser to see if that works. 
+
+* If you make an update and sync some new changes with the server, and you don't see them load right away, it's probably a caching issue. In Chrome: open a new Incognito window, load the map page, and see if you see your updates. If you do, you're all set, it was a caching problem.
+
+* If you need help resolving a merge conflict error you received in Gitapp, scroll down to the Help & Troubleshooting section for more information on what these are and how to resolve them.
 
 
 ***
