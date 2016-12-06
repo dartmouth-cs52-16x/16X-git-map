@@ -153,9 +153,10 @@ Namecheap has free domains for students. Go to: https://nc.me/ and register your
 6. Set up Your Git Account
 ![Set up Git] (imgs/dalikate-6-gotogit.png)
 
-### Step 2. Create a New Repo for Your Domain
+### Step 2. Create a New Repo & Link Your Domain
 If the previous step didn't take you over to Github, go to: http://github.com and log in to your account if you're not already logged in.
 
+#### Create A New Repo & Add Your Design (PDF)
 1. Create a new repository. (Use the domain name you just registered with namecheap, e.g. my new repo is called "dalikate".)
 ![Create New Repo] (imgs/dalikate-git1-newrepo.png)
 
@@ -168,19 +169,28 @@ To add manually in Gitapp: Click the + Add a Repository dropdown, select clone, 
 * Copy the PDF you exported from Sketch to your local repo
 * In Gitapp, commit the changes and click Publish
 
-3. Set up GitHub pages on http://github.com
-Go to settings, scroll down to GitHub Pages. Under "Source", select "Master Branch", and save.
-![Set Up Repo In Desktop] (imgs/dalikate-git4-settings.png)
+#### Set up GitHub Pages & Link to Your Domain
+To set up GitHub pages, go to http://github.com.
+
+1. Go to "Your Profile"
+![Git Profile] (imgs/git-domain-1-profile.png)
+
+2. Select "Repositories" and click the name of the repository you just created for your new domain.
+![New Repo] (imgs/git-domain-2-repo.png)
+
+3. Go to Settings and scroll down to GitHub Pages. Under "Source", select "Master Branch", and save.
+![Repo Settings] (imgs/git-domain-3-settings.png)
+![Master Branch] (imgs/dalikate-git4-settings.png)
 
 4. Under "Custom Domain", add your new domain, and save.
 ![Add Custom Domain] (imgs/dalikate-git5-customdomain.png)
 
-5. In your web browser, open a new tab and go to: yournewdomain.me/your-page.pdf. If you see the page you designed in Sketch, update your marker block in `main.js` so the `url` points to your PDF on your new domain. Commit and sync the changes!
+5. In your web browser, open a new tab and go to: yournewdomain.me/your-page.pdf. If you see the page you designed in Sketch, update your marker block in `main.js` so the `url` field points to your PDF on your new domain (the URL you just visited). Commit and sync the changes!
 
 Congrats, you've published your page and set up your new domain!
 
 ### Domain Trouble
-If, for some reason, you have trouble registering your domain, go back to https://nc.me/ and re-enter the domain you just registered. If you received confirmation and verified your email, you should be able to log in with your Namecheap account info. You should see your new domain in your domain list. If you see it, you're all set and yournewdomain.me/your-page.pdf should work. If you don't see your domain listed, the registration didn't go through and you may need to contact Namecheap support for help. 
+If, for some reason, you have trouble registering your domain, go back to https://nc.me/ and re-enter the domain you just registered. If you received confirmation and verified your email, you should be able to log in with your Namecheap account info. You should see your new domain in your domain list. If you see it, you're all set and yournewdomain.me/your-page.pdf should work. If you don't see your domain listed, the registration didn't go through and you may need to contact Namecheap support for help. If you can't get this piece to work, it's okay — just make sure your bio image is showing on the map and links to your PDF!  
 
 ***
 
