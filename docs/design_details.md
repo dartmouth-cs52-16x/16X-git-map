@@ -27,9 +27,9 @@ The design of your bio should include:
 * A short bio telling us about yourself (you might include/mention: design applications you know, what you enjoy most about ui/ux design, why you’re excited to work with DALI)
 * And something interesting about yourself :-)
 
-* Create a complex symbol to use in your design, duplicate the symbol, and use the override option to change information in your symbol.
+* Create a complex symbol to use in your design, duplicate the symbol, and use the override option to change information in your symbol. Watch the Sketch tutorial on *Introducing Symbols* for direction on this. https://www.youtube.com/watch?v=3fcIp5OXtVE
 
-* Create a mask to crop some content on your page.
+* Create a mask to crop some content on your page. Watch the Sketch tutorial on *Using Masks* https://www.youtube.com/watch?v=4_1mcizltcM
 
 ### For Your Style Guide:
 
@@ -38,6 +38,8 @@ Your style guide should include:
 * A short description/rationale explaining your design choices
 * Type styles — include the name of the typeface, sizes, styles, and colors used
 * Color palette — include swatches and hex codes
+
+Visit my page to see an example style guide: http://dalikate.me/kate-page.pdf
 
 ***
 ## Part 2: Setup Git & Atom
@@ -67,7 +69,7 @@ Git is a code collaboration tool. If you've previously used git on your computer
 
 ### Step 3. Add the Project Repo in Atom
 
-In Atom, go to: File -> Add Project Folder, and select the 17w-mappy repo.
+In Atom, go to: File -> Add Project Folder, and select the 17W-mappy repo.
 
 ***
 ## Part 3: Use Atom & Git to Publish Your Work
