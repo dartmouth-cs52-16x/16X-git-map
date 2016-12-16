@@ -41,7 +41,7 @@ const addMarker = function(options) {
 addMarker({
   name: 'Froggy',
   iconUrl: 'images/froggy.jpg',
-  url: 'people/froggy.html',
+  url: '//giphy.com/embed/QCpqmkDHVNde',
   message: 'Come visit me in Costa Rica!',
   lat_long: [9.6660971,-85.0621176],
 });
@@ -51,7 +51,7 @@ addMarker({
   name: 'Tim',
   iconUrl: 'images/tim_round.jpg',
   url: '//www.zingweb.com',
-  message: 'I went hiking here!',
+  message: 'Hiking in the High Sierras!',
   lat_long: [37.2320967,-118.8578716],
 });
 
