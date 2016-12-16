@@ -50,7 +50,7 @@ addMarker({
 addMarker({
   name: 'Tim',
   iconUrl: 'images/tim_round.jpg',
-  url: 'http://www.zingweb.com',
+  url: '//www.zingweb.com',
   message: 'I went hiking here!',
   lat_long: [37.2320967,-118.8578716],
 });
