@@ -5,9 +5,9 @@ We're going to be making a website from domain name to design and html/css. Then
 (some screenshot examples are from cs52)
 
 Key: <br />
-🚀steps to definitely pay attention to <br/>
-💻run this in Terminal<br />
-🍸pro tip<br />
+🚀 steps to definitely pay attention to <br/>
+💻 run this in Terminal<br />
+🍸 pro tip<br />
 
 
 ## Steps At a Glance
@@ -49,18 +49,18 @@ First things first.  You need a local development environment.
 
 ![](https://github-atom-io-herokuapp-com.global.ssl.fastly.net/assets/logo@2x-a922b71bfaf4cdc1dcf7a5ea29b92a91.png)
 
-🚀Install [atom](http://atom.io).  Atom is a code editor.  Atom is an open source, made by Github
+🚀 Install [atom](http://atom.io).  Atom is a code editor.  Atom is an open source, made by Github
 web technology written in html+css+javascript using a platform called [Electron](http://electron.atom.io/).  We'll be using Atom for coding and utilizing a lot of its plugins. After installing and starting up Atom, run: *Atom -> Install Shell Commands* to be able to run `atom` from the commandline.
 
-🚀If you don't have it, install [Google Chrome](https://www.google.com/chrome/browser/desktop/).  Why?
+🚀 If you don't have it, install [Google Chrome](https://www.google.com/chrome/browser/desktop/).  Why?
 Because we'll be using [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) for debugging.
 
-🚀Install [GitHub Desktop](http://desktop.github.com).  We will be mostly using `git` from the commandline but installing the App gives you a nice tree visualization.
+🚀 Install [GitHub Desktop](http://desktop.github.com).  We will be mostly using `git` from the commandline but installing the App gives you a nice tree visualization.
 
 
 ### OS X ###
 
-🚀Install [Homebrew](http://brew.sh/).  This is a package manager for all things open source.
+🚀 Install [Homebrew](http://brew.sh/).  This is a package manager for all things open source.
 We will use `brew` extensively to setup your dev environment.  If you run `brew doctor`  it should be mostly error free.
 
 ### Various Linux ###
@@ -105,19 +105,19 @@ Lets start off the term right, with a domain of your own that you'll use through
 
 We'll use NameCheap as our registrar.  Namecheap is a good [net citizen](https://www.netneutrality.com/) and have free domains for students.
 
-🚀go to: [https://nc.me/](https://nc.me/)
+🚀 go to: [https://nc.me/](https://nc.me/)
 and lets register you a domain!
 
 ![](imgs/check.png)
 
-🚀I'm going to grab one for cs52 now too!
+🚀 I'm going to grab one for cs52 now too!
 
 ![](imgs//buy.png)
 
-🚀When prompted choose Github Pages Setup
+🚀 When prompted choose Github Pages Setup
 ![](imgs//choose_github_pages.png)
 
-🚀Great, now we'll do the rest of the setup manually so when prompted to setup github — instead to do advance setup.
+🚀 Great, now we'll do the rest of the setup manually so when prompted to setup github — instead to do advance setup.
 
 ![](imgs//justclickhere.png)
 
@@ -129,7 +129,7 @@ and lets register you a domain!
 
 ![](imgs//create_repo.png)
 
-Grab the URL for the repository (either SSH or HTML depending on how you have git setup.  If SSH gives you trouble just try HTML.)
+🚀 Grab the URL for the repository (either SSH or HTML depending on how you have git setup.  If SSH gives you trouble just try HTML.)
 
 **Note:**  the following are transcripts of a terminal session while setting up **cs52.me**.  You should replace anything with `cs52.me` with your own repo name and your github URL instead.
 
@@ -171,7 +171,7 @@ From the command line (where you will run all future commands):
 ```bash
 💻 atom index.html
 ```
-🚀basically just start Atom and create a file called `index.html` in your cloned workspace.
+🚀 basically just start Atom and create a file called `index.html` in your cloned workspace.
 
 ![](imgs//index_html.png)
 
@@ -187,7 +187,7 @@ Serving HTTP on 0.0.0.0 port 9000 ...
 
 ❓does anybody know what `127.0.0.1` is the address for?
 
-Lets check out what we have made in Chrome: http://localhost:9000
+🚀 Lets check out what we have made in Chrome: http://localhost:9000
 
 ![](imgs//localhost.png)
 
@@ -216,7 +216,7 @@ To insert a new image just put a .jpg or .png in an `images` folder and use the 
 
 More here: http://learn.shayhowe.com/html-css/adding-media/#adding-images
 
-
+🚀 At this point you should have some html and a page showing up in your browser. Make sure it works and all images load etc.
 
 ### An Overview of Git
 Now that you've made some changes to the site, we'll go over how to use git to add, commit, and push your changes. Git is a code version control system and allows you to have a named log of your changes to the code and a way to work on the same files together with other people. It is sort of like an offline google docs where you *commit* (explicitly name) every set of changes. [Here's a good resource](http://rogerdudler.github.io/git-guide/) but we'll do the basics here.
@@ -231,10 +231,10 @@ This is a good overview image for the things you'll be doing — it'll all make 
 
 **What this does:** The add step tells git which files from the workspace you want it to track, or add to the index.
 
-  - 🚀**Check your status:** Use `git status` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.
-  - 🚀**Add Untracked Files:** Use `git add filename` on those files to tell git to track them.
+  - 🚀 **Check your status:** Use `git status` to see what git thinks you have been working on. If you see *untracked* that means git doesn't know that you want to commit those file.
+  - 🚀 **Add Untracked Files:** Use `git add filename` on those files to tell git to track them.
     - You might also used `git add .` to add all untracked files recursively from the current directory.
-  - 🚀Go ahead a try to add your new files now. Run `git status` to make sure they are added.
+  - 🚀 Go ahead a try to add your new files now. Run `git status` to make sure they are added.
 
 
 ```bash
@@ -265,7 +265,7 @@ Changes to be committed:
 #### Git Commit
 **What this does:** Committing files tells git that you want to name and save the changes you have made as a concrete *changeset*. For now this changeset is only saved locally in your local repository. Commits should represent one logical change in the repo and the commit message should make that change clear.
 
-  - 🚀**Commit your changes:** ```git commit -am "i made some changes"```
+  - 🚀 **Commit your changes:** ```git commit -am "i made some changes"```
     - ``-a`` means all changes
     - ``-m`` indicates that your commit message follows directly, a commit message is required.
   - Example of sample commit chains that adds new payments feature to an e-commerce website:
@@ -312,7 +312,7 @@ To git@github.com:dartmouth-cs52/cs52.me.git
 
 By default GitHub Pages, when it sees a branch named `gh-pages`, will publish it at `http://<github username>.github.io/<repository name>`.
 
-You can make sure of this by going to Settings for your repository.
+🚀 You can make sure of this by going to Settings for your repository.
 
 ![settings](imgs//settings.png)
 
@@ -329,7 +329,7 @@ Ok. Add another file to your local workspace named `CNAME`.  Inside this file pu
 
 🚀 Now you have to `git add` and `git commit` and `git push` this new file.  See [Git Add](#git-add) section (skip branching as thats a one time thing).
 
-### DONE!
+### DONE with Part 1!
 
 As soon as you `git push` your site should become available at your URL!  *Note: actually it might take up to 5 minutes for it to start working with your domain name as github pushes your content to various servers.*
 
@@ -367,9 +367,9 @@ Now that you have a personal page up.  Let's add you to the DALI 17W Map!
 
 ### Clone The Repo
 
-1. 🚀Clone the repo:
+1. 🚀 Clone the repo:
 `git clone https://github.com/dali-lab/17W-mappy.git`
-1. 🚀change directory to this new workspace:
+1. 🚀 change directory to this new workspace:
 `cd 17W-mappy`
 
 
@@ -419,8 +419,8 @@ Start a local feature branch and do work on it. A branch keeps your work separat
 Here is a great visualization tool to help see what you are doing in the git tree: [git-with-d3](https://onlywei.github.io/explain-git-with-d3/#branch)
 
 ```bash
-git branch <feature>  # creates new branch feature
-git checkout <feature>  # switches to branch feature
+💻 git branch <feature>  # creates new branch feature
+💻 git checkout <feature>  # switches to branch feature
 ```
 
 🍸 Protip: `git checkout -b` will both create a new branch and check it out to make it the current branch you are working on.
@@ -437,7 +437,7 @@ git checkout <feature>  # switches to branch feature
 Note that these commands only update your current local branch.  The idea here is to not fall too far behind the master branch if other people are working on it.
 
 ```bash
-git pull origin gh-pages
+💻 git pull origin gh-pages
 ```
 
 #### Merge Conflicts
@@ -479,9 +479,9 @@ Once you have your conflict file the way you want it — ie. fixed and without a
 
 Now lets add a picture of yourself and a lat long for a place that you like or are from.
 
-Open `main.js` in atom.
+🚀 Open `main.js` in atom.
 
-🚀Find where we run the method `addMarker` to create a marker for Froggy.
+🚀 Find where we run the method `addMarker` to create a marker for Froggy.
 Copy that function call and paste it in somewhere in the `SECTION FOR MARKERS`.  
 
 Add an image of yourself into `images`.   It would probably be a good idea to resize your image to be 200x200 pixels. If you don't have a favorite tool for this try [resizeimage](http://resizeimage.net/)
@@ -490,14 +490,14 @@ For the `url` field use the new page that you made earlier!  Rather than using h
 
 Find a lat long: http://www.latlong.net/
 
-🚀Play around with it till you have a working badge visible on your local dev site:  http://localhost:9000/ and when click on the badge it is able to load in the page you made into the modal.
+🚀 Play around with it till you have a working badge visible on your local dev site:  http://localhost:9000/ and when click on the badge it is able to load in the page you made into the modal.
 
 
 ### Rebase local branch
 When you're nearly ready to publish, rebase your local branch on top of the latest master one more time. Just like you have been above. Note: we are using rebasing here instead of just pulling, because now we are pros. 🏆  What this does is basically pull in all remote changes and then replay your commits on top of them. This gives you a cleaner version history.
 
 ```bash
-git pull --rebase origin gh-pages
+💻 git pull --rebase origin gh-pages
 ```
 
 If you have rebase conflicts, fix the files as in [Deciphering-Merge-Conflicts](#Deciphering-Merge-Conflicts) and do `git add`, then
@@ -509,7 +509,7 @@ If you have rebase conflicts, fix the files as in [Deciphering-Merge-Conflicts](
 After you are finished working on your branch, you should push it up to github.
 
 ```bash
-git push origin yourname_icon
+💻 git push origin yourname_icon
 ```
 🍸 Protip: git does not push multiple branches by default, but you can with: `git push --all origin`.  Just be careful if you have a ton of test branches lying around.
 
