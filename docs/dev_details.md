@@ -55,7 +55,7 @@ web technology written in html+css+javascript using a platform called [Electron]
 🚀 If you don't have it, install [Google Chrome](https://www.google.com/chrome/browser/desktop/).  Why?
 Because we'll be using [Chrome Developer Tools](https://developers.google.com/web/tools/chrome-devtools/) for debugging.
 
-🚀 Install [GitHub Desktop](http://desktop.github.com).  We will be mostly using `git` from the commandline but installing the App gives you a nice tree visualization.
+🚀 Install [GitHub Desktop](http://desktop.github.com).  We will be mostly using `git` from the commandline but installing the App gives you a nice tree visualization and a git shell if you are on windows.
 
 
 ### OS X ###
@@ -73,7 +73,7 @@ Windows is a trickier dev environment.  We'll try to provide directions but thes
 
 In general though whenever we refer to 💻 Terminal you can just use ***Git Shell*** (which comes bundled with the GitHub app).  You may want to check out [Chocolatey](http://chocolatey.org) which is a package manager for Windows.
 
-If you want to be brave you can try out the very new beta of [ubuntu in windows](https://blogs.msdn.microsoft.com/commandline/2016/04/06/bash-on-ubuntu-on-windows-download-now-3/) — no guarantees there.
+If you want to be brave you can try out the very new beta of [ubuntu in windows](https://msdn.microsoft.com/en-us/commandline/wsl/about) — no guarantees there.
 
 
 ## Command Line ##
