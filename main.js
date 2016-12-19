@@ -71,6 +71,14 @@ addMarker({
   lat_long: [42.373616,-71.109734],
 });
 
+addMarker({
+  name: 'Lillian',
+  iconUrl: 'images/lillian.jpg',
+  url: '//www.zhaolillian.com/about-me-dali',
+  message: 'MIA in Argentina',
+  lat_long: [37.5483,-121.9886],
+});
+
 
 //END SECTION FOR MARKERS
 
