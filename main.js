@@ -82,7 +82,7 @@ addMarker({
 addMarker({
   name: 'Luisa',
   iconUrl: 'images/luisa.jpg',
-  url: '//www.vluisa.github.io/mapWebsite/',
+  url: '//vluisa.github.io/mapWebsite/',
   message: 'I was born here!',
   lat_long: [4.444676,-75.242438],
 });
