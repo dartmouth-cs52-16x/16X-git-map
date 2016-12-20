@@ -24,6 +24,7 @@ This mostly assumes that you are using a recent version of OS X, so your mileage
 * A short bio telling us about yourself (you might include/mention: design/programming applications you know/like, what you enjoy most about ui/ux design/development, why you’re excited to work with DALI.)
 * Something interesting/fun/random about yourself :smile:
 
+Note: remember to fill out the [DALI Personnel Details Form](https://goo.gl/forms/7oOlYXL6W3kBDX4k1) to be added to the github team!
 
 ## Design
 
