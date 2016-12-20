@@ -79,6 +79,14 @@ addMarker({
   lat_long: [37.5483,-121.9886],
 });
 
+addMarker({
+  name: 'Luisa',
+  iconUrl: 'images/luisa.jpg',
+  url: '//vluisa.github.io/mapWebsite/',
+  message: 'I was born here!',
+  lat_long: [4.444676,-75.242438],
+});
+
 
 //END SECTION FOR MARKERS
 
