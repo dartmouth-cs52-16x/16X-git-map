@@ -91,7 +91,7 @@ addMarker({
   name: 'Pat',
   iconUrl: 'images/pat.jpg',
   url: '//www.patrickxu.com',
-  message: 'Biking in California!',
+  message: 'Exploring Yellowstone!',
   lat_long: [44.797716, -110.434368],
 });
 
