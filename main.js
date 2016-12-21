@@ -87,6 +87,14 @@ addMarker({
   lat_long: [4.444676,-75.242438],
 });
 
+addMarker({
+  name: 'Pat',
+  iconUrl: 'images/pat.jpg',
+  url: '//www.patrickxu.com',
+  message: 'Biking in California!',
+  lat_long: [44.797716, -110.434368],
+});
+
 
 //END SECTION FOR MARKERS
 
