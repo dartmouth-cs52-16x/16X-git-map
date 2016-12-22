@@ -103,6 +103,13 @@ addMarker({
   lat_long: [44.763057,-85.620632],
 });
 
+addMarker({
+  name: 'Nitasha',
+  iconUrl: 'images/Nitasha.jpg',
+  url: '//nitashakochar.me',
+  message: 'Anybody wanna watch Sherlock?',
+  lat_long: [40.792044,-73.539848],
+});
 
 //END SECTION FOR MARKERS
 
