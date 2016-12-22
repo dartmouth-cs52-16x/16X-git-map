@@ -106,7 +106,7 @@ addMarker({
 addMarker({
   name: 'Nitasha',
   iconUrl: 'images/Nitasha.jpg',
-  url: '//nitashakochar.me',
+  url: '//nitashakochar.github.io/nitashakochar.me/',
   message: 'Anybody wanna watch Sherlock?',
   lat_long: [40.792044,-73.539848],
 });
