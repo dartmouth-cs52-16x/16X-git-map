@@ -76,7 +76,7 @@ addMarker({
   iconUrl: 'images/lillian.jpg',
   url: '//www.zhaolillian.com/about-me-dali',
   message: 'MIA in Argentina',
-  lat_long: [37.5483,-121.9886],
+  lat_long: [-38.4161, -63.6167],
 });
 
 addMarker({
