@@ -95,6 +95,14 @@ addMarker({
   lat_long: [44.797716, -110.434368],
 });
 
+addMarker({
+  name: 'Kyle',
+  iconUrl: 'images/kyle.jpg',
+  url: '//kyledotterrer.me',
+  message: 'Building a Fire!',
+  lat_long: [44.763057,-85.620632],
+});
+
 
 //END SECTION FOR MARKERS
 
